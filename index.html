@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly AI Briefing — March 15–21, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f4f4f0;
+    color: #1a1a1a;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    background: #1a1a2e;
+    color: #ffffff;
+    padding: 36px 40px 32px;
+    margin-bottom: 0;
+  }
+  .masthead-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .masthead-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7c9dc4;
+    margin-bottom: 8px;
+  }
+  .masthead h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+  }
+  .masthead-date {
+    font-size: 14px;
+    color: #8899aa;
+  }
+
+  /* ── TOP HIGHLIGHTS BAND ── */
+  .highlights-band {
+    background: #16213e;
+    padding: 32px 40px 36px;
+    margin-bottom: 32px;
+  }
+  .highlights-band-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .highlights-band h2 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e8a84c;
+    margin-bottom: 20px;
+  }
+  .highlight-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #243050;
+  }
+  .highlight-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .highlight-num {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    background: #e8a84c;
+    color: #16213e;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+  .highlight-content a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .highlight-content a:hover { text-decoration: underline; }
+  .highlight-meta {
+    font-size: 12px;
+    color: #6b8aaa;
+    margin-top: 3px;
+  }
+  .highlight-desc {
+    font-size: 13.5px;
+    color: #b0c4d8;
+    margin-top: 4px;
+    line-height: 1.5;
+  }
+
+  /* ── SECTION HEADERS ── */
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7c9dc4;
+    margin: 36px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1a1a2e;
+  }
+
+  /* ── SOURCE CARD ── */
+  .source-card {
+    background: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    border: 1px solid #e5e5e0;
+  }
+  .source-card.wildcard {
+    border: 1px dashed #7c9dc4;
+  }
+  .source-header {
+    padding: 14px 20px 12px;
+    border-bottom: 1px solid #f0f0eb;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .source-icon { font-size: 16px; flex-shrink: 0; }
+  .source-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+  .source-platform {
+    font-size: 12px;
+    color: #888;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .wildcard-badge {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+  }
+
+  /* ── ARTICLE ITEMS ── */
+  .article-item {
+    padding: 14px 20px;
+    border-bottom: 1px solid #f5f5f0;
+    position: relative;
+  }
+  .article-item:last-child { border-bottom: none; }
+  .article-item.high-priority { border-left: 3px solid #e8a84c; padding-left: 17px; }
+  .article-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .article-title a:hover { color: #2563eb; text-decoration: underline; }
+  .article-meta {
+    font-size: 12px;
+    color: #888;
+    margin: 4px 0 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  .tag-high { background: #fef3cd; color: #a0600a; }
+  .tag-yt { background: #fee2e2; color: #b91c1c; }
+  .tag-blog { background: #e0f2fe; color: #0369a1; }
+  .tag-de { background: #f3f4f6; color: #4b5563; }
+  .tag-paywalled { background: #f3f4f6; color: #6b7280; }
+  .article-summary {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  /* ── NO CONTENT ── */
+  .no-content {
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+  }
+
+  /* ── RELEVANCE NOTES ── */
+  .relevance-card {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .relevance-card h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .relevance-card p {
+    font-size: 14px;
+    color: #1e3a5f;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  .relevance-card p:last-child { margin-bottom: 0; }
+
+  /* ── GAPS ── */
+  .gaps-card {
+    background: #fff9f0;
+    border: 1px solid #f0d080;
+    border-radius: 8px;
+    padding: 18px 20px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+  .gaps-card h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #7a5500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .gap-item {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0e0c0;
+  }
+  .gap-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .gap-source { font-weight: 600; color: #333; }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-label">Sven's Weekly Briefing</div>
+    <h1>Weekly AI Briefing</h1>
+    <div class="masthead-date">Week of March 15–21, 2026 &nbsp;·&nbsp; 10 sources checked &nbsp;·&nbsp; Generated March 21, 2026</div>
+  </div>
+</div>
+
+<!-- TOP HIGHLIGHTS -->
+<div class="highlights-band">
+  <div class="highlights-band-inner">
+    <h2>⭐ Top Highlights This Week</h2>
+
+    <div class="highlight-item">
+      <div class="highlight-num">1</div>
+      <div class="highlight-content">
+        <a href="https://www.youtube.com/watch?v=_ZpZ1cB67_Y">Enovair: Master Claude Cowork Full Tutorial — Everything You Need To Try</a>
+        <div class="highlight-meta">Enovair · Mar 20 · 🎬 YouTube</div>
+        <div class="highlight-desc">A comprehensive 25-minute walkthrough of Claude Cowork covering everything from setup to advanced use cases. Direct value for your primary tool stack — if you want one definitive Cowork reference video this week, this is it.</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">2</div>
+      <div class="highlight-content">
+        <a href="https://natesnewsletter.substack.com/p/your-ai-agent-needs-three-things">Nate B. Jones: AI memory system just turned into an autonomous agent — plus the wiring guide</a>
+        <div class="highlight-meta">Nate B. Jones · Mar 21 · 📝 Substack (paywalled)</div>
+        <div class="highlight-desc">Nate covers a feature that turns your AI memory system into a fully autonomous agent — and includes a practical guide to wire it up. Directly relevant to how you think about persistent memory and agent architecture across your Claude Projects.</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">3</div>
+      <div class="highlight-content">
+        <a href="https://www.youtube.com/watch?v=l1y3IeC_eJ0">Grace Leung: Claude Cowork + Skills is Your NEW Content System</a>
+        <div class="highlight-meta">Grace Leung · Mar 15 · 🎬 YouTube</div>
+        <div class="highlight-desc">Shows how to combine Cowork and Claude Skills into a unified content production system — handling reformatting, repurposing, and scheduling across multiple platforms from a single folder. Directly maps to your book marketing and social content workflows.</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">4</div>
+      <div class="highlight-content">
+        <a href="https://www.youtube.com/watch?v=wlrCn-onmRA">AI mit Arnie: Selbstverbessernde KI ist Jetzt da — autoresearch in OpenClaw &amp; Claude Code</a>
+        <div class="highlight-meta">AI mit Arnie · Mar 18 · 🎬 YouTube 🇩🇪</div>
+        <div class="highlight-desc">Arnold covers self-improving AI capabilities now available via autoresearch in OpenClaw and Claude Code — a significant capability shift. German-language but directly relevant to your Claude Code usage and the broader agentic engineering direction.</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">5</div>
+      <div class="highlight-content">
+        <a href="https://www.youtube.com/watch?v=rzJC-ngZ6CY">Wes Roth: Grok 5 Could be xAI's Biggest Breakthrough Yet</a>
+        <div class="highlight-meta">Wes Roth · Mar 19 · 🎬 YouTube</div>
+        <div class="highlight-desc">Wes covers Grok 5 as potentially xAI's most significant release — relevant because you use Grok alongside Claude for specific tasks where Claude underperforms. Worth tracking whether Grok 5 changes your tool allocation.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- BLOGS & SUBSTACKS -->
+  <div class="section-label">📝 Blogs &amp; Substacks</div>
+
+  <!-- 1. Anthropic -->
+  <div class="source-card">
+    <div class="source-header">
+      <span class="source-icon">📝</span>
+      <span class="source-name">Anthropic</span>
+      <span class="source-platform">blog.anthropic.com</span>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.anthropic.com/81k-interviews">What 81,000 people want from AI</a></div>
+      <div class="article-meta">
+        <span>Mar 18, 2026</span>
+        <span class="tag tag-blog">Research</span>
+      </div>
+      <div class="article-summary">Anthropic published its largest-ever qualitative study: 80,508 people interviewed in 159 countries and 70 languages using Claude as the interviewer. Key findings: top desire is professional excellence (18.8%), followed by personal transformation (13.7%) and life management support. The study surfaces a "light and shade" tension — the things people most want from AI (emotional support, cognitive augmentation) are also what they most fear becoming dependent on. People in Sub-Saharan Africa and Asia are significantly more optimistic than Western Europe and North America.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title">Usage limits doubled for all plans — March 15–27 (non-peak hours)</div>
+      <div class="article-meta">
+        <span>Mar 15, 2026</span>
+        <span class="tag tag-blog">Promotion</span>
+      </div>
+      <div class="article-summary">Anthropic doubled usage limits for Free, Pro, Max, and Team plans during non-peak hours from March 15–27. No separate blog post published; reported via third-party tracking sources. Directly relevant: if you're hitting limits during your Claude workflow sessions, this window gives you extra headroom.</div>
+    </div>
+  </div>
+
+  <!-- 2. Ethan Mollick -->
+  <div class="source-card">
+    <div class="source-header">
+      <span class="source-icon">📝</span>
+      <span class="source-name">Ethan Mollick</span>
+      <span class="source-platform">oneusefulthing.org</span>
+    </div>
+    <div class="no-content">No new post this week. Last post: <a href="https://www.oneusefulthing.org/p/the-shape-of-the-thing" style="color:#2563eb;">"The Shape of the Thing"</a> (Mar 12) — where we are right now and what likely happens next. Mollick publishes infrequently; next post could arrive any time.</div>
+  </div>
+
+  <!-- 3. Nate B. Jones -->
+  <div class="source-card">
+    <div class="source-header">
+      <span class="source-icon">📝</span>
+      <span class="source-name">Nate B. Jones</span>
+      <span class="source-platform">natesnewsletter.substack.com</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://natesnewsletter.substack.com/p/your-ai-agent-needs-three-things">The feature nobody covered this week just turned your AI memory system into an autonomous agent + the guide to wire it up</a></div>
+      <div class="article-meta">
+        <span>Mar 21, 2026</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-paywalled">Paywalled</span>
+      </div>
+      <div class="article-summary">Title and subtitle visible; full content paywalled. Topic: a overlooked feature that converts an AI memory system into an autonomous agent, with a practical wiring guide. Directly relevant to your Claude Projects architecture and persistent memory setup.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://natesnewsletter.substack.com/p/five-things-claudes-chrome-extension">Claude organized 900 Google Drive files, negotiated a billing credit, and ran competitive intel across six tabs. Your browser just became an employee.</a></div>
+      <div class="article-meta">
+        <span>Mar 17, 2026</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-paywalled">Paywalled</span>
+      </div>
+      <div class="article-summary">Title visible; full content paywalled. Topic: five practical use cases for Claude in Chrome (the browser extension) — file management, billing negotiation, and competitive research across tabs. Relevant to your browser-based Claude workflows.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://natesnewsletter.substack.com/p/perplexity-shipped-its-best-product">Most AI companies are renting their position. These 4 prompts tell you if yours is one of them.</a></div>
+      <div class="article-meta">
+        <span>Mar 19, 2026</span>
+        <span class="tag tag-paywalled">Paywalled</span>
+      </div>
+      <div class="article-summary">Title visible; full content paywalled. Subtitle: "What Perplexity's smartest move reveals about the most dangerous position in AI." Strategic framing on AI vendor dependency — relevant to your thinking about vendor independence in your AI infrastructure.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://natesnewsletter.substack.com/p/a-single-sentence-from-a-family-member">A Single Sentence from a Family Member Shifted an AI Diagnosis 12x. That Anchoring Bias Is in Your Agents Right Now.</a></div>
+      <div class="article-meta">
+        <span>Mar 18, 2026</span>
+        <span class="tag tag-paywalled">Paywalled</span>
+      </div>
+      <div class="article-summary">Title visible; full content paywalled. Subtitle: "What a medical triage study reveals about every agent you're deploying." Covers anchoring bias in AI agents — a practical concern for any automated workflow where early context shapes all downstream outputs.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://natesnewsletter.substack.com/p/your-ai-agent-just-mass-deleted-a">Your AI coding agent deleted 2.5 years of customer data in minutes. Here's why an experienced engineer couldn't stop it — and the 5 habits that prevent it.</a></div>
+      <div class="article-meta">
+        <span>Mar 16, 2026</span>
+        <span class="tag tag-paywalled">Paywalled</span>
+      </div>
+      <div class="article-summary">Title visible; full content paywalled. Topic: catastrophic failure mode of agentic coding tools — and 5 specific habits that prevent irreversible data loss. Relevant to your Claude Code usage.</div>
+    </div>
+  </div>
+
+  <!-- YOUTUBE -->
+  <div class="section-label">🎬 YouTube Channels</div>
+
+  <!-- 4. Grace Leung -->
+  <div class="source-card">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Grace Leung</span>
+      <span class="source-platform">@graceleungyl</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=l1y3IeC_eJ0">Claude Cowork + Skills is Your NEW Content System</a></div>
+      <div class="article-meta">
+        <span>Mar 15, 2026</span>
+        <span>17 min</span>
+        <span>30K views</span>
+        <span class="tag tag-yt">YouTube</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+      </div>
+      <div class="article-summary">Grace demonstrates a complete content production system built on Cowork + Claude Skills — handling content creation, reformatting for multiple platforms, and scheduling from a single folder setup. Covers marketing research, social content, and design workflows. Directly applicable to your book marketing and social media projects.</div>
+    </div>
+  </div>
+
+  <!-- 5. Tina Huang -->
+  <div class="source-card">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Tina Huang</span>
+      <span class="source-platform">@TinaHuang1</span>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=kKG5MDF_234">Stop Paying For More Subscriptions</a></div>
+      <div class="article-meta">
+        <span>Mar 18, 2026</span>
+        <span>21 min</span>
+        <span>30K views</span>
+        <span class="tag tag-yt">YouTube</span>
+      </div>
+      <div class="article-summary">Tina makes the case for using AI (specifically Bolt for vibe-coding) to build your own lightweight tools instead of subscribing to SaaS products. Covers the "build don't subscribe" shift as AI lowers the cost of custom tooling. Relevant to your vendor-independence philosophy for your AI infrastructure.</div>
+    </div>
+  </div>
+
+  <!-- 6. Christoph Magnussen -->
+  <div class="source-card">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Christoph Magnussen</span>
+      <span class="source-platform">@christophmagnussen 🇩🇪</span>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=o8ldzkIckTA">Kann ChatGPT 5.4 endlich überzeugen? Neue Modelle und Skills Feature!</a></div>
+      <div class="article-meta">
+        <span>Mar 16, 2026</span>
+        <span>13 min</span>
+        <span>16K views</span>
+        <span class="tag tag-yt">YouTube</span>
+        <span class="tag tag-de">🇩🇪 German</span>
+      </div>
+      <div class="article-summary">German-language. Christoph reviews GPT 5.4 — its new models and Skills-like feature — asking whether it's finally a credible challenger. Provides a German-market enterprise perspective on how OpenAI is positioning itself against Claude's Skills capability. Useful as competitive context.</div>
+    </div>
+  </div>
+
+  <!-- 7. Wes Roth -->
+  <div class="source-card">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Wes Roth</span>
+      <span class="source-platform">@WesRoth</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=rzJC-ngZ6CY">Grok 5 Could be xAI's Biggest Breakthrough Yet...</a></div>
+      <div class="article-meta">
+        <span>Mar 19, 2026</span>
+        <span>28 min</span>
+        <span>56K views</span>
+        <span class="tag tag-yt">YouTube</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+      </div>
+      <div class="article-summary">Wes covers Grok 5 as potentially xAI's most significant model release — covering capability improvements and benchmarks. Since you use Grok alongside Claude for specific tasks, this is worth watching to determine whether Grok 5 changes where you route certain work.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=7_Q8ECC9PYA">"Self Evolved" AI model just CRUSHED everything else...</a></div>
+      <div class="article-meta">
+        <span>Mar 20, 2026</span>
+        <span>25 min</span>
+        <span>56K views</span>
+        <span class="tag tag-yt">YouTube</span>
+      </div>
+      <div class="article-summary">Covers a self-evolving AI model that's achieving top benchmark performance — connecting to the broader theme of self-improving AI systems also covered by AI mit Arnie this week. Wes tracks the AI news frontier; good for staying current on model competition.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=gVbD5cQ1GC8">no one saw what APPLE just did...</a></div>
+      <div class="article-meta">
+        <span>Mar 21, 2026</span>
+        <span>17 min</span>
+        <span>34K views</span>
+        <span class="tag tag-yt">YouTube</span>
+      </div>
+      <div class="article-summary">Title only seen; Wes covers an Apple AI move that flew under the radar. Apple's AI strategy is broadly relevant to how AI tools will be delivered on consumer devices — context-setting for the broader ecosystem.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=quLuf3PFT2M">NEMOCLAW... NVIDIA is going ALL IN on OpenClaw</a></div>
+      <div class="article-meta">
+        <span>Mar 17, 2026</span>
+        <span>10 min</span>
+        <span>56K views</span>
+        <span class="tag tag-yt">YouTube</span>
+      </div>
+      <div class="article-summary">Covers NVIDIA's NemoClaw initiative — a major infrastructure investment in OpenClaw compatibility. Relevant as background context on the compute/infrastructure layer supporting the AI agents you use daily.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=Mz7W0qNlmOw">Here's how I would learn AI if I was STARTING OVER</a></div>
+      <div class="article-meta">
+        <span>Mar 15, 2026</span>
+        <span>28 min</span>
+        <span>42K views</span>
+        <span class="tag tag-yt">YouTube</span>
+      </div>
+      <div class="article-summary">Wes lays out his ideal AI learning path from scratch — covering which concepts, tools, and skills he'd prioritize. Useful as a reference for how practitioners currently structure AI education, and for identifying any gaps in your own stack.</div>
+    </div>
+  </div>
+
+  <!-- 8. AI mit Arnie -->
+  <div class="source-card">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">AI mit Arnie (Arnold Oberleiter)</span>
+      <span class="source-platform">@Arnold-Oberleiter 🇩🇪</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=wlrCn-onmRA">Selbstverbessernde KI ist Jetzt da (autoresearch in OpenClaw &amp; Claude Code)</a></div>
+      <div class="article-meta">
+        <span>Mar 18, 2026</span>
+        <span>25 min</span>
+        <span class="tag tag-yt">YouTube</span>
+        <span class="tag tag-de">🇩🇪 German</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+      </div>
+      <div class="article-summary">German-language. Arnold covers the arrival of self-improving AI via autoresearch capabilities in OpenClaw and Claude Code — AI that can iteratively refine its own outputs without manual prompting. A significant capability development for your Claude Code usage and agent architecture thinking.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=LNhvEO_JWVM">Google hat RAG für immer verändert (Gemini Embedding 2 &amp; Claude Code)</a></div>
+      <div class="article-meta">
+        <span>Mar 14, 2026</span>
+        <span>20 min</span>
+        <span class="tag tag-yt">YouTube</span>
+        <span class="tag tag-de">🇩🇪 German</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+      </div>
+      <div class="article-summary">German-language. Note: published March 14 — one day outside this week's window, included for relevance. Arnold covers how Google's Gemini Embedding 2 changes RAG architecture, demonstrated with Claude Code. Directly relevant to your interest in RAG and persistent memory. The Claude Code integration angle makes this particularly worth checking.</div>
+    </div>
+  </div>
+
+  <!-- 9. Enovair -->
+  <div class="source-card">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Enovair</span>
+      <span class="source-platform">@EnovairPartners</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=_ZpZ1cB67_Y">Master Claude Cowork Full Tutorial: Everything You Need To Try</a></div>
+      <div class="article-meta">
+        <span>Mar 20, 2026</span>
+        <span>25 min</span>
+        <span>7.1K views</span>
+        <span class="tag tag-yt">YouTube</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+      </div>
+      <div class="article-summary">Comprehensive Cowork tutorial covering the full feature set — from basic setup through advanced use cases. Enovair focuses on AI strategy for businesses and solopreneurs; this video appears to be their definitive Cowork reference guide. Highly applicable to your day-to-day Cowork usage.</div>
+    </div>
+  </div>
+
+  <!-- 10. WILDCARD -->
+  <div class="section-label">🔍 Wildcard Source</div>
+
+  <div class="source-card wildcard">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Brock Mesarich — AI for Non Techies</span>
+      <span class="wildcard-badge">🔍 Wildcard</span>
+      <span class="source-platform">@BrockMesarich</span>
+    </div>
+    <div class="article-item" style="background:#f8fbff; border-left: 3px solid #7c9dc4; padding-left:17px;">
+      <div class="article-summary" style="margin-bottom:10px;"><strong>Why this wildcard:</strong> Brock Mesarich publishes almost daily, almost exclusively about Claude Cowork. He appeared in Tina Huang's suggested videos sidebar while researching this week's sources. His content is practical (non-technical), highly focused, and maps directly to your tool stack. Four of his videos this week alone cover Cowork Dispatch use cases, the new "anywhere" capability, a 52-minute full course, and animated website building — all with Cowork. He fits the 10x filter: a practitioner who explains Cowork at a level above most users but without requiring deep technical background. Strong candidate for a permanent slot if he sustains this output quality.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=mnsDx7HDwls">5 Insane Claude Cowork Dispatch Use Cases (Steal Them)</a></div>
+      <div class="article-meta">
+        <span>Mar 21, 2026</span>
+        <span>23 min</span>
+        <span class="tag tag-yt">YouTube</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+      </div>
+      <div class="article-summary">Five ready-to-steal Cowork Dispatch use cases published today. Dispatch is the scheduled/triggered automation layer of Cowork — exactly the kind of "AI working while you sleep" pattern you've been building toward.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=blBrZw237Yw">Claude Cowork Now Works from ANYWHERE (OpenClaw Killer?)</a></div>
+      <div class="article-meta">
+        <span>Mar 19, 2026</span>
+        <span>15 min</span>
+        <span class="tag tag-yt">YouTube</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+      </div>
+      <div class="article-summary">Covers a Cowork capability expansion allowing it to run outside the desktop app context — positioned as a potential alternative to OpenClaw for remote/distributed work scenarios. Relevant if you ever want Cowork to operate beyond your local machine.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=9BEWaO_eEFE">Master 99% of Claude Cowork in 52 Minutes (Full Course)</a></div>
+      <div class="article-meta">
+        <span>Mar 17, 2026</span>
+        <span>52 min</span>
+        <span class="tag tag-yt">YouTube</span>
+      </div>
+      <div class="article-summary">A complete Cowork course in one video. Useful as a structured reference or for onboarding others to your Cowork setup.</div>
+    </div>
+  </div>
+
+  <!-- RELEVANCE NOTES -->
+  <div class="section-label">🔗 Relevance Notes</div>
+
+  <div class="relevance-card">
+    <h3>Cowork + Skills is the theme of the week</h3>
+    <p>Four separate sources this week (Grace Leung, Enovair, Brock Mesarich wildcard, and Nate B. Jones) all converged on Cowork and Skills as active learning territory. Grace shows the content workflow, Enovair gives the full tutorial, Brock covers Dispatch and the "anywhere" expansion, and Nate covers the browser-as-employee angle. This week gives you multiple high-quality Cowork reference materials in one go.</p>
+    <p>The AI mit Arnie and Wes Roth coverage of self-improving AI (autoresearch, self-evolved models) signals a capability shift worth tracking: AI that refines its own outputs without manual re-prompting. This connects directly to how you think about your Claude Code and agent pipelines — the next iteration may require less hand-holding at each step.</p>
+    <p>Grok 5 (Wes Roth) is the one non-Claude story worth your attention given your existing Grok usage. If Grok 5 significantly improves on tasks where Claude 4.x currently underperforms for you, it's worth a direct test before the next briefing.</p>
+  </div>
+
+  <!-- GAPS -->
+  <div class="section-label">⚠️ Gaps &amp; Coverage Notes</div>
+
+  <div class="gaps-card">
+    <h3>Coverage Notes</h3>
+    <div class="gap-item">
+      <span class="gap-source">Ethan Mollick:</span> No new post this week. Last post was March 12 ("The Shape of the Thing") — just outside this window. His posting cadence is monthly or slower; no gap in the source, just a quiet week.
+    </div>
+    <div class="gap-item">
+      <span class="gap-source">Anthropic usage limit promotion:</span> The doubled usage limits (March 15–27) were reported via third-party tracking sources, not confirmed from a direct Anthropic blog post or announcement page. Content is credible but flagged as secondary source.
+    </div>
+    <div class="gap-item">
+      <span class="gap-source">Nate B. Jones — paywalled content:</span> All five posts this week are behind the paid Substack wall. Titles and subtitles are confirmed (visible on homepage); summaries are based on title content only, not read articles. Consider upgrading if the daily AI strategy coverage is relevant enough.
+    </div>
+    <div class="gap-item">
+      <span class="gap-source">AI mit Arnie RAG video:</span> The Gemini Embedding 2 / RAG video (March 14) was included despite being one day outside the official window due to high relevance to your RAG interest. Clearly flagged in the source card.
+    </div>
+    <div class="gap-item">
+      <span class="gap-source">Wes Roth video descriptions:</span> Several Wes Roth videos this week have clickbait-style titles without visible descriptions from the channel page. Summaries reflect the title topic; full content not verified.
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Weekly AI Briefing for Sven &nbsp;·&nbsp; March 15–21, 2026 &nbsp;·&nbsp; 10 sources checked (9 permanent + 1 wildcard) &nbsp;·&nbsp; All YouTube sources verified via Claude in Chrome
+</footer>
+
+</body>
+</html>
