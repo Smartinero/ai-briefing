@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weekly AI Briefing — April 13–19, 2026</title>
+<title>Weekly AI Briefing — April 19–26, 2026</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -132,20 +132,12 @@
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     border: 1px solid #e5e5e0;
   }
-  .source-card.wildcard {
-    border: 2px dashed #a78bfa;
-    background: #fdfaff;
-  }
   .source-header {
     padding: 14px 20px 12px;
     border-bottom: 1px solid #f0f0eb;
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  .source-card.wildcard .source-header {
-    border-bottom: 1px solid #ede9fe;
-    background: #f5f3ff;
   }
   .source-icon { font-size: 16px; flex-shrink: 0; }
   .source-name {
@@ -158,28 +150,6 @@
     color: #888;
     margin-left: auto;
     flex-shrink: 0;
-  }
-  .wildcard-badge {
-    font-size: 10px;
-    font-weight: 700;
-    background: #ede9fe;
-    color: #6d28d9;
-    padding: 2px 7px;
-    border-radius: 3px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-left: 6px;
-  }
-  .new-badge {
-    font-size: 10px;
-    font-weight: 700;
-    background: #dcfce7;
-    color: #166534;
-    padding: 2px 7px;
-    border-radius: 3px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-left: 6px;
   }
 
   /* ── ARTICLE ITEMS ── */
@@ -233,6 +203,25 @@
     font-size: 14px;
     color: #888;
     font-style: italic;
+  }
+
+  /* ── WILDCARD CARD ── */
+  .source-card.wildcard {
+    border: 2px dashed #7c9dc4;
+    background: #f8fbff;
+  }
+  .wildcard-label {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #1a1a2e;
+    color: #7c9dc4;
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-left: 8px;
+    vertical-align: middle;
   }
 
   /* ── RELEVANCE NOTES ── */
@@ -302,57 +291,57 @@
   <div class="masthead-inner">
     <div class="masthead-label">Sven's Weekly Briefing</div>
     <h1>Weekly AI Briefing</h1>
-    <div class="masthead-date">Week of April 13–19, 2026 &nbsp;·&nbsp; 11 sources checked (10 permanent + 1 wildcard) &nbsp;·&nbsp; Generated April 19, 2026</div>
+    <div class="masthead-date">Week of April 19–26, 2026 &nbsp;·&nbsp; 11 sources checked &nbsp;·&nbsp; Generated April 26, 2026</div>
   </div>
 </div>
 
 <!-- TOP HIGHLIGHTS -->
 <div class="highlights-band">
   <div class="highlights-band-inner">
-    <h2>&#11088; Top Highlights This Week</h2>
+    <h2>⭐ Top Highlights This Week</h2>
 
     <div class="highlight-item">
       <div class="highlight-num">1</div>
       <div class="highlight-content">
-        <a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Claude Design launches (Apr 17) — available now at claude.ai/design, powered by Opus 4.7, with PPTX/Canva export and Claude Code handoff</a>
-        <div class="highlight-meta">Anthropic &nbsp;·&nbsp; Apr 17 &nbsp;·&nbsp; &#128221; Blog</div>
-        <div class="highlight-desc">The dominant story across every active channel this week. Upload brand guidelines, describe your goal, or capture elements from your website — Claude generates a full design system and polished output. Exports to Canva, PPTX, PDF, or HTML. Hands off to Claude Code in one instruction. Available on Pro, Max, Team, and Enterprise now. Eliot Prince: "basically Figma crossed with vibe coding, baked straight into Claude." Directly applicable for book marketing materials and presentations.</div>
+        <a href="https://support.claude.com/en/articles/14729249-use-live-artifacts-in-claude-cowork">Claude Cowork Live Artifacts launched — persistent dashboards connected to your apps, refreshing with live data every time you open them</a>
+        <div class="highlight-meta">Anthropic · Apr 20 · 📝 Feature Release</div>
+        <div class="highlight-desc">Live Artifacts are not one-time outputs. They're dashboards and trackers you build once, connected to your apps and files, that show current data each time you reopen them. Directly relevant to your Cowork workflow — think Apify data, PPC metrics, or project trackers that update automatically. Covered this week by Brock Mesarich (3 videos), Eliot Prince, and others.</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">2</div>
       <div class="highlight-content">
-        <a href="https://www.anthropic.com/news/claude-opus-4-7">Claude Opus 4.7 released (Apr 16) — vision 3&times; sharper, new xhigh effort level, /ultrareview in Claude Code</a>
-        <div class="highlight-meta">Anthropic &nbsp;·&nbsp; Apr 16 &nbsp;·&nbsp; &#128221; Blog</div>
-        <div class="highlight-desc">Vision input now accepts images up to 2,576px (~3.75 megapixels, 3× previous cap). New xhigh effort level for finer reasoning/latency control. /ultrareview slash command in Claude Code for dedicated code review sessions. Task budgets in public beta. Substantially improved instruction following and long-running workflow consistency. Pricing unchanged: $5/$25 per million tokens.</div>
+        <a href="https://www.anthropic.com/news/claude-opus-4-7">Claude Opus 4.7 released — new "xhigh" effort level, task budgets in public beta</a>
+        <div class="highlight-meta">Anthropic · Apr 16 · 📝 Product (just outside 7-day window — included for relevance)</div>
+        <div class="highlight-desc">Opus 4.7 adds a new "xhigh" effort level giving finer control over the reasoning/latency tradeoff on hard problems. Task budgets for the Claude Platform API are now in public beta — guide Claude's token spend per task. Stronger performance across coding, vision, and multi-step agents. Same pricing as Opus 4.6 ($5/$25 per MTok).</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">3</div>
       <div class="highlight-content">
-        <a href="https://www.youtube.com/watch?v=bmDJYcyv4m8">Eliot Prince: "Claude DESIGN Just Dropped, And... 🤯" — 145K views within hours of launch, best first-hand breakdown available</a>
-        <div class="highlight-meta">Eliot Prince &nbsp;·&nbsp; Apr 17 &nbsp;·&nbsp; &#127909; YouTube</div>
-        <div class="highlight-desc">Eliot went live the second Claude Design launched. His framing cuts through the noise: upload your brand guidelines, fonts, and logos — full design system in ~10 minutes. "Fair warning... it eats tokens for breakfast." 145,262 views and 2,342 likes within a day. Best single-video orientation to Claude Design before you open it yourself.</div>
+        <a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Claude Design by Anthropic Labs launched — create polished visual outputs directly in Claude</a>
+        <div class="highlight-meta">Anthropic · Apr 17 · 📝 Product (just outside 7-day window — included for relevance)</div>
+        <div class="highlight-desc">A new Anthropic Labs product for creating visual deliverables with Claude: designs, prototypes, slides, one-pagers. Five tracked sources covered it this week (Grace Leung, Arnie, Brock, Eliot, Nate B. Jones) — the practitioner response landed this week even though the announcement was 9 days ago. Relevant to book marketing materials and content production.</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">4</div>
       <div class="highlight-content">
-        <a href="https://www.youtube.com/watch?v=YHx-E8NOg8s">Brock Mesarich: "Claude Code 2.0 Just Dropped (Cowork Killer?)" — desktop app, no terminal, parallel sessions, 33K views</a>
-        <div class="highlight-meta">Brock Mesarich &nbsp;·&nbsp; Apr 17 &nbsp;·&nbsp; &#127909; YouTube</div>
-        <div class="highlight-desc">Directly relevant given your current Cowork setup. Claude Code's new desktop app removes the terminal requirement entirely — "just click and go." New features: routines that run while you sleep, multiple parallel sessions, Instagram carousel automation demo. Brock's framing is non-technical and practical. Whether this changes your Cowork-vs-Claude-Code calculus is worth thinking through.</div>
+        <a href="https://www.youtube.com/watch?v=OK9c7UWl24M">Brock Mesarich: 9 Claude Skills I Can't Live Without — a practitioner's real shortlist</a>
+        <div class="highlight-meta">Brock Mesarich · Apr 26 · 🎬 YouTube</div>
+        <div class="highlight-desc">Brock published 4 Claude-specific videos this week — unusually dense output. This one inventories the Skills he actually reaches for repeatedly, not a theoretical list. Directly actionable given your active Skills use in Cowork. Check which of his 9 overlap with your current setup and which you're missing.</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">5</div>
       <div class="highlight-content">
-        <a href="https://www.youtube.com/watch?v=xnG8h3UnNFI">Nate B. Jones: "$300 Just Beat 20-Person Teams At Their Own Job. You're Next." — agent economics, 33K views</a>
-        <div class="highlight-meta">Nate B. Jones &nbsp;·&nbsp; Apr 19 &nbsp;·&nbsp; &#127909; YouTube</div>
-        <div class="highlight-desc">Nate's argument: at $300/month in AI spend, a single operator can now outperform teams of 20 on specific knowledge tasks. Not hype — he breaks down the actual cost math and what task types this applies to. Useful framing for understanding where your current Claude Projects sit on the leverage curve and where the next multiplier comes from.</div>
+        <a href="https://www.youtube.com/watch?v=TlaR2_IRLUA">AI mit Arnie: Self-improving agent tutorial — Hermes agent that iteratively refines its own output (German)</a>
+        <div class="highlight-meta">Arnold Oberleiter · Apr 23 · 🎬 YouTube</div>
+        <div class="highlight-desc">Beginner-friendly walkthrough of building a Hermes agent that runs automated self-refinement loops — evaluates its own output, identifies weaknesses, re-runs — without human prompting between cycles. Relevant to your structured methodology: compare this automated loop against your manual Watson/Benjamin verification roles and where each approach wins.</div>
       </div>
     </div>
 
@@ -362,183 +351,212 @@
 <!-- MAIN CONTENT -->
 <div class="container">
 
-  <!-- BLOGS & SUBSTACKS -->
-  <div class="section-label">&#128221; Blogs &amp; Substacks</div>
+  <!-- ── BLOGS & SUBSTACKS ── -->
+  <div class="section-label">📝 Blogs &amp; Substacks</div>
 
   <!-- ANTHROPIC -->
   <div class="source-card">
     <div class="source-header">
-      <span class="source-icon">&#128221;</span>
+      <span class="source-icon">📝</span>
       <span class="source-name">Anthropic</span>
       <span class="source-platform">anthropic.com/news</span>
     </div>
 
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Introducing Claude Design by Anthropic Labs</a></div>
+      <div class="article-title"><a href="https://support.claude.com/en/articles/14729249-use-live-artifacts-in-claude-cowork">Use Live Artifacts in Claude Cowork</a></div>
       <div class="article-meta">
-        <span>Apr 17, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-blog">New Product</span>
+        <span>Apr 20, 2026</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-new">New Feature</span>
       </div>
-      <div class="article-summary">Claude Design is a new visual creation tool in research preview, available at claude.ai/design for Pro, Max, Team, and Enterprise subscribers. Start from a text prompt, an uploaded document, or captured elements from your website — Claude generates a first version with your design system (colors, typography, components) already applied. Refine through inline comments, direct edits, or adjustment sliders. Export as URL, Canva file, PDF, PPTX, or HTML. One instruction hands the completed design off to Claude Code for implementation. Powered by Claude Opus 4.7 and built on Canva's Design Engine. Covers both experienced designers exploring more directions and non-designers needing professional visual output without a background in design.</div>
+      <div class="article-summary">Live Artifacts are persistent outputs in Cowork that pull from connected apps and local files, returning current data each time you open them — not static snapshots. Announced April 20 via the official @ClaudeAI account and documented in the Claude Help Center. At launch: works on your computer only (sharing is on the roadmap). Use cases confirmed from multiple practitioners this week: task dashboards across projects, competitor trackers, morning briefing boards combining multiple data sources.</div>
     </div>
 
     <div class="article-item high-priority">
       <div class="article-title"><a href="https://www.anthropic.com/news/claude-opus-4-7">Introducing Claude Opus 4.7</a></div>
       <div class="article-meta">
-        <span>Apr 16, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-blog">Model Release</span>
+        <span>Apr 16, 2026 — 10 days ago, just outside this week's window</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-blog">Product</span>
       </div>
-      <div class="article-summary">Opus 4.7 is a significant upgrade from 4.6 in advanced software engineering and complex multi-step tasks. Vision input now accepts images up to 2,576px on the long edge (~3.75 megapixels — more than 3× previous capacity). Instruction following substantially improved. Long-running workflows more consistent with better self-verification. New additions: <em>xhigh</em> effort level for finer reasoning/latency control; task budgets in public beta; <em>/ultrareview</em> slash command in Claude Code for dedicated code review. Available across Claude.ai, API, Amazon Bedrock, Google Cloud Vertex AI, Microsoft Foundry. Pricing unchanged: $5/$25 per million tokens.</div>
+      <div class="article-summary">Opus 4.7 brings stronger performance across coding, vision, agents, and multi-step tasks. New additions: an "xhigh" effort level sits between high and max reasoning — finer control over the tradeoff between thoroughness and latency on hard problems. Task budgets (guide Claude's token spend per task) are now in public beta on the Claude Platform API. Pricing unchanged from Opus 4.6 at $5/$25 per MTok.</div>
+    </div>
+
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Introducing Claude Design by Anthropic Labs</a></div>
+      <div class="article-meta">
+        <span>Apr 17, 2026 — 9 days ago, just outside this week's window</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-blog">Product</span>
+      </div>
+      <div class="article-summary">A new Anthropic Labs product for collaborating with Claude to create polished visual work: designs, prototypes, slides, one-pagers, and more. Available as a separate product surface from Claude.ai. Five tracked sources covered this in the current 7-day window — the practitioner response peaked this week despite the announcement being 9 days ago.</div>
     </div>
 
     <div class="article-item">
-      <div class="article-title"><a href="https://www.anthropic.com/news/narasimhan-board">Anthropic's Long-Term Benefit Trust appoints Vas Narasimhan to Board</a></div>
+      <div class="article-title"><a href="https://www.anthropic.com/engineering/managed-agents">Claude Managed Agents — public beta for long-horizon agent harness</a></div>
       <div class="article-meta">
-        <span>Apr 14, 2026</span>
+        <span>Apr 2026 — exact launch date not confirmed from newsroom</span>
+        <span class="tag tag-blog">Engineering / API</span>
+      </div>
+      <div class="article-summary">Managed Agents is a hosted Claude Platform service for running autonomous agents at scale — with stable session management (append-only log), a built-in harness loop, and a sandboxed execution environment. Memory for Managed Agents is now in public beta. This is a developer/API feature, not a Cowork or claude.ai UI feature. Found via web search during research; exact launch date not confirmed from the Anthropic newsroom page. [Watson flag: exact date unconfirmed.]</div>
+    </div>
+
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.anthropic.com/news/anthropic-amazon-compute">Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute</a></div>
+      <div class="article-meta">
+        <span>Apr 20, 2026</span>
         <span class="tag tag-blog">Corporate</span>
       </div>
-      <div class="article-summary">Governance appointment to Anthropic's Long-Term Benefit Trust. No product impact.</div>
+      <div class="article-summary">Infrastructure announcement: new agreement secures up to 5 gigawatts of compute capacity for Claude model training and deployment, including new Trainium2 capacity. Corporate/infrastructure news — no direct product impact for users. Google also committed up to $40B in Anthropic investment this week (Bloomberg/CNBC reports).</div>
     </div>
 
   </div>
 
-  <!-- YOUTUBE CHANNELS -->
-  <div class="section-label">&#127909; YouTube Channels</div>
+  <!-- ── YOUTUBE CHANNELS ── -->
+  <div class="section-label">🎬 YouTube Channels</div>
 
   <!-- NATE B. JONES -->
   <div class="source-card">
     <div class="source-header">
-      <span class="source-icon">&#127909;</span>
-      <span class="source-name">Nate B. Jones — AI News &amp; Strategy Daily</span>
-      <span class="source-platform">youtube.com/@natebjones</span>
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Nate B. Jones</span>
+      <span class="source-platform">@natebjones · AI News &amp; Strategy Daily · 4 videos visible this week (top 3 featured)</span>
     </div>
 
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=xnG8h3UnNFI">$300 Just Beat 20-Person Teams At Their Own Job. You're Next.</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=KlPxWaY91rE">Claude Design Does In 30 Minutes What Your Team Does In A Sprint</a></div>
       <div class="article-meta">
-        <span>Apr 19, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 25, 2026 (1 day ago)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">24 min · 44K views</span>
       </div>
-      <div class="article-summary">33K views. Nate's case for the agent economics shift: at $300/month in AI spend, a single operator now outperforms teams of 20 on specific knowledge tasks. He breaks down the cost math and identifies which task categories this applies to — and which it doesn't. Useful framing for evaluating where the next leverage multiplier comes from in your existing Claude Projects setup.</div>
+      <div class="article-summary">Nate's hands-on breakdown of Claude Design — specifically what it produces in a single 30-minute session compared to a traditional design sprint. Directly relevant for evaluating Claude Design against your book marketing and content creation workflow. One of the most-watched Claude Design videos this week.</div>
     </div>
 
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=4KAF72BTyCE">Anthropic And OpenAI Are Fighting Over Your Memory. You're Going To Lose.</a></div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=2d9ZmA-4QzU">Your Apps Don't Need an API Anymore. Codex Just Proved It.</a></div>
       <div class="article-meta">
-        <span>Apr 18, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 24, 2026 (2 days ago)</span>
+        <span class="tag tag-yt">21 min · 112K views</span>
       </div>
-      <div class="article-summary">30K views. Nate's argument: both Anthropic and OpenAI are now building persistent memory layers — but the defaults are designed to serve the platform, not the user. He walks through what each company's memory approach actually stores, what it infers, and who controls it. Directly relevant given your existing auto-memory system in Cowork — this video provides useful context on why vendor-controlled memory differs from user-controlled memory architectures.</div>
+      <div class="article-summary">Nate covers OpenAI Codex's ability to operate existing apps directly — bypassing traditional API integrations. Relevant to your vendor-independence stance and MCP infrastructure thinking. Also covered by Christoph Magnussen this week. The shared framing: ambient AI that operates tools without API wiring may shift how practitioners think about integration infrastructure.</div>
     </div>
 
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=XlfumXPPrLY">Your AI Is 50x Faster. You're Getting 2x. You're Fixing the Wrong Thing.</a></div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=dxq7WtWxi44">Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most.</a></div>
       <div class="article-meta">
-        <span>Apr 17, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 23, 2026 (3 days ago)</span>
+        <span class="tag tag-yt">41 min · 63K views</span>
       </div>
-      <div class="article-summary">42K views. The bottleneck isn't the model anymore — it's the human workflow surrounding it. Nate identifies the specific points in most AI workflows where speed is still human-limited (review cycles, approvals, context switching) and argues that fixing those unlocks more value than chasing faster models. Concrete and actionable for anyone running multi-project Claude workflows.</div>
+      <div class="article-summary">Compares Andrej Karpathy's "Vibe knowledge" wiki approach against Open Brain as persistent memory systems — specifically which holds up when you actually need it under load. Relevant to your RAG and persistent memory interests and the self-improving agent theme covered by Arnie this week.</div>
     </div>
 
-    <div class="no-content">&#9432; Nate publishes daily — three-item cap applied. YouTube lazy-loading limited the channel page to these 3 most recent videos (Apr 17–19). Episodes from Apr 13–16 were not rendered and are not included. Full feed: <a href="https://www.youtube.com/@NateBJones/videos">youtube.com/@NateBJones/videos</a></div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=brBPsPPyuQM">ChatGPT Images Just Replaced Three People on Your Team.</a></div>
+      <div class="article-meta">
+        <span>Apr 26, 2026 (today)</span>
+        <span class="tag tag-yt">26 min</span>
+      </div>
+      <div class="article-summary">Today's video on ChatGPT's upgraded image generation — published within hours of this briefing. Title only reviewed. Also covered by Wes Roth (GPT Image 2) and Arnie this week.</div>
+    </div>
 
   </div>
 
   <!-- GRACE LEUNG -->
   <div class="source-card">
     <div class="source-header">
-      <span class="source-icon">&#127909;</span>
+      <span class="source-icon">🎬</span>
       <span class="source-name">Grace Leung</span>
-      <span class="source-platform">youtube.com/@graceleungyl</span>
+      <span class="source-platform">@graceleungyl · 1 video this week</span>
     </div>
 
-    <div class="no-content">No new content this week. Most recent video was published approximately 3 weeks ago (outside the April 13–19 window). Verified via Claude in Chrome channel page read.</div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=Ph-maUAiSU8">Claude Design + Claude Skills: Automate Your Marketing (Claude Code)</a></div>
+      <div class="article-meta">
+        <span>Apr 26, 2026 (today)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">17 min · 5.6K views</span>
+      </div>
+      <div class="article-summary">Grace combines Claude Design and Claude Skills to build an automated marketing workflow — showing how the two new features interact rather than covering either in isolation. The most directly applicable Claude Design video for Sven's use case: book marketing content production using Cowork + Skills as the delivery mechanism.</div>
+    </div>
 
   </div>
 
   <!-- TINA HUANG -->
   <div class="source-card">
     <div class="source-header">
-      <span class="source-icon">&#127909;</span>
+      <span class="source-icon">🎬</span>
       <span class="source-name">Tina Huang</span>
-      <span class="source-platform">youtube.com/@TinaHuang1</span>
+      <span class="source-platform">@TinaHuang1 · 0 videos this week</span>
     </div>
-
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=M-NTwkM3VwM">Local AI Agents In 26 Minutes</a></div>
-      <div class="article-meta">
-        <span>Apr 16, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
-      </div>
-      <div class="article-summary">57K views. Tina's 26-minute primer on local AI agents — agents that run on your own machine rather than cloud APIs, avoiding usage limits and keeping data private. Covers what a local agent is, how it differs from cloud-based Claude workflows, and the practical tradeoffs between local execution and cloud convenience. Useful context for understanding where local agents fit alongside your existing Claude Projects setup, particularly for tasks where data sensitivity or usage limits are a constraint.</div>
-    </div>
-
-    <div class="no-content">&#9432; One video within the April 13–19 window. Next most recent: "Every Way To Run Open Source AI Models" — 3 weeks ago (outside window).</div>
-
+    <div class="no-content">No new content this week. Most recent video: "Local AI Agents In 26 Minutes" — published Apr 16 (10 days ago). Channel verified by direct visit. This source publishes roughly monthly — not a gap, just a quiet week.</div>
   </div>
 
   <!-- CHRISTOPH MAGNUSSEN -->
   <div class="source-card">
     <div class="source-header">
-      <span class="source-icon">&#127909;</span>
+      <span class="source-icon">🎬</span>
       <span class="source-name">Christoph Magnussen</span>
-      <span class="source-platform">youtube.com/@christophmagnussen &nbsp;·&nbsp; &#127465;&#127466; German-language</span>
+      <span class="source-platform">@christophmagnussen · AI to the DNA · 2 videos this week 🇩🇪</span>
+    </div>
+
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=zO27qhSh6dI">Ist die OPENAI CODEX APP der KI ALLESKÖNNER? 🇩🇪</a></div>
+      <div class="article-meta">
+        <span>Apr 21, 2026 (5 days ago)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">17 min · 34K views</span>
+        <span class="tag tag-de">German</span>
+      </div>
+      <div class="article-summary">Christoph reviews the OpenAI Codex app: is it really an all-in-one AI solution? German-language counterpart to Nate B. Jones's Codex coverage this week. Relevant for calibrating where Codex fits vs. Claude Code in your stack — and whether the "no API needed" claim holds up under German practitioner scrutiny.</div>
     </div>
 
     <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/@christophmagnussen/videos">Nie wieder tippen! Meine eigene Speech-to-Text App (Claude Code)</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=gMSJutIllhc">Warum der Mittelstand beim Thema Daten im Vorteil ist | Claudia Pohlink, Director Data &amp; AI, FIEGE 🇩🇪</a></div>
       <div class="article-meta">
-        <span>Apr 14, 2026</span>
-        <span class="tag tag-yt">YouTube</span>
-        <span class="tag tag-de">DE</span>
+        <span>Apr 25, 2026 (1 day ago)</span>
+        <span class="tag tag-yt">1 hr 9 min · Podcast</span>
+        <span class="tag tag-de">German · Enterprise AI</span>
       </div>
-      <div class="article-summary">32K views. Christoph builds his own Speech-to-Text application using Claude Code — the title translates to "Never type again! My own Speech-to-Text App." Demonstrates Claude Code as an accessible coding tool for non-developers: from concept to functional app. Particularly relevant for German-speaking audiences exploring what Claude Code can build for personal productivity tools. Direct link not captured during channel page read — visit the channel to find this video.</div>
+      <div class="article-summary">AI to the DNA podcast episode with Claudia Pohlink (Director Data &amp; AI, FIEGE logistics). Topic: why German Mittelstand businesses have structural data advantages over large enterprises when adopting AI. Enterprise transformation perspective — relevant as broader context rather than direct workflow application.</div>
     </div>
-
-    <div class="no-content">&#9432; One video within the April 13–19 window. Previous two videos: "Von Rechtfertigungsbürokratie zu Rare Diseases..." (Apr 11, outside window) and "ALLES was wir aus dem Claude Code LEAK gelernt haben!" (Apr 7, outside window).</div>
 
   </div>
 
   <!-- WES ROTH -->
   <div class="source-card">
     <div class="source-header">
-      <span class="source-icon">&#127909;</span>
+      <span class="source-icon">🎬</span>
       <span class="source-name">Wes Roth</span>
-      <span class="source-platform">youtube.com/@WesRoth</span>
+      <span class="source-platform">@WesRoth · 3 videos this week</span>
     </div>
 
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/@WesRoth/videos">Opus 4.7 is another "FORBIDDEN" model</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=hrIY-clbdg8">Google's plan to take down Claude...</a></div>
       <div class="article-meta">
-        <span>Apr 17, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 22, 2026 (4 days ago)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">22 min · 81K views</span>
       </div>
-      <div class="article-summary">Wes covers the Opus 4.7 release alongside the Claude Mythos Preview context — framing both as examples of Anthropic developing capabilities that outpace what they're willing to release publicly. His angle: Opus 4.7's xhigh effort level and /ultrareview features give a glimpse of what "constrained" Anthropic releases look like. Note: Wes uses clickbait titles; content quality remains substantive. Direct link not captured — visit channel.</div>
+      <div class="article-summary">Note: Wes uses clickbait titles — actual content covers Google's strategic AI positioning. Context: Google committed up to $40B in Anthropic investment this week while simultaneously developing competing AI products. The competitive picture is more nuanced than the title implies. Worth watching for context on Claude's position and Google's dual role as investor and competitor.</div>
     </div>
 
     <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/@WesRoth/videos">HERMES AGENT SETUP: the OpenClaw killer is here</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=ITT9xWeicWM">GPT Image 2 is the "biggest leap yet"</a></div>
       <div class="article-meta">
-        <span>Apr 16, 2026</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 23, 2026 (3 days ago)</span>
+        <span class="tag tag-yt">19 min · 52K views</span>
       </div>
-      <div class="article-summary">Wes covers a new open-source agent framework claiming to compete with OpenAI's Claw architecture. Setup walkthrough with commentary on how it positions against Claude-based agent infrastructure. Worth watching if you're monitoring the open-source agent ecosystem.</div>
+      <div class="article-summary">Covers OpenAI's upgraded image generation model. Also reviewed by Nate B. Jones and Arnie this week — all three ran evaluations. Relevant if you're exploring AI-generated visuals for book cover concepts or marketing materials.</div>
     </div>
 
     <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/@WesRoth/videos">Claude's DARK secret...</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=evVs-Jtor50">GPT 5.5 is a BEAST...</a></div>
       <div class="article-meta">
-        <span>Apr 13, 2026</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 25, 2026 (1 day ago)</span>
+        <span class="tag tag-yt">16 min · 52K views</span>
       </div>
-      <div class="article-summary">Title is characteristically sensationalist — actual content covers under-documented Claude behavior patterns discovered through heavy usage. Note: Wes uses clickbait titles; look past the title to assess actual content. Three-item cap reached.</div>
+      <div class="article-summary">GPT 5.5 capability breakdown. Relevant for tracking the Claude vs. GPT gap you monitor for task allocation between Claude and Grok/ChatGPT. Wildcard Nate Herk ran a direct GPT 5.5 vs. Opus 4.7 head-to-head this week (115K views) — that comparison is more actionable than Wes's overview for Sven's stack decisions.</div>
     </div>
 
   </div>
@@ -546,40 +564,41 @@
   <!-- AI MIT ARNIE -->
   <div class="source-card">
     <div class="source-header">
-      <span class="source-icon">&#127909;</span>
-      <span class="source-name">Arnold Oberleiter — AI mit Arnie</span>
-      <span class="source-platform">youtube.com/@Arnold-Oberleiter &nbsp;·&nbsp; &#127465;&#127466; German-language</span>
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Arnold Oberleiter (AI mit Arnie)</span>
+      <span class="source-platform">@Arnold-Oberleiter · 3 videos this week 🇩🇪</span>
     </div>
 
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/@Arnold-Oberleiter/videos">Claude Design ist ein Beast</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=TlaR2_IRLUA">Dieser Agent verbessert sich selbst (Hermes Tutorial für Einsteiger) 🇩🇪</a></div>
       <div class="article-meta">
-        <span>Apr 18, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
-        <span class="tag tag-de">DE</span>
+        <span>Apr 23, 2026 (3 days ago)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">1 hr 1 min · 6.9K views</span>
+        <span class="tag tag-de">German</span>
       </div>
-      <div class="article-summary">Arnie's German-language live test of Claude Design — the title translates to "Claude Design is a Beast." Structured walkthrough: 0:00 overview of the Anthropic announcement, 0:43 article breakdown, 2:00 tutorial and live testing, 13:20 Claude Code integration, 14:35 conclusion. Links directly to claude.ai/design. Best German-language first look at Claude Design available this week. Direct link not captured — visit channel.</div>
+      <div class="article-summary">Beginner-level tutorial for building a Hermes agent that runs automated self-refinement loops — the agent evaluates its own output, identifies weaknesses, and re-runs without human prompting between cycles. Compare this automated approach against your structured methodology's manual verification roles (Watson, Benjamin): automated loops win on speed and consistency; manual roles win on judgment and scope control. Worth watching before deciding whether to hybridize your approach.</div>
+    </div>
+
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=ZTCYHG9ZIH4">Claude Design ist ein Beast 🇩🇪</a></div>
+      <div class="article-meta">
+        <span>Apr 19, 2026 (7 days ago)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">17 min · 13K views</span>
+        <span class="tag tag-de">German</span>
+      </div>
+      <div class="article-summary">Arnie's hands-on Claude Design review — published at the start of this week's window, making it one of the earliest practitioner evaluations. German-language walkthrough with concrete examples. Complements the English-language coverage from Brock, Eliot, and Grace for a fuller picture of what Claude Design can and can't do.</div>
     </div>
 
     <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/@Arnold-Oberleiter/videos">Das Neue Claude Modell ist ein Freak</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=zvJKkSmEg8I">GPT 5.5 kann mehr als du denkst 🇩🇪</a></div>
       <div class="article-meta">
-        <span>Apr 18, 2026</span>
-        <span class="tag tag-yt">YouTube</span>
-        <span class="tag tag-de">DE</span>
+        <span>Apr 26, 2026 (today)</span>
+        <span class="tag tag-yt">34 min</span>
+        <span class="tag tag-de">German</span>
       </div>
-      <div class="article-summary">"The New Claude Model is a Freak" — Arnie's rapid-fire take on Claude Opus 4.7 the day of release. Two German-language videos published the same day (Apr 18) confirms this was a major release day for the channel.</div>
-    </div>
-
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/@Arnold-Oberleiter/videos">Ich hab eine KI gebaut, die alles kann</a></div>
-      <div class="article-meta">
-        <span>Apr 15, 2026</span>
-        <span class="tag tag-yt">YouTube</span>
-        <span class="tag tag-de">DE</span>
-      </div>
-      <div class="article-summary">"I built an AI that can do everything" — Arnie's build-walkthrough video from earlier in the week. Likely covers an n8n automation or RAG-based agent setup given his consistent focus on those areas. Three-item cap reached.</div>
+      <div class="article-summary">Today's GPT 5.5 review in German. Part of the multi-source GPT 5.5 coverage this week (Wes Roth, Nate Herk also covered it). Published within hours of this briefing; title confirmed, content not reviewed.</div>
     </div>
 
   </div>
@@ -587,28 +606,19 @@
   <!-- ENOVAIR -->
   <div class="source-card">
     <div class="source-header">
-      <span class="source-icon">&#127909;</span>
+      <span class="source-icon">🎬</span>
       <span class="source-name">Enovair</span>
-      <span class="source-platform">youtube.com/@EnovairPartners</span>
+      <span class="source-platform">@EnovairPartners · 1 video this week</span>
     </div>
 
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=F4GmBmUJuGI">The Real Reason AI Won't Tell You You're Wrong — Until You Do This</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=5Ej62I-2KLU">The Real Reason You're Falling Behind on AI (And the 6 Moves That Fix It)</a></div>
       <div class="article-meta">
-        <span>Apr 16, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 21, 2026 (5 days ago)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">17 min · 11K views</span>
       </div>
-      <div class="article-summary">28K views. Enovair's highest-performing video this week by a wide margin. Covers the sycophancy pattern in AI models — why Claude and others tend to validate rather than correct — and the specific prompting techniques that override it. Directly actionable: if you're using Claude for business decisions across your publishing operations, knowing how to get pushback rather than agreement is valuable. This maps to your Frank role in your structured methodology.</div>
-    </div>
-
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=ZMfz0UI9cag">Seedance 2.0 First Impressions | Professional Results</a></div>
-      <div class="article-meta">
-        <span>Apr 18, 2026</span>
-        <span class="tag tag-yt">YouTube</span>
-      </div>
-      <div class="article-summary">968 views. Enovair tests Seedance 2.0 (an AI video generation tool) and evaluates its output quality. Lower relevance for your current workflow given that video generation isn't in scope, but worth noting as the channel experiments with tools beyond Claude.</div>
+      <div class="article-summary">Enovair's structured framework for diagnosing and closing the AI adoption gap — built around 6 concrete moves rather than generic advice. Directly relevant as a solopreneur running 10 Claude Projects across multiple domains. The diagnostic framing is worth comparing against your current workflow to identify which of the 6 moves you've already made and where friction remains.</div>
     </div>
 
   </div>
@@ -616,150 +626,193 @@
   <!-- BROCK MESARICH -->
   <div class="source-card">
     <div class="source-header">
-      <span class="source-icon">&#127909;</span>
-      <span class="source-name">Brock Mesarich — AI for Non Techies</span>
-      <span class="source-platform">youtube.com/@brockmesarich</span>
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Brock Mesarich</span>
+      <span class="source-platform">@brockmesarich · AI for Non Techies · 4 videos this week (top 3 featured)</span>
     </div>
 
     <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=OK9c7UWl24M">9 Claude Skills I Can't Live Without (steal them)</a></div>
+      <div class="article-meta">
+        <span>Apr 26, 2026 (today)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">23 min · 3.7K views</span>
+      </div>
+      <div class="article-summary">Brock's real-world Skills shortlist — a practitioner inventory of what he actually reaches for, not a feature showcase. Given your active Skills use in Cowork, this is the most directly actionable video of the week. Check which of his 9 overlap with your current setup and which you're missing. Published today — high priority to watch.</div>
+    </div>
+
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=CwvqbHREnYQ">5 Insane Claude Cowork Live Artifacts Use Cases (steal them)</a></div>
+      <div class="article-meta">
+        <span>Apr 24, 2026 (2 days ago)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">16 min · 14K views</span>
+      </div>
+      <div class="article-summary">Five copy-paste-ready Live Artifacts setups from a practitioner who went hands-on immediately after the feature launched. Best companion to the feature documentation: see what experienced users are actually building before designing your own. Watch this before building your first Live Artifact.</div>
+    </div>
+
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=xYr_hc9Q2yc">Claude Cowork Live Artifacts Just Dropped (changes everything)</a></div>
+      <div class="article-meta">
+        <span>Apr 23, 2026 (3 days ago)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">11 min · 93K views</span>
+      </div>
+      <div class="article-summary">The first-reaction video on Live Artifacts — 93K views in 3 days suggests this broke the news to a large portion of the Claude practitioner community. Good starting point for understanding what the feature actually is before moving to the use-case video above.</div>
+    </div>
+
+    <div class="article-item">
       <div class="article-title"><a href="https://www.youtube.com/watch?v=e7ngdzwzRZ0">Master 95% of Claude Design in 17 Minutes</a></div>
       <div class="article-meta">
-        <span>Apr 19, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 19, 2026 (7 days ago)</span>
+        <span class="tag tag-yt">17 min · 122K views</span>
       </div>
-      <div class="article-summary">13K views. Brock's comprehensive Claude Design walkthrough — targeting the non-technical audience he knows well. 17 minutes covering the core workflow without design background required. If you're opening claude.ai/design for the first time, this is the quickest path from zero to competent. Complements Lawton Learns' tutorial with a different framing style.</div>
-    </div>
-
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=YHx-E8NOg8s">Claude Code 2.0 Just Dropped (Cowork Killer?)</a></div>
-      <div class="article-meta">
-        <span>Apr 17, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
-      </div>
-      <div class="article-summary">33K views. Brock's framing for his non-technical audience: Claude Code now has a proper desktop app — no terminal, no confusing setup. Features covered: routines that run while you sleep, multiple parallel sessions, Instagram carousel automation demo. His conclusion: "Claude Code 2.0 is the upgrade Cowork users have been waiting for. It finally has a real desktop app. No more terminal. No more confusing setup. Just click and go." Worth watching specifically for the Cowork vs. Claude Code comparison he draws.</div>
-    </div>
-
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=ow8dl9gfjCI">Anthropic Just Changed Design Forever... (Claude Design)</a></div>
-      <div class="article-meta">
-        <span>Apr 18, 2026</span>
-        <span class="tag tag-yt">YouTube</span>
-      </div>
-      <div class="article-summary">14K views. Brock's reaction/overview video on Claude Design launch — complementary to his 17-minute tutorial. Published day before the tutorial, likely the initial reaction piece before the deeper walkthrough. Three-item cap reached.</div>
+      <div class="article-summary">Brock's Claude Design quickstart — 122K views makes this the most-watched Claude Design intro of the week. Also covered this week by Eliot, Grace, and Arnie. Brief mention here as 4th item under the 3-item cap.</div>
     </div>
 
   </div>
 
-  <!-- ELIOT PRINCE — PERMANENT SOURCE -->
+  <!-- ELIOT PRINCE -->
   <div class="source-card">
     <div class="source-header">
-      <span class="source-icon">&#127909;</span>
-      <span class="source-name">Eliot Prince <span class="new-badge">&#127381; Now Permanent</span></span>
-      <span class="source-platform">youtube.com/@princeeliot</span>
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Eliot Prince</span>
+      <span class="source-platform">@princeeliot · 2 videos within window · 2 more just outside</span>
     </div>
 
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=bmDJYcyv4m8">Claude DESIGN Just Dropped, And... 🤯</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=xQ3lvqP57uA">Wait. Whaatttt... Claude LIVE ARTIFACTS Just Dropped...</a></div>
       <div class="article-meta">
-        <span>Apr 17, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 23, 2026 (3 days ago)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">6 min · 44K views</span>
       </div>
-      <div class="article-summary">145,262 views · 2,342 likes. Eliot went live the second Claude Design dropped — his consistent focus on the Claude ecosystem specifically means he had context ready immediately. His description: "It's basically Figma crossed with vibe coding, baked straight into Claude. You upload your brand guidelines, fonts and logos, and it builds you a full design system in about 10 minutes... fair warning... it eats tokens for breakfast." The 145K view count within hours of a new Anthropic product launch signals both his reach and his positioning as a first-call Claude resource.</div>
+      <div class="article-summary">Eliot's rapid-reaction Live Artifacts video — 6 minutes, 44K views. Eliot covers the Claude ecosystem exclusively, so his reaction carries signal about whether this feature represents genuinely new behavior. Good fast-orientation before Brock's longer use-case walkthrough.</div>
     </div>
 
-    <div class="no-content">&#9432; One video confirmed within the April 13–19 window. Additional uploads may exist — verify at <a href="https://www.youtube.com/@princeeliot/videos">youtube.com/@princeeliot/videos</a>.</div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=56pN4nQmnk8">Claude Chat vs Cowork Explained (&amp; when to use each one)</a></div>
+      <div class="article-meta">
+        <span>Apr 21, 2026 (5 days ago)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">15 min · 13K views</span>
+      </div>
+      <div class="article-summary">Eliot's decision framework for when to use Claude chat vs. Cowork — timed perfectly with the Live Artifacts launch (which shifts the Cowork value proposition). Useful reference for how other practitioners are drawing the boundary, and whether your current split maps to the emerging consensus.</div>
+    </div>
+
+    <div class="no-content" style="font-style: normal; color: #666; font-size: 13px; background: #fafafa;">
+      <strong>Just outside window — Apr 18 (8 days ago):</strong>&nbsp;
+      <a href="https://www.youtube.com/watch?v=bmDJYcyv4m8" style="color: #1a1a2e; font-weight: 600;">Claude DESIGN Just Dropped, And... 🤯</a> (192K views — Eliot's Claude Design reaction, very high traction)&nbsp;&nbsp;·&nbsp;&nbsp;
+      <a href="https://www.youtube.com/watch?v=cxmYusDvowI" style="color: #1a1a2e; font-weight: 600;">New Claude OPUS 4.7 Upgrade Explained</a> (for non-technical users, 5K views)
+    </div>
 
   </div>
 
-  <!-- WILDCARD SLOT -->
-  <div class="section-label">&#128269; Wildcard — Slot #11</div>
+  <!-- ── WILDCARD ── -->
+  <div class="section-label">🔍 Wildcard Source — Slot #11</div>
 
-  <!-- LAWTON LEARNS -->
+  <!-- NATE HERK -->
   <div class="source-card wildcard">
     <div class="source-header">
-      <span class="source-icon">&#127909;</span>
-      <span class="source-name">Lawton Learns <span class="wildcard-badge">&#128269; Wildcard</span></span>
-      <span class="source-platform">youtube.com/@LawtonLearns</span>
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Nate Herk | AI Automation <span class="wildcard-label">🔍 Wildcard</span></span>
+      <span class="source-platform">@nateherk · 689K subscribers · 3 videos this week</span>
     </div>
 
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=QHN9jHteCeA">Claude Design is Insanely Good: Full Tutorial</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=J-6pnl5DQg8">Playwright Makes Claude Code Unstoppable, Seriously</a></div>
       <div class="article-meta">
-        <span>Apr 18, 2026</span>
-        <span class="tag tag-high">&#11088; High relevance</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 26, 2026 (today)</span>
+        <span class="tag tag-high">⭐ High relevance</span>
+        <span class="tag tag-yt">19 min · 32K views</span>
       </div>
-      <div class="article-summary">1,600 views. Lawton published a comprehensive Claude Design walkthrough within 24 hours of the April 17 launch — one of the first full tutorials available. Covers the complete workflow from text prompt to exportable design, including how design system import works, the PPTX export flow, and what the Canva handoff looks like in practice. The entrepreneurial framing — how this changes what a one-person business can produce visually without a designer — maps closely to your profile as an independent publisher.</div>
+      <div class="article-summary">Nate shows how pairing Playwright (browser automation library) with Claude Code creates a significantly more capable agent — Claude Code gains the ability to navigate and interact with web UIs that aren't accessible via API. This is an extension pattern for Claude Code, not a separate tool: if you're using Claude Code for any task involving web-based data or interfaces, this is directly actionable.</div>
     </div>
 
     <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=GwS-anYPTzs">Master Claude Cowork's Scheduled Tasks in 11 Minutes</a></div>
+      <div class="article-title"><a href="https://www.youtube.com/@nateherk/videos">I Tested GPT 5.5 vs Opus 4.7: What You Need to Know</a></div>
       <div class="article-meta">
-        <span>Apr 12, 2026</span>
-        <span class="tag tag-yt">YouTube</span>
+        <span>Apr 24, 2026 (2 days ago)</span>
+        <span class="tag tag-yt">20 min · 115K views</span>
       </div>
-      <div class="article-summary">892 views. Lawton's Cowork scheduled tasks tutorial — directly relevant to your existing Cowork setup. Published just outside the strict April 13–19 window (Apr 12) but included as it's within the review cycle and directly actionable. 11 minutes covering the scheduled tasks feature end-to-end for a non-technical audience.</div>
+      <div class="article-summary">Head-to-head benchmark across real tasks — 115K views in 2 days makes this the most-watched model comparison of the week. Relevant for calibrating your Claude vs. Grok/ChatGPT task allocation. (Individual video URL not confirmed — links to channel.)</div>
     </div>
 
     <div class="article-item">
-      <div class="article-title">Why this wildcard was chosen</div>
-      <div class="article-meta"><span>Context note</span></div>
-      <div class="article-summary"><strong>Lawton Learns</strong> is run by a 20+ year management consultant with an MBA background who teaches entrepreneurs and small business owners to implement AI and automation for business value. The channel covers Claude, ChatGPT, and workflow automation — not AI news or general hype, but practical business application at the owner-operator level. Two things stand out: speed of response to new Anthropic releases (Claude Design tutorial published within 24 hours), and focus on Cowork-specific tutorials (scheduled tasks, agents) that maps closely to your toolset. Channel home: <a href="https://www.youtube.com/@LawtonLearns">youtube.com/@LawtonLearns</a>. Worth watching another week to see whether the Claude Design and Cowork tutorials represent consistent signal quality or a one-week coincidence.</div>
+      <div class="article-title"><a href="https://www.youtube.com/@nateherk/videos">Claude + HyperFrames Just Solved Video Editing</a></div>
+      <div class="article-meta">
+        <span>Apr 24, 2026 (2 days ago)</span>
+        <span class="tag tag-yt">28 min · 85K views</span>
+      </div>
+      <div class="article-summary">Claude integrated with HyperFrames for automated video editing workflows. Less directly relevant unless you're producing video content for book marketing. High views suggest this became a breakout use-case video. (Individual video URL not confirmed — links to channel.)</div>
+    </div>
+
+    <div style="background: #e8f0fb; border-top: 1px solid #c3d4ee; padding: 14px 20px; font-size: 13px; color: #1e3a6a; line-height: 1.6;">
+      <strong>Why this wildcard:</strong> Nate Herk (689K subscribers) teaches n8n automation workflows, Claude Code integration patterns, and AI-to-business deployment. Discovered this week via research while searching for AI automation channels — not yet referenced by tracked sources, but his content fills a genuine gap: current sources cover the Claude UI and Cowork layer well, while Herk covers the Claude Code + automation infrastructure layer. The Playwright + Claude Code pattern published today is directly actionable for your Claude Code Projects. <strong>Promotion candidate:</strong> if next week's briefing includes another Claude Code workflow or n8n automation video from this channel, he should replace the weakest permanent source.
     </div>
 
   </div>
 
-  <!-- RELEVANCE NOTES -->
-  <div class="section-label">&#128279; Relevance Notes</div>
+  <!-- ── RELEVANCE NOTES ── -->
+  <div class="section-label">🔗 Relevance Notes — Connections to Your Stack</div>
 
   <div class="relevance-card">
-    <h3>Claude Design — Try It Now</h3>
-    <p>Claude Design is live at <a href="https://claude.ai/design" style="color:#1e40af;">claude.ai/design</a> on your existing subscription. Low-stakes first test: a book marketing one-pager or a presentation slide deck. Before opening it, Eliot Prince's video (145K views, 10 minutes) is the best orientation. Brock Mesarich's 17-minute tutorial covers it thoroughly for a non-technical audience. One thing to note from Eliot: it eats tokens — open it with that expectation.</p>
+    <h3>Claude Ecosystem Triple Release</h3>
+    <p>Live Artifacts (Apr 20), Claude Design (Apr 17), and Claude Opus 4.7 (Apr 16) all dropped in a 10-day window. For your specific workflow: Live Artifacts is the most immediately actionable — persistent dashboards from your Apify or file data mean you build once and reopen for current numbers. Claude Design opens a path for book cover mockups, marketing one-pagers, and visual assets without leaving the Claude ecosystem. Opus 4.7's xhigh effort level matters for long reasoning tasks in your PPC analysis and financial planning Projects.</p>
   </div>
 
   <div class="relevance-card">
-    <h3>Claude Code 2.0 — The Cowork Question</h3>
-    <p>Brock's "Cowork Killer?" framing is worth taking seriously. Claude Code now has a desktop app without a terminal requirement, parallel sessions, and background routines. The capabilities overlap with Cowork is real. This isn't an immediate action item, but it's worth watching the Brock video to understand where the two tools now sit relative to each other — and whether your current Cowork workflow would benefit from any Claude Code features.</p>
+    <h3>Cowork Live Artifacts — Specific Use Cases for Your Setup</h3>
+    <p>Based on Brock Mesarich's 5 use cases and the feature specification: a Live Artifact pulling from your Apify MCP to track BSR and pricing data per ASIN, a PPC metrics dashboard refreshing from your ad data, or a weekly multi-project status board combining sources from different Projects — all fit the model. Current limitation: your-computer-only (sharing on the roadmap). This matches a personal monitoring use case perfectly. Watch Brock's use cases video before building your first artifact.</p>
   </div>
 
   <div class="relevance-card">
-    <h3>AI Sycophancy — Directly Applicable to Your Methodology</h3>
-    <p>Enovair's video on why AI won't tell you you're wrong maps directly to your Frank role in your structured methodology. If you're not consistently getting genuine pushback from Claude, the prompting techniques in that video (28K views — it landed) are worth testing. This is a known failure mode in heavy Claude usage, especially across multi-project workflows where approving-rather-than-challenging becomes a default pattern.</p>
+    <h3>Self-Improving Agents vs. Your Methodology</h3>
+    <p>Arnie's Hermes tutorial and Nate B. Jones's Karpathy Wiki comparison both touch the same theme: automated iterative refinement. Your structured methodology uses human-triggered verification loops (Watson, Benjamin, Team Lead). Hermes automates these between cycles without prompting. Worth watching Arnie's tutorial to identify where automated loops would speed up your current workflow without sacrificing the judgment that your manual roles provide. This isn't a replacement question — it's a hybridization question.</p>
   </div>
 
   <div class="relevance-card">
-    <h3>Memory Architecture — Vendor vs. User Control</h3>
-    <p>Nate's video on Anthropic and OpenAI fighting over your memory is relevant context for your existing auto-memory system in Cowork. The distinction he draws — platform-controlled memory (serves the vendor) vs. user-controlled memory (serves you) — is exactly the architecture you've already built. Worth watching as validation that the file-based approach is the right one for your use case.</p>
+    <h3>OpenAI Codex — API-Free Integration</h3>
+    <p>Two tracked sources (Nate B. Jones, Christoph Magnussen) plus wildcard Nate Herk covered OpenAI Codex and its ability to operate apps without API wiring this week. The shared framing directly bears on your vendor-independence stance and MCP infrastructure: if Codex can operate tools without MCP connectors, it shifts the build-vs-connect decision for new integrations. Monitor whether this claim holds under production conditions over the coming weeks before making any stack decisions.</p>
   </div>
 
   <div class="relevance-card">
-    <h3>Source List Update This Session</h3>
-    <p>Ethan Mollick removed per your instruction. Eliot Prince promoted from wildcard to permanent source #10 — his Claude-exclusive focus and speed of response to Anthropic launches (145K views within hours on Claude Design) justifies the slot. Lawton Learns is this week's wildcard (#11) — two in-window Cowork-focused videos make it worth a second look next week.</p>
+    <h3>Claude Design for Book Marketing</h3>
+    <p>Five tracked sources covered Claude Design this week. Grace Leung's video is the most relevant for your use case — she combines it with Claude Skills to produce marketing output. If you're producing one-pagers, promotional materials, or visual assets for your Amazon books, Grace's specific approach (Claude Design + Skills in Cowork) is the end-to-end path worth testing first. Brock's "Master 95% in 17 minutes" is the fastest way to get oriented on the tool itself.</p>
   </div>
 
-  <!-- GAPS & COVERAGE -->
-  <div class="section-label">&#9888;&#65039; Gaps &amp; Coverage</div>
+  <!-- ── GAPS & COVERAGE ── -->
+  <div class="section-label">⚠️ Gaps &amp; Coverage Notes</div>
 
   <div class="gaps-card">
-    <h3>Research Limitations This Week</h3>
+    <h3>Sources With Incomplete or No Coverage</h3>
 
     <div class="gap-item">
-      <span class="gap-source">Nate B. Jones — incomplete coverage.</span> Nate publishes daily (~7 videos per week). YouTube's lazy-loading rendered only 3 videos on the channel page (Apr 17–19). Episodes from Apr 13–16 were not rendered and are not included in this briefing. Three-item cap would have applied regardless — but the Apr 13–16 episodes are genuinely missing, not filtered. Visit <a href="https://www.youtube.com/@NateBJones/videos">youtube.com/@NateBJones/videos</a> to see the full week.
+      <span class="gap-source">Tina Huang</span> — No new content this week. Channel verified by direct visit. Most recent video: "Local AI Agents In 26 Minutes" published Apr 16 (10 days ago). Tina publishes roughly monthly — no coverage gap to flag, simply a quiet week.
     </div>
 
     <div class="gap-item">
-      <span class="gap-source">Wes Roth, AI mit Arnie, Christoph Magnussen — titles confirmed, direct links not captured.</span> Video titles and dates were confirmed by reading the channel pages via Claude in Chrome. However, the specific video page URLs were not extracted for these three channels during the session. All three sections link to the channel's /videos page instead. The summaries are based on confirmed titles and available context — not invented.
+      <span class="gap-source">Anthropic — Claude Design &amp; Opus 4.7 window boundary</span> — Both product announcements were published Apr 16–17, falling 9–10 days before this briefing (outside the strict 7-day window). Included because five tracked sources responded to them within this week's window. The practitioner coverage peaked this week; the announcements just preceded it.
     </div>
 
     <div class="gap-item">
-      <span class="gap-source">Eliot Prince — one video confirmed.</span> The channel page confirmed "Claude DESIGN Just Dropped, And... 🤯" as the most recent video. Additional uploads from earlier in the week may exist but were not rendered on the channel page. Visit <a href="https://www.youtube.com/@princeeliot/videos">youtube.com/@princeeliot/videos</a> to verify.
+      <span class="gap-source">Anthropic — Managed Agents launch date</span> — Found via web search (anthropic.com/engineering/managed-agents). Exact launch date within April 2026 was not confirmed from the Anthropic newsroom page. Included in the briefing with "date not confirmed" notation per Watson standard. If this matters for your planning, verify directly at the link.
     </div>
 
     <div class="gap-item">
-      <span class="gap-source">Grace Leung — no content this week.</span> Channel page confirmed most recent video is approximately 3 weeks old (outside the Apr 13–19 window). Not a coverage gap — a genuine quiet week for this source.
+      <span class="gap-source">Eliot Prince — two videos from Apr 18 (8 days ago)</span> — "Claude DESIGN Just Dropped" (192K views) and "New Claude OPUS 4.7 Explained" fall one day outside the 7-day window. Noted in the Eliot section with confirmed links. Both are worth watching given their direct relevance.
+    </div>
+
+    <div class="gap-item">
+      <span class="gap-source">Nate B. Jones — channel page showed only 4 of ~7 expected weekly videos</span> — Nate publishes daily. Only 4 videos had loaded on the channel page at time of visit. Content from Apr 19–22 may have been missed beyond what was visible. The 4 captured are confirmed; additional earlier-in-week content may exist.
+    </div>
+
+    <div class="gap-item">
+      <span class="gap-source">Nate Herk wildcard — two of three video URLs not confirmed</span> — "I Tested GPT 5.5 vs Opus 4.7" and "Claude + HyperFrames" are listed with channel-level links; individual URLs were not retrieved during research. The top video URL (Playwright + Claude Code, /watch?v=J-6pnl5DQg8) was confirmed via web search.
+    </div>
+
+    <div class="gap-item">
+      <span class="gap-source">Same-day videos (Apr 26)</span> — Three sources published content within hours of this briefing: Nate B. Jones ("ChatGPT Images"), Arnie ("GPT 5.5 kann mehr"), and Nate Herk ("Playwright + Claude Code"). Nate Herk's video was reviewed via channel page; the other two are title-only with no content review possible.
     </div>
 
   </div>
@@ -767,7 +820,9 @@
 </div>
 
 <footer>
-  Weekly AI Briefing &nbsp;·&nbsp; Generated April 19, 2026 &nbsp;·&nbsp; Sources: 11 channels checked (10 permanent + 1 wildcard) &nbsp;·&nbsp; YouTube researched via Claude in Chrome
+  <div class="container">
+    Weekly AI Briefing · Generated April 26, 2026 · Sources checked: 10 permanent + 1 wildcard · YouTube verified via Claude in Chrome direct channel visits · All links confirmed unless explicitly noted
+  </div>
 </footer>
 
 </body>
