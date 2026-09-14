@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weekly AI Briefing — August 19–26, 2026</title>
+<title>Weekly AI Briefing — September 7–14, 2026</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
@@ -62,7 +62,7 @@
     scroll-margin-top: 16px;
   }
   .source-card:target { box-shadow: 0 0 0 3px #e8a84c, 0 1px 4px rgba(0,0,0,0.08); }
-  .source-header { padding: 14px 20px 12px; border-bottom: 1px solid #f0f0eb; display: flex; align-items: center; gap: 10px; }
+  .source-header { padding: 14px 20px 12px; border-bottom: 1px solid #f0f0eb; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
   .source-icon { font-size: 16px; flex-shrink: 0; }
   .source-name { font-size: 14px; font-weight: 700; color: #1a1a2e; }
   .source-platform { font-size: 12px; color: #888; margin-left: auto; flex-shrink: 0; }
@@ -108,14 +108,12 @@
   }
   .theme-sources a:hover { background: #2563eb; color: #fff; }
 
-  /* ── BACKGROUND / REQUESTED DEEP-DIVE ── */
+  /* ── RELEVANCE NOTE ── */
   .catchup-card { background: #f5f0ff; border: 1px solid #ddd0f7; border-radius: 8px; padding: 18px 20px; margin-bottom: 24px; }
   .catchup-card h3 { font-size: 13px; font-weight: 700; color: #5b21b6; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
   .catchup-card p { font-size: 14px; color: #3f2560; line-height: 1.6; margin-bottom: 10px; }
   .catchup-card p:last-child { margin-bottom: 0; }
   .catchup-card a { color: #5b21b6; font-weight: 600; }
-  .catchup-card ul { margin: 0 0 10px 18px; }
-  .catchup-card li { font-size: 14px; color: #3f2560; line-height: 1.6; margin-bottom: 6px; }
   .verdict { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 7px; border-radius: 3px; background: #e9dcff; color: #5b21b6; margin-right: 6px; }
 
   /* ── GAPS ── */
@@ -132,7 +130,7 @@
   <div class="masthead-inner">
     <div class="masthead-label">Weekly AI Briefing</div>
     <h1>What your sources published this week</h1>
-    <div class="masthead-date">August 19–26, 2026 &nbsp;·&nbsp; 11 sources monitored &nbsp;·&nbsp; Generated August 26, 2026</div>
+    <div class="masthead-date">September 7–14, 2026 &nbsp;·&nbsp; 11 sources monitored &nbsp;·&nbsp; Generated September 14, 2026</div>
   </div>
 </div>
 
@@ -144,45 +142,45 @@
     <div class="highlight-item">
       <div class="highlight-num">1</div>
       <div class="highlight-content">
-        <a href="https://www.youtube.com/watch?v=OiplQPjdA4c" target="_blank">Anthropic and OpenAI Just Changed the Rules of Prompting</a>
-        <div class="highlight-meta">🎬 Enovair · Aug 19 · 18 min</div>
-        <div class="highlight-desc">Exactly the topic you asked for. Enovair read both labs' new prompting guidance and distils it into <strong>five parts of a prompt that still matter and five habits to break</strong> — then rebuilds a bloated client-proposal prompt down to one sentence, live, and turns the result into a Skill. Links Anthropic's Opus 5 prompting guide and the "new rules of context engineering" post directly. See the dedicated section below for what those primary sources actually say.</div>
+        <a href="https://www.youtube.com/watch?v=-DawhgUKiOg" target="_blank">CLAUDE SKILLS FULL COURSE 2.5 HOURS (Beginner to Expert)</a>
+        <div class="highlight-meta">🎬 Eliot Prince · Sep 10 · 152 min</div>
+        <div class="highlight-desc">The single most directly usable item this week for your setup: a full-length Claude Skills course from the one source that covers nothing but the Claude ecosystem. You already run skills (<code>structured-methodology</code>, the PPC and marketing tooling) — this is the first end-to-end treatment of the subject any tracked source has published. <strong>Caveat, stated plainly:</strong> the scraper returned no description or chapter list for this video, so the contents are known only from the title. Treat the scope as unverified until you open it.</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">2</div>
       <div class="highlight-content">
-        <a href="https://support.claude.com/en/articles/12138966-release-notes" target="_blank">Memory in Claude Cowork, editable topics, and a sensitive-topics setting</a>
-        <div class="highlight-meta">📝 Anthropic release notes · Aug 25 · ~2 min read</div>
-        <div class="highlight-desc">Memory now works <strong>across both chat and Cowork in the cloud</strong> — one memory, not two. You can view everything remembered under <em>Settings → Memory → Topics</em> and edit or delete individual entries. Sensitive subjects (health, beliefs) are held out of memory unless you switch on "Include sensitive topics in memory." On by default for Free/Pro/Max. This is the single most consequential change of the week for how you work across ~10 Projects.</div>
+        <a href="https://www.youtube.com/watch?v=HIRDzMtuWFk" target="_blank">Anthropic Engineer Explains: What to Build Instead of AI Agents</a>
+        <div class="highlight-meta">🎬 Nate Herk · Sep 13 · 10 min</div>
+        <div class="highlight-desc">The argument, in Nate's own description: the people who created agent skills "stopped building a separate bot for every single job" and switched to <strong>reusable skills that plug into the same workflow every run</strong>. That is the shape you are already converging on across ~10 Projects. Chapters flag a "70% problem" and "Claude's guessing game" — i.e. where skills stop covering the job.</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">3</div>
       <div class="highlight-content">
-        <a href="https://www.youtube.com/watch?v=Fys9ua-x0A0" target="_blank">Anthropic Just Dropped Claude Memory 2.0 (Full Breakdown)</a>
-        <div class="highlight-meta">🎬 Brock Mesarich · Aug 25 · 10 min</div>
-        <div class="highlight-desc">The practitioner explainer for highlight #2, published the same day. Covers how memories get created differently now, how to switch it on in about 30 seconds, where to find and edit stored memories — and a caveat he says almost nobody is discussing: it is <strong>cloud-only</strong>, which decides whether it works for you at all. He also flags what it means for Claude Code.</div>
+        <a href="https://www.youtube.com/watch?v=n5bZHETCiJA" target="_blank">The Race to Done: Fable 5.1 vs GPT-6 Astra. Who Wins?</a>
+        <div class="highlight-meta">🎬 Nate B. Jones · Sep 10 · 16 min</div>
+        <div class="highlight-desc">Same short prompt, both models, two Mac clipboard apps. His stated conclusion is job-by-job, not a winner: he walks through where he now starts for <strong>writing, spreadsheets, research and code</strong>, and argues the second round of prompting — how correctable the output is — matters more than the first. This is the practical version of the model-choice question you face every session.</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">4</div>
       <div class="highlight-content">
-        <a href="https://www.mager.co/blog/2026-07-24-context-engineering-claude-5/" target="_blank">Claude Is Unhobbled. Your Context Engineering Is Not.</a>
-        <div class="highlight-meta">📝 mager.co (Wildcard) · Jul 24 · ~5 min read (estimated)</div>
-        <div class="highlight-desc">The uncomfortable one. Anthropic stripped <strong>over 80% of Claude Code's system prompt</strong> for Claude 5 models with no performance loss — and this post's argument is that carefully built CLAUDE.md files and heavy skill documentation are now <em>technical debt</em>, not assets. Not because the work was wrong, but because stronger models infer conventions that older models had to be told. That points straight at your methodology skill and handover documents. See Theme 1.</div>
+        <a href="https://support.claude.com/en/articles/12138966-release-notes" target="_blank">Smart reports (beta) — Claude release notes</a>
+        <div class="highlight-meta">📝 Anthropic · Sep 10 · ~2 min read</div>
+        <div class="highlight-desc">The only Claude product change in the window. Smart reports analyse how a team uses Claude — "the work getting done, what it costs, where sessions run into friction, and <strong>which repeated patterns are worth packaging as shared skills</strong>." <strong>Enterprise plans only</strong>, so not available to you. Noted because the framing — treat recurring session patterns as skill candidates — is the same idea your methodology already applies by hand.</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">5</div>
       <div class="highlight-content">
-        <a href="https://www.youtube.com/watch?v=VXEStoKn27Y" target="_blank">5 Marketing Claude Skills I Can't Live Without (steal them)</a>
-        <div class="highlight-meta">🎬 Eliot Prince · Aug 24 · 14 min</div>
-        <div class="highlight-desc">He built 43 marketing skills, binned 38, and kept five that run his channel, a 29,000-person email list and his LinkedIn: Director of Psychology (finds where content loses people), Trend Jack, Clipper Army (one long video → 15–20 clips), Lead Magnet, Email Sequences — plus Brandprint, so every file Claude produces already carries your branding. Install time quoted at about 45 minutes. Directly transferable to your book marketing.</div>
+        <a href="https://www.youtube.com/watch?v=9WqlEMgIKeE" target="_blank">Dein „Second Brain" hat ein Problem (LLM-Wiki 2.0 mit GPT-6 Astra)</a>
+        <div class="highlight-meta">🎬 Arnold Oberleiter (AI mit Arnie) · Sep 7 · 19 min · German</div>
+        <div class="highlight-desc">Second-brain and persistent-memory architecture is a standing high-priority category for you — it is what your handover documents and project context files are. Arnie's title states a problem with the common approach and offers an "LLM-Wiki 2.0" alternative. <strong>Caveat:</strong> description empty in the scrape, so the argument itself is unverified. Nate Herk published on the same concept the same week (see Theme 3) — two sources, one idea, worth an hour.</div>
       </div>
     </div>
 
@@ -191,120 +189,81 @@
 
 <div class="container">
 
-  <!-- REQUESTED DEEP-DIVE: OPUS 5 PROMPTING -->
-  <div class="catchup-card">
-    <h3>🎯 You asked for: adapting prompting to Opus 5</h3>
-    <p><span class="verdict">Scope note</span> The two authoritative sources on this are Anthropic's own, and both were published <strong>July 24, 2026</strong> — outside this week's window. They are included because you asked for them, not because they are news. What <em>is</em> in-window is that two of your sources (Enovair, and the wildcard) built on them this week.</p>
-
-    <p><strong>1 · <a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5" target="_blank">Prompting Claude Opus 5</a></strong> — Anthropic docs · ~8 min read (estimated). The guide's framing is that Opus 5's default behaviour changed, so prompts written for earlier models now over-correct. Concretely, it says Opus 5 writes longer by default, narrates more during agentic work, <strong>self-verifies without being asked</strong>, expands scope beyond what was requested, and delegates to subagents more readily. Its remedies are explicit counter-instructions:</p>
-    <ul>
-      <li><strong>Length:</strong> "Keep responses focused, brief, and concise… spend most of the response on the main answer."</li>
-      <li><strong>Scope:</strong> "Deliver what was asked, at the scope intended. If the request seems mistaken, say so in a sentence and continue with the task as asked."</li>
-      <li><strong>Deliverables:</strong> "Match the length of written documents to what the task needs… do not pad with filler sections, redundant summaries, or boilerplate."</li>
-      <li><strong>Self-correction:</strong> only correct an earlier statement when the error would change your conclusions or decisions.</li>
-    </ul>
-    <p>And — this is the part that matters most for you — it says to <strong>remove</strong> instructions that earlier models needed: explicit "include a final verification step" instructions now cause <em>over</em>-verification, and "double-check your answer" adds cost without improving results. It also recommends using lower effort levels (<code>low</code>, <code>medium</code>) rather than disabling thinking.</p>
-
-    <p><strong>2 · <a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models" target="_blank">The new rules of context engineering for Claude 5 generation models</a></strong> — Anthropic blog, by Thariq Shihipar · ~6 min read (estimated). Six then→now shifts: rules → judgment; examples → interface design; upfront information → progressive disclosure (move detail into skills Claude calls when needed); repetition → concise descriptions placed where they are relevant; manual memory → auto-memory; simple specs → rich references. The headline evidence is the 80% system-prompt reduction in Claude Code with no measured performance loss.</p>
-
-    <p><span class="verdict">Open question</span> There is a real tension between this guidance and your own operating framework, and it is worth resolving deliberately rather than by drift. Your structured methodology deliberately instructs verification (Watson) and challenge (Frank) — the docs above say verification instructions specifically are now counter-productive on Opus 5. <strong>These are not the same thing, and the distinction is the whole question.</strong> Anthropic is talking about <em>redundant self-checking of its own output</em>; Watson is a <em>source-traceability standard</em> the model would not apply on its own. Hypothesis: the Watson standard survives and the "add a final verification step" mechanics do not. That is testable — run one substantial task with your methodology skill as-is and one with the verification mechanics stripped but the source-labelling standard kept, and compare. No source claims this; it is a proposal, not a finding.</p>
-  </div>
-
   <!-- THEMES — cross-source index -->
   <div class="section-label">🧭 This Week's Themes — who covered what</div>
 
   <div class="theme-card">
-    <h3>1 · The prompting rules changed — and your instruction files may now be debt</h3>
-    <p>The strongest thread this week, and the one you asked about. Enovair walks through both labs' new guidance and names five habits to break. The wildcard makes the sharper claim: organisations that invested in detailed CLAUDE.md files and extensive skill documentation are now carrying technical debt, because Claude 5 models infer conventions that older models had to be told explicitly. Nate B. Jones arrives near the same place from the builder's side — his "four plain text files that make an AI builder explain itself" is progressive disclosure by another name.</p>
+    <h3>1 · Skills, not agents, as the unit you build</h3>
+    <p>The clearest cross-source thread of the week, and the one closest to your work. Nate Herk relays an Anthropic engineer's position that building a separate agent per job is the wrong shape, and reusable skills plugged into one workflow are the right one. Eliot Prince published a 2.5-hour skills course the same week. Anthropic's own Smart reports feature frames recurring team patterns as "worth packaging as shared skills." Three independent arrivals at the same conclusion in seven days. <em>Assessment, not a source claim:</em> this validates the direction you are already on — but none of these sources addresses the question you actually face, which is how many skills one person can maintain before the library itself becomes the overhead.</p>
     <div class="theme-sources">
       <span class="lbl">Covered by</span>
-      <a href="#src-enovair">🎬 Enovair (five parts, five habits to break)</a>
-      <a href="#src-wildcard">🔍 mager.co (instruction files as debt)</a>
-      <a href="#src-natebjones">🎬 Nate B. Jones (four plain text files)</a>
+      <a href="#src-nateherk">🎬 Nate Herk (build skills, not agents)</a>
+      <a href="#src-eliot">🎬 Eliot Prince (full skills course)</a>
+      <a href="#src-anthropic">📝 Anthropic (Smart reports framing)</a>
     </div>
   </div>
 
   <div class="theme-card">
-    <h3>2 · One memory across Cowork and chat</h3>
-    <p>Anthropic shipped it Tuesday; Brock had the breakdown the same day. The parts that bear on your setup: memory is now shared across chat and Cowork <em>in the cloud</em>, you can inspect and edit individual entries under Topics, and sensitive categories are excluded unless you opt in. Brock's caveat — cloud-only — is the one to check against how you actually run sessions.</p>
+    <h3>2 · Fable 5.1 vs GPT-6 Astra — the week's dominant story</h3>
+    <p>Five of your nine channels covered the Claude-vs-OpenAI comparison in some form, and the consistent framing is <strong>per-job</strong> rather than per-benchmark. Nate B. Jones ran one prompt through both and reports where he now starts for writing, spreadsheets, research and code. Nate Herk's in-window contribution is the harness-vs-model conversation with Mark Kashef — which model to open, and how to keep your skills portable across both. Brock, Arnie and the wildcard covered Astra capability separately. <em>What to take from it:</em> the comparisons are practitioner tests, not benchmarks — usable as input to your own model choice, not as a verdict.</p>
     <div class="theme-sources">
       <span class="lbl">Covered by</span>
-      <a href="#src-anthropic">📝 Anthropic (release note, primary source)</a>
-      <a href="#src-brock">🎬 Brock Mesarich (breakdown + the cloud-only caveat)</a>
+      <a href="#src-natebjones">🎬 Nate B. Jones (one prompt, two apps)</a>
+      <a href="#src-nateherk">🎬 Nate Herk (models vs. harnesses)</a>
+      <a href="#src-brock">🎬 Brock Mesarich (Astra + Blender)</a>
+      <a href="#src-arnie">🎬 Arnold Oberleiter (Astra 3D test)</a>
+      <a href="#src-wildcard">🔍 Mark Kashef (Astra effort levels)</a>
     </div>
   </div>
 
   <div class="theme-card">
-    <h3>3 · Skills as production infrastructure, not novelties</h3>
-    <p>Three sources, three different production uses of skills in one week: Arnold builds a reproducible brand kit so websites, PDFs, documents, presentations and images all come out in one design; Eliot runs his entire marketing output on five kept skills out of 43 built; Nate Herk ships Scrollcraft, a free skill that interviews you about the user journey and then verifies its own build. The pattern worth noting is that all three <em>built</em> rather than installed.</p>
+    <h3>3 · The second brain gets rebuilt — twice, in one week</h3>
+    <p>Arnie argues the standard second-brain setup has a problem and proposes an "LLM-Wiki 2.0." Nate Herk builds an AI operating system from an empty folder using a four-Cs framework, linked wikis and an AGENTS.md context file — and cites Karpathy's LLM Wiki gist as the source idea. Same week, same concept, two different builds. This is the category your handover documents, PROJECT_CONTEXT files and memory setup already occupy, so it is the closest thing this week to a direct methodology input.</p>
     <div class="theme-sources">
       <span class="lbl">Covered by</span>
-      <a href="#src-arnold">🎬 Arnold Oberleiter (brand kit skills, DE)</a>
-      <a href="#src-eliot">🎬 Eliot Prince (5 marketing skills)</a>
-      <a href="#src-nateherk">🎬 Nate Herk (Scrollcraft)</a>
+      <a href="#src-arnie">🎬 Arnold Oberleiter (LLM-Wiki 2.0)</a>
+      <a href="#src-nateherk">🎬 Nate Herk (AI OS from an empty folder)</a>
     </div>
   </div>
 
   <div class="theme-card">
-    <h3>4 · Connectors / MCP in ordinary workflows</h3>
-    <p>Eliot's connector video opens on a <strong>new Claude connector setting</strong> before going through five marketing connectors he uses daily for live data, automated workflows and always-on agents. Wes Roth's build shows the same plumbing from the other end — he connects Lovable to Claude over MCP so he can keep developing a project from a chat window. Relevant to your Apify connector setup.</p>
+    <h3>4 · AI safety turned into a news cycle — and Anthropic was at the centre of it</h3>
+    <p>Not your focus area, but it dominated the week and touches the vendor you depend on. Per Nate Herk's description: an Anthropic researcher (Jacob Coxon) resigned, putting his personal extinction-risk estimate above 10% within a decade; Anthropic published its September misuse report; Dario Amodei published an essay proposing to pace the frontier; there was a political response. Wes Roth covers the same resignation from a funding-and-media angle, and separately covers OpenAI chief scientist Jakub Pachocki's "An Alien Mind" essay. <em>Relevance to you:</em> none operationally this week — flagged because vendor-independence is a standing concern of yours and this is the kind of week that moves it.</p>
     <div class="theme-sources">
       <span class="lbl">Covered by</span>
-      <a href="#src-eliot">🎬 Eliot Prince (5 marketing connectors)</a>
-      <a href="#src-wesroth">🎬 Wes Roth (Lovable ↔ Claude over MCP)</a>
+      <a href="#src-wesroth">🎬 Wes Roth (funding angle + Pachocki essay)</a>
+      <a href="#src-nateherk">🎬 Nate Herk (10-min news summary)</a>
+      <a href="#src-anthropic">📝 Anthropic (misuse report, primary source)</a>
     </div>
   </div>
 
-  <div class="theme-card">
-    <h3>5 · Grok Bot became a serious second tool</h3>
-    <p>You already use Grok deliberately alongside Claude, so this one is squarely yours. Grok Bot dropped from $200/month to $60 with a free trial, and two sources spent the week on it. Brock is unusually direct: he says he was wrong about it, and it now handles roughly 70% of his admin while Claude keeps the complex workflows. Nate Herk's nine hacks cover the multi-agent side — a chief-of-staff agent, shared memory, logging, routines.</p>
-    <div class="theme-sources">
-      <span class="lbl">Covered by</span>
-      <a href="#src-brock">🎬 Brock Mesarich (70% cheaper, what he moved)</a>
-      <a href="#src-nateherk">🎬 Nate Herk (9 Grok Bot hacks)</a>
-    </div>
+  <!-- RELEVANCE NOTE -->
+  <div class="catchup-card">
+    <h3>📌 Relevance note — what this week did and did not contain</h3>
+    <p><span class="verdict">Confirmed</span> There was <strong>one</strong> Claude product change in the window (Smart reports, Enterprise-only) and <strong>zero</strong> Cowork, Chat, connector or MCP changes. Verified against both the Anthropic newsroom and the Claude release notes. Claude Fable 5.1 and Mythos 5.1 shipped September 1 — six days before this window opens — which is why five of your sources spent the week comparing them to GPT-6 Astra rather than covering anything newer.</p>
+    <p><span class="verdict">Assessment</span> Consequence for you: the high-value material this week is <em>practitioner</em> material (skills architecture, second-brain builds, model selection), not <em>vendor</em> material. If your reading time is limited, items 1, 2 and 5 in the highlights are the ones that change how you work; the rest is situational awareness.</p>
   </div>
 
-  <div class="theme-card">
-    <h3>6 · Vendor independence and the cheap-model question</h3>
-    <p>Four sources, one question: how much of your work actually needs the expensive model? Arnold argues local AI has crossed a line with Qwen 3.8 27B running on Ollama/LM Studio. Nate B. Jones runs GLM-5.3 inside Claude Code and Codex — with the useful caveat that a cheaper model is only cheaper after you count retries, review and rebuilt context. Nate Herk tests free OpenRouter models and Deepseek Harness. Tina Huang publishes her full HermesOS multi-agent setup. Mostly coding-flavoured, so it stays a background thread rather than a highlight — but the vendor-independence angle is yours.</p>
-    <div class="theme-sources">
-      <span class="lbl">Covered by</span>
-      <a href="#src-arnold">🎬 Arnold Oberleiter (Qwen 3.8 local, DE)</a>
-      <a href="#src-natebjones">🎬 Nate B. Jones (GLM-5.3, true cost)</a>
-      <a href="#src-nateherk">🎬 Nate Herk (free models, Deepseek Harness)</a>
-      <a href="#src-tina">🎬 Tina Huang (HermesOS)</a>
-    </div>
-  </div>
-
-  <div class="theme-card">
-    <h3>7 · Agent guardrails as an ordinary discipline</h3>
-    <p>Quieter but consistent: Nate Herk's Goldman Sachs piece opens with an agent that sent a discount code to 200,000 people before anyone could stop it, and lays out five safeguards from a place where one wrong entry costs millions. Nate B. Jones' in-window security material sits adjacent. Worth a note given you are wiring connectors into live accounts.</p>
-    <div class="theme-sources">
-      <span class="lbl">Covered by</span>
-      <a href="#src-nateherk">🎬 Nate Herk (five safeguards)</a>
-    </div>
-  </div>
-
-  <!-- SOURCE-BY-SOURCE -->
-  <div class="section-label">📡 Source-by-Source</div>
+  <!-- SOURCES -->
+  <div class="section-label">📚 Source by Source</div>
 
   <!-- ANTHROPIC -->
   <div class="source-card" id="src-anthropic">
     <div class="source-header">
       <span class="source-icon">📝</span>
       <span class="source-name">Anthropic</span>
-      <span class="source-platform">anthropic.com · support.claude.com</span>
+      <span class="source-platform">anthropic.com / support.claude.com</span>
     </div>
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://support.claude.com/en/articles/12138966-release-notes" target="_blank">Memory in Claude Cowork, editable topics, and a sensitive-topics setting</a></div>
-      <div class="article-meta"><span class="tag tag-blog">Release note</span><span class="tag tag-high">High relevance</span> Aug 25 · ~2 min read</div>
-      <div class="article-summary">Memory now functions across both chat and Cowork in the cloud. All remembered items are viewable under Settings → Memory → Topics, where individual entries can be edited or deleted. Sensitive subjects such as health or beliefs are kept out of memory by default unless "Include sensitive topics in memory" is switched on. Enabled by default for Free, Pro and Max; disabled for Team and Enterprise organisations.</div>
+      <div class="article-title"><a href="https://support.claude.com/en/articles/12138966-release-notes" target="_blank">Smart reports (beta)</a></div>
+      <div class="article-meta"><span class="tag tag-blog">Release note</span><span class="tag tag-high">High relevance</span> Sep 10 · ~2 min read</div>
+      <div class="article-summary">Reports that analyse how a team uses Claude: the work getting done, what it costs, where sessions run into friction, and which repeated patterns are worth packaging as shared skills. <strong>Claude Enterprise plans only</strong> — not available on your plan.</div>
     </div>
-    <div class="brief-mentions">
-      <div class="brief-mentions-label">Also this week (brief — corporate, outside content focus)</div>
-      <div class="brief-mention-item">📝 <a href="https://www.anthropic.com/news/wellbeing-research-grants" target="_blank">Funding better evaluations of AI's impact on wellbeing</a> — Aug 25 · ~5 min read · a $5M grant programme funding independent research and open-source evaluations of AI's effect on user wellbeing. Policy/research, not a product change.</div>
-      <div class="brief-mention-item"><em>Checked and empty:</em> the Anthropic <a href="https://www.anthropic.com/engineering" target="_blank">engineering blog</a> has no August 2026 posts — most recent dated entry is April 23, 2026.</div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank">Detecting and countering misuse of AI: September 2026</a></div>
+      <div class="article-meta"><span class="tag tag-blog">Blog</span> Sep 10 · ~15 min read (estimated)</div>
+      <div class="article-summary">Anthropic's threat intelligence team documents operations in which threat actors tried to use Claude for malicious activity, with case studies, and describes how misuse has evolved since the 2025 reports. Corporate/safety rather than product — included for completeness, and because it is one of the threads driving this week's safety news cycle (Theme 4).</div>
+      <div class="flag">Read time is an estimate — the post was not fetched in full, only its newsroom listing.</div>
     </div>
   </div>
 
@@ -316,148 +275,24 @@
       <span class="source-platform">youtube.com/@natebjones</span>
     </div>
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=joRXo6x7Pgk" target="_blank">Nobody Laid Out The Five Kinds Of Software You Can Make. So I Did.</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Aug 19 · 35 min</div>
-      <div class="article-summary">Building personal software as a non-developer, from a wish to a working app: five software "shapes" that decide almost every later choice, how to pick between Lovable, Replit, Bolt, Codex and Claude Code, and — the part relevant to your methodology work — <strong>four plain text files that make an AI builder explain itself</strong>. Also covers where your data should live and why moving it later is hard. His closing point is that the judgment stays yours.</div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=n5bZHETCiJA" target="_blank">The Race to Done: Fable 5.1 vs GPT-6 Astra. Who Wins?</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 10 · 16 min</div>
+      <div class="article-summary">One short prompt to both models produced two different Mac clipboard apps. He compares the design calls, the four fixes he asked for afterwards, and a speed test — then states where he now starts for writing, spreadsheets, research and code. His framing: knowing which model to open for which job is worth more than knowing which benchmarks higher.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=ix8SsXjBc7M" target="_blank">Why Are You Still Doing Your Own Admin? GPT-6 Astra Made Me Ask.</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 7 · 27 min</div>
+      <div class="article-summary">He simulates a household move — his research puts 20+ hours of admin inside one — and hands it to Astra as a week-long job rather than a prompt. The transferable parts are the <strong>manager loop</strong> for supervising a long-running agent job, and "recipe cards" as a post-prompt format for specifying delegated work. Directly comparable to how you structure Project instructions and handover documents.</div>
+      <div class="flag">The 23 recipe cards themselves sit behind a paid guide; the video and its method are free.</div>
     </div>
     <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=DgyQ5r6bnmc" target="_blank">Stripe Paid $7.5 Billion For OpenRouter. You Are Living In The Age Of Startups.</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Aug 24 · 25 min</div>
-      <div class="article-summary">What moved OpenRouter from a $1.3bn valuation in May to $7.5bn in August, read from Stripe's own metrics: token volume doubling every 11 weeks, and agent-to-agent commerce letting a tiny team assemble and sell things. Broader-trends piece rather than a tool you can use, but the "change your base case" argument is the substance.</div>
-    </div>
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=0bLI31EFDDs" target="_blank">OpenAI Pays $280,000 For This Job. You Don't Have To Be An Engineer.</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Aug 23 · 26 min</div>
-      <div class="article-summary">What a "forward deployed engineer" actually does, which third of the skill set a non-engineer already has, and a 30-day plan to prove the rest. Career-oriented and outside your current focus, but his point that evals are technical work with nothing to do with code is a transferable idea.</div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=zDPuEPDXCpU" target="_blank">Is Omarchy The Last Desktop You'll Ever Need?</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 11 · 18 min</div>
+      <div class="article-summary">Nominally about a Linux project, but he explicitly applies it to Mac and Windows. The useful section is on <strong>permission levels an agent should not skip</strong> and starting with one small reversible change — relevant given you run Cowork against connected Proton Drive folders. Also covers Apple Shortcuts and AeroSpace as the Mac-side equivalents.</div>
     </div>
     <div class="brief-mentions">
-      <div class="brief-mentions-label">Also this week (brief)</div>
-      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=4HvFqhtCb-A" target="_blank">Stop Paying $200 For Work An $18 Model Can Do Inside Claude Code And Codex.</a> — Aug 21 · 21 min · running GLM-5.3 inside Claude Code and Codex. Coding-focused, so brief per your current filter — but the argument that a cheaper model is only cheaper after retries, review and rebuilt context is worth the two minutes.</div>
-      <div class="brief-mention-item"><em>Note:</em> Nate publishes daily. His Aug 17 agent-security video ("One Cancelled Gym Class. That's How Agent Swarm Attacks Start.") falls just outside the window and is not counted here.</div>
-    </div>
-  </div>
-
-  <!-- GRACE LEUNG -->
-  <div class="source-card" id="src-grace">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Grace Leung</span>
-      <span class="source-platform">youtube.com/@graceleungyl</span>
-    </div>
-    <div class="no-content">No new content found this week. Her most recent upload is "Master Claude Design in 17 Minutes for Marketing" (~3 weeks ago), which was already featured in the August 7 edition. Verified by pulling her five newest uploads directly, not assumed.</div>
-  </div>
-
-  <!-- TINA HUANG -->
-  <div class="source-card" id="src-tina">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Tina Huang</span>
-      <span class="source-platform">youtube.com/@TinaHuang1</span>
-    </div>
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=1CLc-VeEivk" target="_blank">My FULL Hermes Agent Setup (HermesOS)</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Aug 25 · 16 min</div>
-      <div class="article-summary">Her complete multi-agent HermesOS setup, walked through end to end. Non-Claude and infrastructure-heavy (the video is sponsored by a VPS host), so it sits in the vendor-independence thread rather than your primary focus — relevant if you want to see how a multi-agent system is composed outside the Claude ecosystem.</div>
-      <div class="flag">Description is almost entirely promotional and affiliate links with a single "00:00 intro" timestamp — summary based on the title and the video's stated subject, not on a content description.</div>
-    </div>
-  </div>
-
-  <!-- WES ROTH -->
-  <div class="source-card" id="src-wesroth">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Wes Roth</span>
-      <span class="source-platform">youtube.com/@WesRoth</span>
-    </div>
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=LUFVYJlguJk" target="_blank">build your business and get your first $1 in one afternoon...</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Aug 20 · 28 min</div>
-      <div class="article-summary">He builds "Decaf News" — a text-only news site — end to end in Lovable by describing what he wants in plain English: site, database, user accounts, automated news pipeline, payments and hosting. Then <strong>connects Lovable to Claude over MCP</strong> so development continues from a chat window. Sponsored (Lovable), which is disclosed in the description; the MCP portion is the part that earns its place here.</div>
-    </div>
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=Im2c-7jvKz8" target="_blank">OpenAI's "JALAPENO" is INSANE...</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Aug 26 · 16 min</div>
-      <div class="article-summary">On OpenAI's "Jalapeño" chip, framed against Nvidia Blackwell. The only substantive link in the description is a SemiAnalysis piece titled "OpenAI Jalapeño: Better Than Nvidia Blackwell." AI-industry hardware news — background, not actionable.</div>
-      <div class="flag">Description is Wes's standard boilerplate plus one source link — summary based on the title and that link, not on a content description. Per the project note on his clickbait titles, treat the framing with caution.</div>
-    </div>
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=VbNdual0DFo" target="_blank">GEMINI 4 is COMPLETELY different...</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Aug 23 · 18 min</div>
-      <div class="article-summary">On Google's Gemini 4. Competitive-landscape coverage.</div>
-      <div class="flag">Description contains no content detail at all — boilerplate channel links only. Title-only item: no summary of what he actually claims about Gemini 4 is available without watching.</div>
-    </div>
-  </div>
-
-  <!-- ARNOLD OBERLEITER -->
-  <div class="source-card" id="src-arnold">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Arnold Oberleiter — AI mit Arnie</span>
-      <span class="source-platform">youtube.com/@Arnold-Oberleiter</span>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=2EoNRuFJfBo" target="_blank">Diese Skills machen Claude Design unfair</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-de">German</span><span class="tag tag-high">High relevance</span> Aug 21 · 31 min</div>
-      <div class="article-summary">He adds four community skills (Grill Me, Unslop, Web Design Guidelines, SEO Audit) to Claude Code with Claude Design, then builds a complete <strong>brand kit</strong> that reproduces websites, PDFs, documents, presentations and images in one consistent design. Skills are published free on his GitHub. He also covers the <strong>EU AI Act labelling obligation</strong> for AI-generated content — directly relevant to you as a publisher selling into the German market. Chapters run from installing skills (5:30) through brand-kit creation (11:20) to PDFs and images in the same design (22:30).</div>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=oJvlQmvBLtk" target="_blank">Qwen 3.8: Lokale KI hat gewonnen</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-de">German</span><span class="tag tag-high">High relevance</span> Aug 19 · 30 min</div>
-      <div class="article-summary">Qwen 3.8 27B and Meta's Muse Glimmer run locally via Ollama, LM Studio and Hermes: hardware requirements, quantisation for smaller machines, speed tuning with speculative decoding, and three head-to-head tests. Closes with local AI music generation in ComfyUI. Squarely in your vendor-independence / local-AI interest — note the hardware sections (7:26, 8:34) before judging feasibility.</div>
-    </div>
-  </div>
-
-  <!-- ENOVAIR -->
-  <div class="source-card" id="src-enovair">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Enovair</span>
-      <span class="source-platform">youtube.com/@EnovairPartners</span>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=OiplQPjdA4c" target="_blank">Anthropic and OpenAI Just Changed the Rules of Prompting</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Aug 19 · 18 min</div>
-      <div class="article-summary">Both labs published new guidance for prompting their newest models, and his framing is that much of what we were taught now works against us. He covers <strong>five parts of a prompt that still matter and five habits to break</strong>, then rebuilds a bloated client-proposal prompt live until the whole workflow runs on one sentence — in ChatGPT or Claude — and turns the result into a Skill (16:22). The description links the primary sources: OpenAI's latest-model guide, Anthropic's Opus 5 prompting guide, and Anthropic's context-engineering post. All three are summarised in the requested deep-dive above.</div>
-      <div class="flag">Gated add-on: the description offers a free guide ("11 Ready-to-Install AI Skills for Knowledge Workers") behind an email opt-in. The video itself is free and unrestricted; only the bonus guide requires a sign-up.</div>
-    </div>
-  </div>
-
-  <!-- BROCK MESARICH -->
-  <div class="source-card" id="src-brock">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Brock Mesarich — AI for Non Techies</span>
-      <span class="source-platform">youtube.com/@brockmesarich</span>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=Fys9ua-x0A0" target="_blank">Anthropic Just Dropped Claude Memory 2.0 (Full Breakdown)</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Aug 25 · 10 min</div>
-      <div class="article-summary">What changed when Anthropic merged memory across Cowork and chat, how memories now get created differently, how to switch it on in about 30 seconds, and how to view and edit stored memories live. He tests the sync in both directions and closes on the caveat he says nobody is discussing: <strong>it is cloud-only</strong> (7:37). Also addresses what this means for Claude Code (4:10). The tightest 10 minutes in this edition.</div>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=BFZ7lyKYcg8" target="_blank">Grok Bot Just Got 70% Cheaper... (I Switched)</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Aug 23 · 24 min</div>
-      <div class="article-summary">Grok Bot went from $200/month to $60 with a free trial. He shows the agents he actually runs, how they message each other, and how they handle inbox, meetings and invoices — plus the Zapier MCP for 9,000+ apps and Parallel for verified research. He states plainly in the description that Grok Bot now handles about 70% of his admin while the complex workflows stay with Claude. Given you use Grok deliberately alongside Claude, this is the concrete version of that split.</div>
-    </div>
-  </div>
-
-  <!-- ELIOT PRINCE -->
-  <div class="source-card" id="src-eliot">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Eliot Prince</span>
-      <span class="source-platform">youtube.com/@princeeliot</span>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=VXEStoKn27Y" target="_blank">5 Marketing Claude Skills I Can't Live Without (steal them)</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Aug 24 · 14 min</div>
-      <div class="article-summary">Five skills kept out of 43 built, each named and explained: Director of Psychology (finds exactly where your content loses people and what to fix), Trend Jack (turns trends into post ideas with an angle), Clipper Army (one long video into 15–20 short clips), Lead Magnet, and Email Sequences — plus a bonus, Brandprint, so every file Claude produces already carries your branding. He quotes about 45 minutes to install them all. Free via his resource vault (email opt-in).</div>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=4wN_xg0bcyY" target="_blank">5 Claude MARKETING Connectors I Can't Live Without</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Aug 26 · 18 min</div>
-      <div class="article-summary">Five connectors he uses daily to pull live data, run automated workflows and keep agents working on social content, SEO, ads and outreach. Opens with a <strong>new Claude connector setting</strong> (0:34) before going through them one by one. Posted a few hours before this briefing was generated.</div>
-      <div class="flag">The description lists chapter timestamps but does not name which five connectors — the names are only in the video. Flagged rather than guessed.</div>
+      <div class="brief-mentions-label">Also published (three-item cap applied — 4 in-window uploads)</div>
+      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=ifgB5u53Ftg" target="_blank">There Is A US–China AI Race. Alvin Wang Graylin Has Been On Both Sides Since 1990.</a> — Sep 13 · 48 min · long interview arguing the race framing is the core mistake; geopolitics rather than tooling.</div>
     </div>
   </div>
 
@@ -469,28 +304,148 @@
       <span class="source-platform">youtube.com/@nateherk</span>
     </div>
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=yCACmFTiCto" target="_blank">Turn Claude Into a One Person Marketing Team in 38 Mins</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Aug 21 · 38 min</div>
-      <div class="article-summary">Sets up a brand-aware Claude project, connects an image/video generator over MCP, and produces a website, ad creatives, carousels, sizzle reels, UGC videos and a branded analytics tracker — without coding, editing or design skills. He shows the real outputs <em>and</em> the costs, and is explicit about where first-pass generations still need a human. The closest thing this week to a template for a solo publisher's marketing stack.</div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=HIRDzMtuWFk" target="_blank">Anthropic Engineer Explains: What to Build Instead of AI Agents</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 13 · 10 min</div>
+      <div class="article-summary">The creators of agent skills stopped building a separate bot per job; Nate's own system uses reusable skills that plug into the same workflow every run. Chapters name a "70% problem" and "Claude's guessing game" — where a skill stops carrying the work. Short, and the most concentrated skills-architecture argument of the week.</div>
     </div>
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=QUI6Ug4cHnE" target="_blank">How to Build Claude Websites That Aren't AI Slop (steal this)</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Aug 22 · 17 min</div>
-      <div class="article-summary">Scrollcraft, a free skill that turns ordinary landing pages into scroll-driven sites without funnelling every project into one template. The mechanism is the interesting part: the skill <strong>interviews you about the user journey</strong>, works with existing or generated assets, and <strong>verifies its own build</strong>. He then redesigns a live site with it and improves the first draft through one focused feedback pass — a good demonstration of the build-don't-install pattern in Theme 3.</div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=6LNlCpQPYFc" target="_blank">How to Actually Choose the Right AI Agent</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 11 · 34 min</div>
+      <div class="article-summary">Interview with Mark Kashef (this week's wildcard) on <strong>models vs. harnesses</strong> — the distinction between the model and the tooling wrapped around it. Sections that bear on your setup: making skills portable across tools, keeping an AI OS updated as models improve, when models outgrow your skills and it is time to retire them, and organising projects vs. global rules. Some Claude Code / Codex content.</div>
     </div>
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=TMPUUyQC5aM" target="_blank">A Week of Grok Bot Lessons in 10 Mins</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Aug 19 · 10 min</div>
-      <div class="article-summary">Nine practical Grok Bot hacks for making a team of agents easier to teach, manage and trust: a chief-of-staff agent, shared memory, Composio, task logging, screen-recorded tasks, routines and saved browser profiles — turning separate bots into one connected system. Ten minutes, no padding.</div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=yysILVsfLFM" target="_blank">I Turned GPT-6 Astra Into the Ultimate AI Second Brain</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 7 · 20 min</div>
+      <div class="article-summary">Builds an AI operating system from an empty folder: a four-Cs framework, an AGENTS.md context file, connecting everyday tools, auditing and improving the system, and organising knowledge into linked LLM wikis. Cites Karpathy's LLM Wiki gist. Built on Codex rather than Claude, but the structure is tool-agnostic and maps onto what you already do with PROJECT_CONTEXT files.</div>
     </div>
     <div class="brief-mentions">
-      <div class="brief-mentions-label">Also this week (brief — three-item cap applied; 8 uploads in window)</div>
-      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=ZzHsJW10iq4" target="_blank">Everything Goldman Sachs Taught Me About AI (In 10 minutes)</a> — Aug 24 · 10 min · five agent safeguards from a place where one wrong entry costs millions; opens with an agent that blasted a discount code to 200,000 people.</div>
-      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=DoHPZf7jEQ4" target="_blank">The 3 AI Agency Mistakes Keeping You From $20K/Month Retainers</a> — Aug 25 · 29 min · agency pricing and retainers; outside your focus.</div>
-      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=UsfCe5fJK6A" target="_blank">100 Hours Testing Deepseek Harness vs. Claude Code</a> — Aug 23 · 18 min · harness comparison; coding-focused, brief per your current filter.</div>
-      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=_kK_4cOYF4o" target="_blank">This Stealth Model Makes Claude Code Free. Here's How.</a> — Aug 21 · 14 min · free OpenRouter models inside Claude Code, with the privacy and reliability trade-offs.</div>
-      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=tgjYMym_0-c" target="_blank">Sell These 5 Most In Demand AI Automations in 2026</a> — Aug 20 · 11 min · market-demand research for automation services; business-oriented.</div>
+      <div class="brief-mentions-label">Also published (three-item cap applied — 7 in-window uploads)</div>
+      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=68HH9HVFJDM" target="_blank">AI News in 10 mins: Human extinction within 10 years</a> — Sep 13 · 10 min · the week's safety news cycle condensed: the Coxon resignation, Anthropic's misuse report, Dario Amodei's pacing essay, political response.</div>
+      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=o3IEkKXXXvo" target="_blank">GPT-6 Astra Finally Solves AI Video Editing (full guide)</a> — Sep 8 · 30 min · Codex + Hyperframes for video editing in plain English; turns an editing style into a reusable skill.</div>
+      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=TLQLfa7yH4I" target="_blank">I Turned GPT-6 Astra Into a 24/7 Stock Trader (tutorial)</a> — Sep 7 · 17 min · seven-day $10,000 real-money agent trading experiment. He notes Astra now blocks financial actions and he routed trades through a second bot. Interesting as an agent-continuity demo; treat the trading premise with scepticism.</div>
+      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=5QmOhvVssxY" target="_blank">Thank You for 1M Subscribers</a> — Sep 9 · 7 min · personal channel milestone, no AI content. Listed only so the feed count reconciles.</div>
     </div>
+  </div>
+
+  <!-- ELIOT PRINCE -->
+  <div class="source-card" id="src-eliot">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Eliot Prince</span>
+      <span class="source-platform">youtube.com/@princeeliot</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=-DawhgUKiOg" target="_blank">CLAUDE SKILLS FULL COURSE 2.5 HOURS (Beginner to Expert)</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 10 · 152 min</div>
+      <div class="article-summary">A full-length course on Claude Skills from the channel that covers the Claude ecosystem exclusively. Given that you build and maintain skills across ~10 Projects, this is the highest-leverage single item in the edition — if the content matches the title.</div>
+      <div class="flag">Title only — the scraper returned no description and no chapter list for this video, so nothing about its actual structure or level is confirmed. Summary above is inference from the title and the channel's established focus, not from content.</div>
+    </div>
+  </div>
+
+  <!-- ARNOLD OBERLEITER -->
+  <div class="source-card" id="src-arnie">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Arnold Oberleiter — AI mit Arnie</span>
+      <span class="source-platform">youtube.com/@Arnold-Oberleiter</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=9WqlEMgIKeE" target="_blank">Dein „Second Brain" hat ein Problem (LLM-Wiki 2.0 mit GPT-6 Astra)</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-de">German</span><span class="tag tag-high">High relevance</span> Sep 7 · 19 min</div>
+      <div class="article-summary">Argues the standard second-brain setup has a structural problem and proposes an LLM-Wiki 2.0 approach built with GPT-6 Astra. Pairs with Nate Herk's second-brain build the same week (Theme 3).</div>
+      <div class="flag">Title only — no description returned by the scraper. The specific problem he identifies and his proposed fix are not confirmed; the summary states what the title states and nothing more.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=lSrz75LKyeA" target="_blank">GPT 6 Astra ist der neue 3D-König</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-de">German</span> Sep 9 · 15 min</div>
+      <div class="article-summary">Astra's 3D generation capability. Adjacent to Brock's Astra + Blender piece and the wildcard's 3D-worlds build — three sources on the same capability in one week. Outside your working areas.</div>
+      <div class="flag">Title only — no description returned.</div>
+    </div>
+  </div>
+
+  <!-- BROCK MESARICH -->
+  <div class="source-card" id="src-brock">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Brock Mesarich | AI for Non Techies</span>
+      <span class="source-platform">youtube.com/@brockmesarich</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=IsUpatC9obI" target="_blank">How to Use Grok Bot Better Than 99% of People (FULL COURSE)</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 8 · 50 min</div>
+      <div class="article-summary">A full course on Grok Bot. Grok is a standing high-priority category for you — you use it deliberately for tasks where Claude underperforms — and this is the only substantial Grok tutorial from a tracked source this week.</div>
+      <div class="flag">Title only — no description returned by the scraper. Depth and coverage unconfirmed.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=zFgu699Ga28" target="_blank">AI News: Big ChatGPT &amp; Grok Bot Updates, Meta Muse Is Here</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 12 · 18 min</div>
+      <div class="article-summary">Weekly news roundup covering ChatGPT and Grok Bot updates plus a Meta release. The Grok Bot portion is the part worth your time.</div>
+      <div class="flag">Title only — no description returned.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=JiQr45mQ1Hw" target="_blank">ChatGPT Image 2.5 Just Dropped (Full Breakdown)</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 9 · 10 min</div>
+      <div class="article-summary">Breakdown of a new OpenAI image model. Potentially relevant to book cover and ad-creative work, though nothing in the available metadata addresses those uses.</div>
+      <div class="flag">Title only — no description returned.</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published (three-item cap applied — 4 in-window uploads)</div>
+      <div class="brief-mention-item">🎬 <a href="https://www.youtube.com/watch?v=DgovrfgLxYs" target="_blank">ChatGPT 6 Astra + Blender = Endless Possibilities</a> — Sep 10 · 11 min · Astra-driven 3D work; outside your areas.</div>
+    </div>
+  </div>
+
+  <!-- WES ROTH -->
+  <div class="source-card" id="src-wesroth">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Wes Roth</span>
+      <span class="source-platform">youtube.com/@WesRoth</span>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=WBK2WX7TA4g" target="_blank">we JUST got played...</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 10 · 13 min</div>
+      <div class="article-summary">Clickbait title, substantive sourcing: he traces the funding networks behind AI-risk advocacy following the resignation of Anthropic researcher Jacob Coxon, and links the WSJ reporting, the Survival and Flourishing Fund grant records, and the Sanders–Casar superintelligence bill directly in the description. A funding-and-media angle on the story Nate Herk covers straight.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=lkujyxUdUIk" target="_blank">OpenAI JUST solved math....</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 9 · 38 min</div>
+      <div class="article-summary">OpenAI says 10,000 agents produced a proposed solution to the Navier–Stokes Millennium Prize Problem in 88 hours — and a credit dispute followed. He covers the mathematics, Buckmaster and Alpöge's prior work, the Lean formalisation, and OpenAI's response. Out of focus, but the clearest example yet of multi-agent research scale.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=Vjh3YCnI3vo" target="_blank">OpenAI's chief scientist just issued a warning...</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 7 · 29 min</div>
+      <div class="article-summary">Walks through Jakub Pachocki's essay "An Alien Mind" on recursive self-improvement outpacing control, alongside OpenAI's chain-of-thought monitoring work and Anthropic's global-workspace and persona-selection research. All primary sources linked in the description.</div>
+    </div>
+  </div>
+
+  <!-- GRACE LEUNG -->
+  <div class="source-card" id="src-grace">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Grace Leung</span>
+      <span class="source-platform">youtube.com/@graceleungyl</span>
+    </div>
+    <div class="no-content">No new content found this week. Most recent upload: <a href="https://www.youtube.com/watch?v=L-X6HIrzrBI" target="_blank">How to Get AI to Recommend Your Brand in 16 minutes | AEO Playbook</a> — Aug 26, 12 days before this window. Verified by pulling her eight newest videos by full channel URL.</div>
+  </div>
+
+  <!-- TINA HUANG -->
+  <div class="source-card" id="src-tina">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Tina Huang</span>
+      <span class="source-platform">youtube.com/@TinaHuang1</span>
+    </div>
+    <div class="no-content">No new content found this week. Most recent upload: <a href="https://www.youtube.com/watch?v=NMYQt25otes" target="_blank">10X Productivity in 10 Minutes</a> — Aug 29, 9 days before this window. Verified by pulling her eight newest videos by full channel URL.</div>
+  </div>
+
+  <!-- ENOVAIR -->
+  <div class="source-card" id="src-enovair">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Enovair</span>
+      <span class="source-platform">youtube.com/@EnovairPartners</span>
+    </div>
+    <div class="no-content">No new content found this week. Most recent upload: <a href="https://www.youtube.com/watch?v=xM5fwAKA_-o" target="_blank">ChatGPT Voice Just Changed How I Work</a> — Aug 28, 10 days before this window. Verified by pulling their eight newest videos by full channel URL.</div>
   </div>
 
   <!-- WILDCARD -->
@@ -498,21 +453,26 @@
   <div class="source-card wildcard" id="src-wildcard">
     <div class="source-header">
       <span class="source-icon">🔍</span>
-      <span class="source-name">mager.co</span>
-      <span class="source-platform">mager.co/blog</span>
+      <span class="source-name">Mark Kashef</span>
+      <span class="source-platform">youtube.com/@Mark_Kashef · 84K subs</span>
       <span class="wildcard-label">Wildcard</span>
     </div>
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.mager.co/blog/2026-07-24-context-engineering-claude-5/" target="_blank">Claude Is Unhobbled. Your Context Engineering Is Not.</a></div>
-      <div class="article-meta"><span class="tag tag-blog">Blog</span><span class="tag tag-high">High relevance</span> Jul 24 · ~5 min read (estimated)</div>
-      <div class="article-summary">Takes Anthropic's 80% system-prompt reduction and draws the conclusion Anthropic does not state outright: teams that built detailed CLAUDE.md files and extensive skill documentation are now carrying <strong>technical debt</strong> — not because the work was wrong, but because those patterns were built for models that needed them. His prescription is to design self-describing interfaces and progressive disclosure instead of writing comprehensive constraints. Short, argued, and free to read in full.</div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=OQipTxv9Qv0" target="_blank">I Tested Every GPT-6 Astra Effort Level. Here's What I'd Use</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 8 · 17 min</div>
+      <div class="article-summary">Seven runs of the same research-and-build assignment at Low, Medium, High, Extra High, Max and Ultra, plus a GPT-5.6 Sol baseline, comparing outputs, completion times and processed tokens. The finding that matters is the shape of the curve, not the winner: he ends up preferring Medium, and notes Max and Extra High took longest. <strong>Why this is worth your attention:</strong> effort-level selection is the same decision you make in Claude, and almost nobody tests it systematically. He also publishes his own caveats — seven exploratory first attempts, different product ideas, token totals include cached input — which is the standard you hold outputs to.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=27qpBfBhpDk" target="_blank">GPT-6 Astra Can Build 3D Worlds to Learn Anything</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 13 · 14 min</div>
+      <div class="article-summary">Builds a playable 3D world that teaches how Codex works — idea → production plan → build → test → host. Outside your focus as a 3D project, but the method underneath (define "done" before building, test one scene before the whole world, turn visual quality into a testing rubric) is milestone-based validation applied to AI output.</div>
     </div>
     <div class="brief-mentions">
       <div class="brief-mentions-label">Why this wildcard</div>
-      <div class="brief-mention-item"><strong>Fit:</strong> a working builder writing short, argued posts rather than tool round-ups — the 10x band. It is the only source found this week that takes Anthropic's context-engineering guidance and asks what it costs the people who already did the work, which is precisely your position with a methodology skill, handover documents and ~10 Project instruction sets.</div>
-      <div class="brief-mention-item"><strong>Honesty check:</strong> this was found through a targeted search on your Opus 5 prompting request, <em>not</em> encountered while researching the ten permanent sources — a deviation from the normal wildcard discovery rule, flagged rather than dressed up. The relevant post is also from July 24, outside this week's window.</div>
-      <div class="brief-mention-item"><strong>Caveat before promoting it:</strong> the site's other recent posts skew to coding harnesses ("OpenCode Go + Buzz: killing Claude Code for a $10 harness", Aug 8; "Buzz: what it looks like when agents get equal standing", Jul 23), which is de-focused for you. One excellent post is not yet a pattern. Judgement to make next edition: does it produce non-coding material you can use, or was this a single well-aimed hit?</div>
-      <div class="brief-mention-item"><strong>Paywall check:</strong> full post confirmed readable with no subscription or login.</div>
+      <div class="brief-mention-item"><strong>How he was found:</strong> through a tracked source, as the rule intends — Nate Herk interviewed him on September 11 (<a href="https://www.youtube.com/watch?v=6LNlCpQPYFc" target="_blank">How to Actually Choose the Right AI Agent</a>). No targeted search was needed.</div>
+      <div class="brief-mention-item"><strong>Fit (10x filter):</strong> he runs controlled experiments and publishes the caveats with the results. His <a href="https://www.youtube.com/watch?v=cHVB2e-V80Y" target="_blank">September 2 line-by-line comparison of the Fable 5 and Fable 5.1 system prompt captures</a> (12:50, outside window) documents the captured instruction layer growing from 17,501 to 40,046 words and captured tool definitions from 18 to 46 — and is explicit that these are unofficial captures, not Anthropic-published artefacts. That combination — depth plus honest labelling of what is unverified — is exactly the band you want.</div>
+      <div class="brief-mention-item"><strong>Caveat before promoting him:</strong> his current output is heavily Codex/OpenAI-weighted — three of his six most recent uploads are Astra or Codex pieces. Christoph Magnussen was removed in June for the same drift. The Claude-ecosystem material is present (the system-prompt analysis, testing MCPs inside Claude) but is not the majority. Judgement for next edition: does he publish Claude-side material again, or is the system-prompt piece an outlier?</div>
+      <div class="brief-mention-item"><strong>Paywall check:</strong> all videos free on YouTube. His companion guides are Gumroad downloads at $0 with optional contribution — accessible without payment, gated by an email address. Not counted against the paywall rule since the video content stands alone.</div>
     </div>
   </div>
 
@@ -520,16 +480,14 @@
   <div class="section-label">⚠️ Gaps &amp; Coverage</div>
   <div class="gaps-card">
     <h3>What to know about this week's coverage</h3>
-    <div class="gap-item"><strong>Method changed this week — Claude in Chrome was unavailable.</strong> The browser extension reported "not connected," so the project's required method could not be used. Rather than falling back to web search (which the project rules warn misses recent YouTube uploads), the YouTube sweep ran through the Apify connector using a channel-videos scraper. That returned complete upload feeds with exact publish dates and durations for all nine channels. <em>Assessment, not a claim from a source:</em> this is more complete than the accessibility-tree reads used in previous editions, which repeatedly captured only partial feeds for daily publishers. Worth considering as the standing method.</div>
-    <div class="gap-item"><strong>Chrome partial failure — a testable hypothesis, not a diagnosis.</strong> Your local Chrome MCP is reachable: listing tabs and opening URLs both worked. Reading page content and executing JavaScript both failed with "Google Chrome is not running." <em>Observed:</em> the two tools that work do not need in-page scripting; the two that fail do. <em>Hypothesis:</em> Chrome's "Allow JavaScript from Apple Events" setting (View → Developer) is off. <em>Falsifying test:</em> switch it on and retry — if page reads still fail, the hypothesis is wrong and the cause is elsewhere. Not investigated further this session.</div>
-    <div class="gap-item"><strong>Window is 8 days, not 7.</strong> This edition covers Aug 19–26 rather than Aug 20–26. Reason: the Enovair prompting video, the single most relevant item to your stated request, and Arnold's Qwen piece both landed on Aug 19. Stated rather than quietly extended.</div>
-    <div class="gap-item"><strong>Opus 5 prompting sources are out of window.</strong> Anthropic's prompting guide and context-engineering post are both dated July 24, 2026, and the wildcard post responds to them the same day. They are included because you asked for the topic. The in-window material is Enovair's video.</div>
-    <div class="gap-item"><strong>Grace Leung — no new uploads.</strong> Most recent is ~3 weeks old. Verified by pulling her five newest videos directly. Note: her handle returned no results when queried with a date filter, and resolved correctly when queried by full channel URL — so the first "no content" result was a query artefact, checked rather than accepted.</div>
-    <div class="gap-item"><strong>Title-only / boilerplate-description items (flagged inline):</strong> Wes Roth's Gemini 4 video (no content detail in the description at all — no summary possible without watching), Wes Roth's Jalapeño video (boilerplate plus one source link), and Tina Huang's HermesOS video (promotional links, single timestamp). Eliot's connector video lists timestamps but never names the five connectors.</div>
-    <div class="gap-item"><strong>All video summaries are drawn from descriptions and chapter lists, not from watching.</strong> Durations and publish dates come from the scraper and are exact. Blog read times are marked as estimates — only the Anthropic wellbeing post has a verified length (~1,100 words).</div>
-    <div class="gap-item"><strong>Anthropic newsroom:</strong> only one in-window post (the wellbeing grants programme, Aug 25), which is corporate rather than a product change. The week's substantive Anthropic item is the Aug 25 release note, which lives on support.claude.com rather than the news blog. The engineering blog was checked and has nothing from August.</div>
-    <div class="gap-item"><strong>Paywall check:</strong> all included items are free (public YouTube videos, public Anthropic pages, mager.co verified open). Two items gate a <em>bonus</em> behind an email opt-in (Enovair's skills guide, Eliot's resource vault) — the videos themselves are unrestricted, so they are included with the gating noted. Nate B. Jones' Substack remains paywalled; only his free YouTube versions are used, per the project note.</div>
-    <div class="gap-item"><strong>Three-item cap applied</strong> to Nate Herk (8 in-window uploads → 3 featured, 5 brief). No other source exceeded three.</div>
+    <div class="gap-item"><strong>Descriptions missing for three channels — the biggest limitation in this edition.</strong> The Apify scraper returned exact titles, publish dates, durations and view counts for every channel, but returned <em>null descriptions</em> for Eliot Prince, Arnold Oberleiter and Brock Mesarich. That is 6 of the 19 featured items, including highlights #1 and #5. Their summaries are therefore <strong>title-derived only</strong> and are flagged inline. Nate B. Jones, Nate Herk, Wes Roth and Mark Kashef returned full descriptions with chapter lists, and their summaries are content-based. <em>Open question for next edition:</em> whether this is a scraper-side intermittency or specific to those channels — worth one comparison run to find out, since three of your ten permanent sources are currently unsummarisable.</div>
+    <div class="gap-item"><strong>Three sources published nothing in the window.</strong> Grace Leung (last upload Aug 26), Tina Huang (Aug 29), Enovair (Aug 28). Each was re-checked by full channel URL after an initial date-filtered query returned "no videos found" — per the project's channel-name-artefact rule. In all three cases the re-check confirmed genuine silence, not a query artefact: their newest uploads all predate September 7.</div>
+    <div class="gap-item"><strong>Method: Apify only, as specified.</strong> Two runs of <code>lurkapi/youtube-channel-videos-stats-scraper</code> — one date-filtered across the nine permanent channels, one unfiltered re-check of the four channels that returned nothing or an incomplete result — plus one run for the wildcard. No web search and no Chrome were used for YouTube data. All publish dates and durations in this briefing come directly from the scraper and are exact.</div>
+    <div class="gap-item"><strong>No video was watched.</strong> Every summary is drawn from titles, descriptions and chapter lists. Where a description was absent, the item says so rather than inferring content.</div>
+    <div class="gap-item"><strong>Anthropic coverage.</strong> The newsroom had one in-window post (the September 10 threat intelligence report). The Claude release notes had one in-window entry (Smart reports, September 10, Enterprise-only). Both are included. Nothing shipped for Cowork, Chat, Skills, connectors or MCP in the window — stated as a finding, not an omission.</div>
+    <div class="gap-item"><strong>Paywall check.</strong> Nate B. Jones' Substack remains paywalled — his free YouTube versions are used, per the project note. His recipe-card guide and Mark Kashef's Gumroad kits are companion materials to free videos, noted where relevant. No paywalled item was included as a source.</div>
+    <div class="gap-item"><strong>Three-item cap applied</strong> to Nate B. Jones (4 in-window → 3 featured, 1 brief), Nate Herk (7 → 3 featured, 4 brief) and Brock Mesarich (4 → 3 featured, 1 brief). Wes Roth published exactly 3; no cap needed.</div>
+    <div class="gap-item"><strong>Window boundary note.</strong> Several strong items landed on September 5–6 — the GPT-6 Astra launch coverage from Nate B. Jones, Wes Roth, Arnold Oberleiter and Nate Herk, including Nate Herk's 15-use-case Fable 5.1 vs Astra comparison. They fall outside the trailing-7-day window and are excluded rather than quietly pulled in. If you want that launch week covered, say so and it can be a one-off extended edition.</div>
   </div>
 
 </div>
