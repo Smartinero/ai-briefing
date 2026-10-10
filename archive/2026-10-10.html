@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Briefing — xAI · Grok · Grok Bot — October 3–10, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f4f4f0;
+    color: #1a1a1a;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .container { max-width: 800px; margin: 0 auto; padding: 0 20px 60px; }
+
+  /* ── MASTHEAD ── */
+  .masthead { background: #1a1a2e; color: #ffffff; padding: 36px 40px 32px; margin-bottom: 0; }
+  .masthead-inner { max-width: 800px; margin: 0 auto; }
+  .masthead-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #7c9dc4; margin-bottom: 8px;
+  }
+  .masthead h1 { font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 6px; letter-spacing: -0.5px; }
+  .masthead-date { font-size: 14px; color: #8899aa; }
+
+  /* ── TOP HIGHLIGHTS BAND ── */
+  .highlights-band { background: #16213e; padding: 32px 40px 36px; margin-bottom: 32px; }
+  .highlights-band-inner { max-width: 800px; margin: 0 auto; }
+  .highlights-band h2 {
+    font-size: 12px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #e8a84c; margin-bottom: 20px;
+  }
+  .highlight-item {
+    display: flex; gap: 14px; align-items: flex-start;
+    margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #243050;
+  }
+  .highlight-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .highlight-num {
+    flex-shrink: 0; width: 26px; height: 26px; background: #e8a84c;
+    color: #16213e; font-size: 12px; font-weight: 800; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; margin-top: 2px;
+  }
+  .highlight-content a { color: #93c5fd; text-decoration: none; font-weight: 600; font-size: 15px; line-height: 1.4; }
+  .highlight-content a:hover { text-decoration: underline; }
+  .highlight-meta { font-size: 12px; color: #6b8aaa; margin-top: 3px; }
+  .highlight-desc { font-size: 13.5px; color: #b0c4d8; margin-top: 4px; line-height: 1.5; }
+
+  /* ── SECTION HEADERS ── */
+  .section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #7c9dc4; margin: 36px 0 14px;
+    padding-bottom: 8px; border-bottom: 2px solid #1a1a2e;
+  }
+
+  /* ── SOURCE CARD ── */
+  .source-card {
+    background: #ffffff; border-radius: 8px; margin-bottom: 16px;
+    overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border: 1px solid #e5e5e0;
+    scroll-margin-top: 16px;
+  }
+  .source-card:target { box-shadow: 0 0 0 3px #e8a84c, 0 1px 4px rgba(0,0,0,0.08); }
+  .source-header { padding: 14px 20px 12px; border-bottom: 1px solid #f0f0eb; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .source-icon { font-size: 16px; flex-shrink: 0; }
+  .source-name { font-size: 14px; font-weight: 700; color: #1a1a2e; }
+  .source-platform { font-size: 12px; color: #888; margin-left: auto; flex-shrink: 0; }
+
+  /* ── ARTICLE ITEMS ── */
+  .article-item { padding: 14px 20px; border-bottom: 1px solid #f5f5f0; position: relative; }
+  .article-item:last-child { border-bottom: none; }
+  .article-item.high-priority { border-left: 3px solid #e8a84c; padding-left: 17px; }
+  .article-title a { color: #1a1a2e; text-decoration: none; font-weight: 600; font-size: 15px; line-height: 1.4; }
+  .article-title a:hover { color: #2563eb; text-decoration: underline; }
+  .article-meta { font-size: 12px; color: #888; margin: 4px 0 6px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 2px 6px; border-radius: 3px; }
+  .tag-high { background: #fef3cd; color: #a0600a; }
+  .tag-yt { background: #fee2e2; color: #b91c1c; }
+  .tag-blog { background: #e0f2fe; color: #0369a1; }
+  .tag-de { background: #f3f4f6; color: #4b5563; }
+  .tag-new { background: #dcfce7; color: #166534; }
+  .article-summary { font-size: 14px; color: #444; line-height: 1.55; }
+  .flag { font-size: 12.5px; color: #8a6d00; background: #fffbe8; border-left: 2px solid #e8a84c; padding: 4px 10px; margin-top: 6px; border-radius: 0 4px 4px 0; }
+  .brief-mentions { padding: 12px 20px 14px; background: #fafaf8; border-top: 1px dashed #e0e0d8; }
+  .brief-mentions-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #999; margin-bottom: 6px; }
+  .brief-mention-item { font-size: 13px; color: #555; margin-bottom: 4px; line-height: 1.4; }
+  .brief-mention-item:last-child { margin-bottom: 0; }
+  .brief-mention-item a { color: #2563eb; text-decoration: none; font-weight: 500; }
+  .brief-mention-item a:hover { text-decoration: underline; }
+
+  /* ── NO CONTENT ── */
+  .no-content { padding: 14px 20px; font-size: 14px; color: #888; font-style: italic; }
+
+  /* ── WILDCARD CARD ── */
+  .source-card.wildcard { border: 2px dashed #7c9dc4; background: #f8fbff; }
+  .wildcard-label { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: #1a1a2e; color: #7c9dc4; padding: 2px 7px; border-radius: 3px; margin-left: 8px; vertical-align: middle; }
+
+  /* ── THEMES (cross-source index) ── */
+  .theme-card { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 18px 20px; margin-bottom: 16px; }
+  .theme-card h3 { font-size: 14px; font-weight: 700; color: #1e40af; margin-bottom: 8px; }
+  .theme-card p { font-size: 14px; color: #1e3a5f; line-height: 1.6; margin-bottom: 10px; }
+  .theme-sources { font-size: 12.5px; color: #1e3a5f; padding-top: 8px; border-top: 1px solid #cfe0f5; }
+  .theme-sources .lbl { font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; font-size: 10px; color: #2563eb; margin-right: 6px; }
+  .theme-sources a {
+    display: inline-block; color: #1e40af; text-decoration: none; font-weight: 600;
+    background: #dbeafe; padding: 2px 9px; border-radius: 12px; margin: 3px 5px 3px 0;
+  }
+  .theme-sources a:hover { background: #2563eb; color: #fff; }
+
+  /* ── RELEVANCE NOTE ── */
+  .catchup-card { background: #f5f0ff; border: 1px solid #ddd0f7; border-radius: 8px; padding: 18px 20px; margin-bottom: 24px; }
+  .catchup-card h3 { font-size: 13px; font-weight: 700; color: #5b21b6; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .catchup-card p { font-size: 14px; color: #3f2560; line-height: 1.6; margin-bottom: 10px; }
+  .catchup-card p:last-child { margin-bottom: 0; }
+  .catchup-card a { color: #5b21b6; font-weight: 600; }
+  .verdict { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 7px; border-radius: 3px; background: #e9dcff; color: #5b21b6; margin-right: 6px; }
+
+  /* ── GAPS ── */
+  .gaps-card { background: #fff9f0; border: 1px solid #f0d080; border-radius: 8px; padding: 18px 20px; font-size: 14px; color: #555; line-height: 1.6; }
+  .gaps-card h3 { font-size: 13px; font-weight: 700; color: #7a5500; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .gap-item { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #f0e0c0; }
+  .gap-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+
+  /* ── [NEW] additions per style guide v1.0 ── */
+  .tag-x { background: #f3f4f6; color: #111827; }
+  .tag-docs { background: #ede9fe; color: #5b21b6; }
+  .tag-changelog { background: #e0f2fe; color: #0369a1; }
+  .highlight-desc a { font-size: inherit; }
+
+  @media (max-width: 600px) {
+    .masthead { padding: 26px 18px 22px; }
+    .highlights-band { padding: 24px 18px 26px; margin-bottom: 24px; }
+    .masthead h1 { font-size: 22px; }
+    .container { padding: 0 14px 48px; }
+    .source-header, .article-item, .brief-mentions, .no-content { padding-left: 14px; padding-right: 14px; }
+    .article-item.high-priority { padding-left: 11px; }
+    .source-platform { margin-left: 0; width: 100%; }
+    .theme-card, .catchup-card, .gaps-card { padding: 16px 14px; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-label">AI Briefing · xAI · Grok · Grok Bot</div>
+    <h1>What's new, and how to use it</h1>
+    <div class="masthead-date">October 3–10, 2026 &nbsp;·&nbsp; 10 sources monitored &nbsp;·&nbsp; Generated October 10, 2026, 18:30 (Bangkok, UTC+7)</div>
+  </div>
+</div>
+
+<!-- TOP HIGHLIGHTS -->
+<div class="highlights-band">
+  <div class="highlights-band-inner">
+    <h2>⭐ Top Highlights</h2>
+
+    <div class="highlight-item">
+      <div class="highlight-num">1</div>
+      <div class="highlight-content">
+        <a href="https://x.com/elonmusk/status/2107724314451878104" target="_blank" rel="noopener">Grok Bot will pick the best model for each task</a>
+        <div class="highlight-meta">𝕏 Elon Musk (post) · Oct 7 · covered by Brock Mesarich and Nate Herk</div>
+        <div class="highlight-desc">The announcement, in full: "Going forward, @SpaceX will use the best back end model for any given task, including Claude Opus 5.5, MidJourney, Suno and other leading APIs. Whatever is most likely to give you the best outcome." As announced, <strong>the model is chosen for you, task by task</strong>. Brock and Nate Herk both made videos on it within two days (see theme 1). <em>Assessment:</em> nothing to set up on your side. The open question is how it shows up in your weekly usage. The Grok Bot changelog entries in this window do not mention it, and I did not find it in the docs pages I read.</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">2</div>
+      <div class="highlight-content">
+        <a href="https://x.com/bot/status/2107949161878606089" target="_blank" rel="noopener">Grok Bot can now search, read, and monitor X</a>
+        <div class="highlight-meta">𝕏 @bot · Oct 8 · official post</div>
+        <div class="highlight-desc">The follow-up post gives three uses: <strong>"track feedback on your product, follow a breaking story, or send a weekly roundup of your industry"</strong>, and says it is <strong>available for all users, with no need to set up the X connector</strong>. <em>Assessment:</em> this is the most directly usable change for you this week. A weekly X roundup on a topic you care about is a one-message routine (see "What to try next").</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">3</div>
+      <div class="highlight-content">
+        <a href="https://x.com/bot/status/2108609764766908772" target="_blank" rel="noopener">Grok Bot now has its own email</a>
+        <div class="highlight-meta">𝕏 @bot · Oct 10 · official post</div>
+        <div class="highlight-desc">Your Bot gets its own email address, which it "can use … to sign up for services, contact businesses for you, or schedule time with someone." <strong>To claim the inbox, ask your Bot</strong> (or tag @bot on X). It is rolling out "to users today" (Oct 9, US time), and on team accounts an admin must switch it on first. <em>Assessment:</em> useful for sign-ups you would rather keep out of your own inbox. Bots normally show email as a draft card for you to approve; keep that on while you try this.</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">4</div>
+      <div class="highlight-content">
+        <a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">Grok Bot 0.68.1: slide decks, formatted emails, a bigger, faster computer</a>
+        <div class="highlight-meta">🛠️ Grok Bot changelog · Oct 7</div>
+        <div class="highlight-desc">Bots can now <strong>build slide decks with you</strong> (sample slides to choose from, delivered as PowerPoint or Google Slides) and <strong>send formatted emails</strong> (headings, bold, lists) from a draft card. The Bot's computer screen grows to 1920 × 1200 and actions run faster. One small change to note: typing <strong>/</strong> in the message box no longer opens the skills menu (see Gaps).</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">5</div>
+      <div class="highlight-content">
+        <a href="https://www.youtube.com/watch?v=MgvwZaDPCs4" target="_blank" rel="noopener">Grok Bot Just Got 2 Massive Upgrades. Do These Things Now.</a>
+        <div class="highlight-meta">🎬 Nate Herk · Oct 9 · 9 min</div>
+        <div class="highlight-desc">A practical follow-up on the two upgrades above: "automatic model routing and native X search". From his description: he moves his Bots off the paid X API onto the built-in X search, explains "why I'm rethinking how I structure my skills", and says what he would still like from model routing. Summary from the description and chapter list only. The last chapter (running Claude Code inside Grok Bot) is coding and out of scope.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- THEMES -->
+  <div class="section-label">🧭 Themes — who covered what</div>
+
+  <div class="theme-card">
+    <h3>1 · Grok Bot stops being tied to one model</h3>
+    <p>On Oct 7, Elon Musk announced that Grok Bot will use "the best back end model for any given task", naming Claude Opus 5.5, Midjourney and Suno. The same day Brock Mesarich published a 7-minute explainer ("The agent vs the model", "Could this save you money?", "What we still don't know"). On Oct 10 his weekly news episode had a 7-minute chapter on it, and Nate Herk covered it as "automatic model routing" on Oct 9. Elon added on Oct 8 that most simple requests "will be handled by a lightning-fast version of Grok 4.8 when that comes out" (a statement of plans, not a release).</p>
+    <p><strong>Assessment, not a source claim:</strong> for a non-coder, the practical message is that there is nothing to pick or configure. What is not yet documented anywhere I checked is how the routing affects usage limits. Watch the changelog and docs for that.</p>
+    <div class="theme-sources"><span class="lbl">Covered by</span>
+      <a href="#src-brock">🎬 Brock Mesarich (2 videos)</a>
+      <a href="#src-nateherk">🎬 Nate Herk (1 video + 1 short)</a>
+      <a href="#src-changelog">🛠️ Changelog (not mentioned)</a>
+    </div>
+  </div>
+
+  <div class="theme-card">
+    <h3>2 · Grok Bot reaches further: X, email and shops</h3>
+    <p>Three official @bot announcements in four days. X search and monitoring for every user without the X connector (Oct 8), a Shopify connector to "check orders, track inventory, and keep product listings up to date" (Oct 8), and the Bot's own email address (Oct 10). Separately, the docs page "Tag @bot on X" (updated Oct 7) explains how to hand an X post to your main Bot as a task by tagging @bot. Brock gave X search its own chapter, and Nate Herk showed moving his Bots onto it.</p>
+    <div class="theme-sources"><span class="lbl">Covered by</span>
+      <a href="#src-bot">𝕏 @bot (3 posts)</a>
+      <a href="#src-docs">📘 Grok Bot docs</a>
+      <a href="#src-brock">🎬 Brock Mesarich</a>
+      <a href="#src-nateherk">🎬 Nate Herk</a>
+    </div>
+  </div>
+
+  <div class="theme-card">
+    <h3>3 · Everyday polish: drafts, approvals and routines</h3>
+    <p>Two app releases in the window (0.68.0 on Oct 5, 0.68.1 on Oct 7). Email drafts can go out from a verified Gmail "send-as" address. Approval cards now name the Bot and quote its instruction. Saved rules are now called "Custom Rules". Routines get a right-click menu with Pause, Resume, Test, Edit and Delete. Gmail sending and reply errors are fixed. The official "Skills and routines" guide (updated Oct 6) sets out the recommended order: do a task once, save it as a skill, and only then automate it as a routine.</p>
+    <div class="theme-sources"><span class="lbl">Covered by</span>
+      <a href="#src-changelog">🛠️ Changelog (2 releases)</a>
+      <a href="#src-docs">📘 Grok Bot docs</a>
+    </div>
+  </div>
+
+  <!-- RELEVANCE NOTE -->
+  <div class="catchup-card">
+    <h3>What to try next (assessment)</h3>
+    <p><span class="verdict">Try</span>Ask one Bot for a weekly X roundup on a topic you follow. The official <a href="https://docs.x.ai/grok-bot/skills-routines-and-automations" target="_blank" rel="noopener">Skills and routines guide</a> suggests running it once by hand first, then "save the process … as a skill", then schedule it. In the routine, state your time zone (Bangkok) and what should happen if nothing new was found.</p>
+    <p><span class="verdict">Try</span>Ask your Bot to claim its email inbox, then use it for one newsletter or service sign-up. Keep draft cards on, so nothing is sent without your OK.</p>
+    <p><span class="verdict">Watch</span>Model routing: there is no official how-it-works page yet. If your weekly usage changes noticeably, Settings → Usage &amp; Billing is where it shows.</p>
+    <p><span class="verdict">Decide</span>Wildcard week 1: Nate B. Jones published nothing on Grok this week (see the <a href="#src-wildcard">wildcard card</a>). Keep him one more week, or rotate the slot.</p>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="section-label">📚 Source by Source</div>
+
+  <!-- 1 XAI NEWS -->
+  <div class="source-card" id="src-xai-news">
+    <div class="source-header">
+      <span class="source-icon">📝</span>
+      <span class="source-name">xAI News (SpaceXAI)</span>
+      <span class="source-platform">x.ai/news</span>
+    </div>
+    <div class="no-content">No new post in the window. I re-checked the full listing on Oct 10: the newest item is "<a href="https://x.ai/news/team-bots" target="_blank" rel="noopener">Team Bots: shared AI teammates that learn as they work</a>" (Sep 28), which was before this window.</div>
+  </div>
+
+  <!-- 2 GROK BOT CHANGELOG -->
+  <div class="source-card" id="src-changelog">
+    <div class="source-header">
+      <span class="source-icon">🛠️</span>
+      <span class="source-name">Grok Bot changelog</span>
+      <span class="source-platform">x.ai/changelog/bot</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">Grok Bot 0.68.1</a></div>
+      <div class="article-meta"><span class="tag tag-changelog">Changelog</span><span class="tag tag-high">High relevance</span> Oct 7 · ~3 min read</div>
+      <div class="article-summary">New: messages in a 1:1 chat take the Bot's colour, Bots build <strong>slide decks</strong> (PowerPoint or Google Slides), send <strong>formatted emails</strong> from a draft card, can search your Gmail Spam folder and move a message back to the inbox, and Team Bots can mention a Slack user group. Improved: faster computer actions, a 1920 × 1200 screen, and typing <strong>/</strong> in the composer "no longer opens a menu of skills and actions". Fixed: Gmail send/reply errors, draft cards, browser crash recovery, and stuck Bots now stop within about 30 seconds.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">Grok Bot 0.68.0</a></div>
+      <div class="article-meta"><span class="tag tag-changelog">Changelog</span> Oct 5 · ~3 min read</div>
+      <div class="article-summary">New languages (Marathi, Tamil, Telugu, Swahili, Hausa), Remove for other computers in Settings → Computer, email drafts from a verified Gmail <strong>send-as</strong> address, and plugin search in the command palette. Improved: approval cards name the Bot and quote its instruction, saved rules are now "Custom Rules", and routines get a right-click menu (Pause, Resume, Test, Edit, Delete). Fixed: large files no longer freeze the app, and Gmail drafts include your signature.</div>
+    </div>
+  </div>
+
+  <!-- 3 GROK BOT DOCS -->
+  <div class="source-card" id="src-docs">
+    <div class="source-header">
+      <span class="source-icon">📘</span>
+      <span class="source-name">Grok Bot docs (official how-to)</span>
+      <span class="source-platform">docs.x.ai/grok-bot</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://docs.x.ai/grok-bot/tag-on-x" target="_blank" rel="noopener">Tag @bot on X</a></div>
+      <div class="article-meta"><span class="tag tag-docs">Docs</span><span class="tag tag-high">High relevance</span> updated Oct 7 · ~4 min read</div>
+      <div class="article-summary">How to hand any X post to your Grok Bot: reply with, for example, "@bot summarize this thread and send the key points to my Slack". @bot posts only a short confirmation on X, and the work happens in your main Bot's chat. You need a Grok account with your X account connected (grok.com → Settings → Account → Connect), Grok Bot access, and at least one Bot of your own. It is not yet available for X accounts based in Australia, the UK, the EU, Iceland, Liechtenstein or Norway, and availability goes by the country X has on record, not your location. @bot stays quiet if the post also tags @grok or contains a video or GIF.</div>
+      <div class="flag">Whether tagging works for your account depends on the country X has on record for it, which I could not check.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://docs.x.ai/grok-bot/skills-routines-and-automations" target="_blank" rel="noopener">Skills and routines</a></div>
+      <div class="article-meta"><span class="tag tag-docs">Docs</span><span class="tag tag-high">High relevance</span> updated Oct 6 · ~6 min read</div>
+      <div class="article-summary">The official method: <strong>"Start with a one-time task. Make it reliable, save the method as a skill, and only then automate it."</strong> A good skill states when to use it, the inputs and access it needs, the steps, how to check the result, what to return, and what needs approval. "Teach a task" lets you demonstrate a browser workflow (up to ten minutes, no microphone audio). For a routine, confirm the owning Bot, the schedule and time zone, the input, the expected result, the approval boundary, and what happens when a source is missing. Use Test run before enabling. A Bot can own up to 50 routines.</div>
+      <div class="flag">This page says to type "/" to reference a saved skill, but the Oct 7 changelog says "/" no longer opens that menu. One of the two is out of date.</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also updated this week (per the docs sitemap; 6 of 11 listed)</div>
+      <div class="brief-mention-item"><a href="https://docs.x.ai/grok-bot/overview" target="_blank" rel="noopener">Overview</a> (Oct 7), <a href="https://docs.x.ai/grok-bot/troubleshooting" target="_blank" rel="noopener">Troubleshooting</a> (Oct 7), <a href="https://docs.x.ai/grok-bot/team-bots" target="_blank" rel="noopener">Team Bots</a> (Oct 8), <a href="https://docs.x.ai/grok-bot/computer-and-apps" target="_blank" rel="noopener">Use the computer and apps</a> (Oct 8), <a href="https://docs.x.ai/grok-bot/mobile" target="_blank" rel="noopener">Grok Bot for Mobile</a> (Oct 6), <a href="https://docs.x.ai/grok-bot/settings-and-notifications" target="_blank" rel="noopener">Settings and notifications</a> (Oct 6). The other five (Bots, Chat, Files, Approvals, Private networks) also show update dates in the window. Dates only: I have no earlier copy, so I can't say what changed.</div>
+    </div>
+  </div>
+
+  <!-- 4 @BOT -->
+  <div class="source-card" id="src-bot">
+    <div class="source-header">
+      <span class="source-icon">𝕏</span>
+      <span class="source-name">Grok Bot (@bot)</span>
+      <span class="source-platform">x.com/bot · official</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.com/bot/status/2107949161878606089" target="_blank" rel="noopener">Grok Bot can now search, read, and monitor X</a></div>
+      <div class="article-meta"><span class="tag tag-x">X post</span><span class="tag tag-high">High relevance</span> Oct 8 · 2-post thread</div>
+      <div class="article-summary">Thread text: "Ask it to track feedback on your product, follow a breaking story, or send a weekly roundup of your industry. Available for all users, with no need to set up the X connector." See highlight 2.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.com/bot/status/2108609764766908772" target="_blank" rel="noopener">Grok Bot now has its own email</a></div>
+      <div class="article-meta"><span class="tag tag-x">X post</span><span class="tag tag-high">High relevance</span> Oct 10 · 2-post thread</div>
+      <div class="article-summary">"Bot can use it to sign up for services, contact businesses for you, or schedule time with someone." Follow-up: "Rolling out to users today. To claim your inbox, just ask Bot or tag @bot on X. Admins must enable it for their team." See highlight 3.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://x.com/bot/status/2108228871938359347" target="_blank" rel="noopener">Grok Bot can now help run your Shopify store</a></div>
+      <div class="article-meta"><span class="tag tag-x">X post</span> Oct 8</div>
+      <div class="article-summary">"Connect Shopify, then ask it to check orders, track inventory, and keep product listings up to date." Shopify's own post says you can ask @bot to add the connector in the replies.</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also this week</div>
+      <div class="brief-mention-item"><a href="https://x.com/bot/status/2106083136002310193" target="_blank" rel="noopener">"We've reset usage limits for all Grok Bot users."</a> (Oct 3, 01:05 Bangkok time). Replies to individual users were not counted.</div>
+    </div>
+  </div>
+
+  <!-- 5 @SPACEXAI -->
+  <div class="source-card" id="src-spacexai">
+    <div class="source-header">
+      <span class="source-icon">𝕏</span>
+      <span class="source-name">SpaceXAI (@SpaceXAI)</span>
+      <span class="source-platform">x.com/SpaceXAI · official company account</span>
+    </div>
+    <div class="no-content">No consumer Grok or Grok Bot news this week. The three posts in the window are developer or partner items, listed below for completeness.</div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published (developer / partner items)</div>
+      <div class="brief-mention-item"><a href="https://x.com/SpaceXAI/status/2107623124909060174" target="_blank" rel="noopener">"Grok 4.7 is now live on Microsoft Foundry"</a> (Oct 7): a developer platform listing.</div>
+      <div class="brief-mention-item"><a href="https://x.com/SpaceXAI/status/2106080040266117521" target="_blank" rel="noopener">"Try Grok 4.7 in Ramp Router, now 50% off until October 6th"</a> (Oct 3, 00:53 Bangkok time): API pricing offer, now expired.</div>
+      <div class="brief-mention-item"><a href="https://x.com/SpaceXAI/status/2108259620758384812" target="_blank" rel="noopener">"We are glad to support the Omarchy team"</a> (Oct 9): sponsorship of an open-source project, quoted from its founder's post.</div>
+    </div>
+  </div>
+
+  <!-- 6 BROCK -->
+  <div class="source-card" id="src-brock">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Brock Mesarich (AI for Non Techies)</span>
+      <span class="source-platform">youtube.com/@brockmesarich</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=Z8H3MvLJwfs" target="_blank" rel="noopener">Grok Bot Now Uses Claude Opus 5.5 + More (MASSIVE Update)</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Oct 7 · 7 min</div>
+      <div class="article-summary">An explainer on the model-routing announcement: "what Elon announced, the three reasons I think this is such a big deal", ending with "what we still don't know". Chapters include "What is Grok Bot", "A quick example", "Could this save you money?" and "The agent vs the model". The description also covers what it means for other companies' agents. That part is out of scope here.</div>
+      <div class="flag">Summary from the description and chapter list only. Chapter titles say what a segment covers, not what he concludes.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=LlwhNla5eQg" target="_blank" rel="noopener">Anthropic Just Dropped Claude Motion, Dashboards + More (AI News)</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Oct 10 · 26 min</div>
+      <div class="article-summary">His weekly news episode. The Grok part is two chapters, about 8 minutes in total: "Grok Bot Can Now Use Other AI Models" (13:36) and "Grok Bot Can Now Search X" (20:40). His description says he tests "the new ones myself". The rest of the episode is about other vendors.</div>
+      <div class="flag">Summary from the description and chapter list only. To jump straight to the Grok part, start at 13:36.</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published</div>
+      <div class="brief-mention-item">Six more uploads in the window (Oct 6–9) are about other vendors' tools or general tools, with no mention of Grok in their titles or descriptions. Not covered.</div>
+    </div>
+  </div>
+
+  <!-- 7 WES ROTH -->
+  <div class="source-card" id="src-wesroth">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Wes Roth</span>
+      <span class="source-platform">youtube.com/@WesRoth</span>
+    </div>
+    <div class="no-content">No Grok or xAI content found this week. He published three videos (Oct 4, Oct 7, Oct 9), all about OpenAI; none mentions Grok, xAI or SpaceXAI in its title or description.</div>
+  </div>
+
+  <!-- 8 NATE HERK -->
+  <div class="source-card" id="src-nateherk">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Nate Herk | AI Automation</span>
+      <span class="source-platform">youtube.com/@nateherk</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=MgvwZaDPCs4" target="_blank" rel="noopener">Grok Bot Just Got 2 Massive Upgrades. Do These Things Now.</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Oct 9 · 9 min</div>
+      <div class="article-summary">Chapters: "Automatic Model Routing", "Native X Search", "Rethinking Your Skills", "Running Claude Code Inside Grok Bot". In his description he says he switched his Bots "away from the paid X API" to the built-in search, is rethinking how he structures skills, and lists what he would still like from model routing. See highlight 5.</div>
+      <div class="flag">Summary from the description and chapter list only. The Claude Code chapter (6:39–8:59) is coding content and out of scope.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=f_WsOXdGm4w" target="_blank" rel="noopener">Grok Bot now runs on Opus 5.5</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Oct 9 · 1 min (Short)</div>
+      <div class="article-summary">Title only. The Short has no description, so I have no summary.</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published</div>
+      <div class="brief-mention-item"><a href="https://www.youtube.com/watch?v=kebGZLyrvZg" target="_blank" rel="noopener">Grok Bot uses my Claude Code subscription. Here's how.</a> (Oct 9, 1 min Short, title only): coding-oriented, out of scope.</div>
+      <div class="brief-mention-item">Six more uploads in the window (Oct 3–10) are about other tools (Claude Code, Codex and others) with no Grok mention. Not covered.</div>
+    </div>
+  </div>
+
+  <!-- 9 ETHAN MOLLICK -->
+  <div class="source-card" id="src-mollick">
+    <div class="source-header">
+      <span class="source-icon">📝</span>
+      <span class="source-name">Ethan Mollick (One Useful Thing)</span>
+      <span class="source-platform">oneusefulthing.org · @emollick</span>
+    </div>
+    <div class="no-content">No new content found this week. I checked the newsletter feed: the newest post is "<a href="https://www.oneusefulthing.org/p/the-dot-and-the-swarm" target="_blank" rel="noopener">The Dot and the Swarm</a>" (Oct 1), just before the window. An X search of his posts for Grok, Grok Bot, xAI or SpaceXAI in the window returned nothing.</div>
+  </div>
+
+  <!-- 10 WILDCARD -->
+  <div class="section-label">🔍 Wildcard Slot (#10)</div>
+  <div class="source-card wildcard" id="src-wildcard">
+    <div class="source-header">
+      <span class="source-icon">🔍</span>
+      <span class="source-name">Nate B. Jones</span>
+      <span class="source-platform">youtube.com/@natebjones · AI News &amp; Strategy Daily</span>
+      <span class="wildcard-label">Wildcard · week 1</span>
+    </div>
+    <div class="no-content">No Grok content found this week. Eight uploads in the window (four full videos and four clips of 2 minutes or less, Oct 3–10); none mentions Grok, Grok Bot, xAI or SpaceXAI in its title or description.</div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Why he is here, and the status</div>
+      <div class="brief-mention-item"><strong>Why chosen:</strong> his August 14 Grok Bot review was written for non-technical users (what the shared computer means, what the price buys, which two Bots to start with).</div>
+      <div class="brief-mention-item"><strong>Week-1 result (assessment):</strong> no Grok content this week, so nothing to judge yet. He publishes daily, so one quiet week is not conclusive.</div>
+      <div class="brief-mention-item"><strong>The decision:</strong> keep him for week 2, or rotate the slot. <em>No other compelling wildcard candidate came up this week.</em></div>
+    </div>
+  </div>
+
+  <!-- GAPS -->
+  <div class="section-label">⚠️ Gaps &amp; Coverage</div>
+  <div class="gaps-card">
+    <h3>What was checked, and what wasn't</h3>
+    <div class="gap-item"><strong>Window boundary.</strong> Trailing 7 days, Oct 3 00:00 to Oct 10 18:30 Bangkok time (UTC+7). All dates on this page are Bangkok dates. Excluded as just before the window: Brock's "AI News: ChatGPT Dots, Major Grok Bot Upgrades, GPT Sol 6.1" (Oct 2, 23:03 Bangkok time) and Mollick's Oct 1 post. Changelog dates are as printed by xAI, which states no time zone.</div>
+    <div class="gap-item"><strong>Method.</strong> YouTube: each channel's public feed for what was published and when, then each video's public page for exact date, length, description and chapters. No signed-in browser. X: the X API, reading @bot and @SpaceXAI posts in the window (replies to individual users not counted), plus a targeted search to find the primary post behind the model-routing news. xAI News and the changelog: full pages read on Oct 10. Docs: pages read in full, update dates from the docs sitemap.</div>
+    <div class="gap-item"><strong>No video was watched.</strong> Every video summary comes from the title, description and chapter list. Chapter titles say what a segment covers, not what the creator concludes. Two of Nate Herk's Shorts have no description and are title only.</div>
+    <div class="gap-item"><strong>Silent sources.</strong> xAI News (newest Sep 28), Wes Roth (three videos, all OpenAI), Ethan Mollick (newest Oct 1) and the wildcard Nate B. Jones (eight uploads, no Grok). @SpaceXAI posted only developer and partner items.</div>
+    <div class="gap-item"><strong>Model routing is announced but not documented.</strong> The primary source is Elon Musk's Oct 7 post. I found no mention in the Grok Bot changelog entries for the window or in the docs pages I read. I did not use automated @grok replies on X as evidence; they describe the rollout, but they are not an official source.</div>
+    <div class="gap-item"><strong>Docs vs changelog conflict.</strong> "Skills and routines" (updated Oct 6) says to type "/" to reference a saved skill; changelog 0.68.1 (Oct 7) says "/" no longer opens the skills menu. Not resolved here.</div>
+    <div class="gap-item"><strong>Docs "updated" dates only.</strong> Eleven more Grok Bot docs pages show an update date in the window, but with no earlier copy I can't say what changed. Only the two pages featured above were read in full.</div>
+    <div class="gap-item"><strong>Scope filter applied.</strong> Items about other vendors' products, coding content and developer-only offers (API pricing, developer platforms) were left out or kept to one line. Where a source compared Grok with other products, only the Grok part is reported.</div>
+    <div class="gap-item"><strong>Three-item cap.</strong> Applied per source. @bot had 3 announcements plus one note; Nate Herk had 3 Grok items (2 featured, 1 brief); Brock 2; the changelog 2 releases.</div>
+  </div>
+
+</div>
+
+</body>
+</html>

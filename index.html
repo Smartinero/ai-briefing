@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weekly AI Briefing — September 21–28, 2026</title>
+<title>AI Briefing — xAI · Grok · Grok Bot — October 3–10, 2026</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
@@ -121,6 +121,24 @@
   .gaps-card h3 { font-size: 13px; font-weight: 700; color: #7a5500; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
   .gap-item { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #f0e0c0; }
   .gap-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+
+  /* ── [NEW] additions per style guide v1.0 ── */
+  .tag-x { background: #f3f4f6; color: #111827; }
+  .tag-docs { background: #ede9fe; color: #5b21b6; }
+  .tag-changelog { background: #e0f2fe; color: #0369a1; }
+  .highlight-desc a { font-size: inherit; }
+
+  @media (max-width: 600px) {
+    .masthead { padding: 26px 18px 22px; }
+    .highlights-band { padding: 24px 18px 26px; margin-bottom: 24px; }
+    .masthead h1 { font-size: 22px; }
+    .container { padding: 0 14px 48px; }
+    .source-header, .article-item, .brief-mentions, .no-content { padding-left: 14px; padding-right: 14px; }
+    .article-item.high-priority { padding-left: 11px; }
+    .source-platform { margin-left: 0; width: 100%; }
+    .theme-card, .catchup-card, .gaps-card { padding: 16px 14px; }
+  }
+
 </style>
 </head>
 <body>
@@ -128,59 +146,59 @@
 <!-- MASTHEAD -->
 <div class="masthead">
   <div class="masthead-inner">
-    <div class="masthead-label">Weekly AI Briefing</div>
-    <h1>What your sources published this week</h1>
-    <div class="masthead-date">September 21–28, 2026 &nbsp;·&nbsp; 11 sources monitored &nbsp;·&nbsp; Generated September 28, 2026</div>
+    <div class="masthead-label">AI Briefing · xAI · Grok · Grok Bot</div>
+    <h1>What's new, and how to use it</h1>
+    <div class="masthead-date">October 3–10, 2026 &nbsp;·&nbsp; 10 sources monitored &nbsp;·&nbsp; Generated October 10, 2026, 18:30 (Bangkok, UTC+7)</div>
   </div>
 </div>
 
 <!-- TOP HIGHLIGHTS -->
 <div class="highlights-band">
   <div class="highlights-band-inner">
-    <h2>⭐ Top Highlights This Week</h2>
+    <h2>⭐ Top Highlights</h2>
 
     <div class="highlight-item">
       <div class="highlight-num">1</div>
       <div class="highlight-content">
-        <a href="https://www.anthropic.com/claude-opus-5-5" target="_blank">Introducing Claude Opus 5.5</a>
-        <div class="highlight-meta">📝 Anthropic · Sep 22 · long post, ~35 min read (estimate)</div>
-        <div class="highlight-desc">The model release of the week, and it is <strong>available in Claude chat and Cowork</strong> from day one. Anthropic's claims: Fable-5.1-level performance, <strong>~40% cheaper than Opus 5</strong> on typical workloads, better writing ("places critical information prominently"), and a new <strong>default effort level of medium</strong> that it says often matches Opus 5 at maximum effort. Five of your sources covered it within four days — see theme 1. <em>Assessment:</em> the price cut matters for API users; on a subscription the practical changes are the effort default and the prompting advice in highlight 2.</div>
+        <a href="https://x.com/elonmusk/status/2107724314451878104" target="_blank" rel="noopener">Grok Bot will pick the best model for each task</a>
+        <div class="highlight-meta">𝕏 Elon Musk (post) · Oct 7 · covered by Brock Mesarich and Nate Herk</div>
+        <div class="highlight-desc">The announcement, in full: "Going forward, @SpaceX will use the best back end model for any given task, including Claude Opus 5.5, MidJourney, Suno and other leading APIs. Whatever is most likely to give you the best outcome." As announced, <strong>the model is chosen for you, task by task</strong>. Brock and Nate Herk both made videos on it within two days (see theme 1). <em>Assessment:</em> nothing to set up on your side. The open question is how it shows up in your weekly usage. The Grok Bot changelog entries in this window do not mention it, and I did not find it in the docs pages I read.</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">2</div>
       <div class="highlight-content">
-        <a href="https://www.youtube.com/watch?v=is3XYKl2bpI" target="_blank">Anthropic Revealed Their Secret Guide to Mastering Opus 5.5</a>
-        <div class="highlight-meta">🎬 Brock Mesarich · Sep 26 · 9 min</div>
-        <div class="highlight-desc">Eight takeaways from Anthropic's Opus 5.5 prompting guide, in nine minutes. I checked the <a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5" target="_blank" style="font-size:inherit;font-weight:600;">official guide</a> directly, and it confirms the main points: the default effort is now <strong>medium</strong>; <strong>remove "think carefully"-style instructions</strong> (the model decides how much to think, and effort is the control); tell it to <strong>check sources broadly before acting</strong>; <strong>keep pasted content separate from your instructions</strong>. <em>Assessment:</em> this is the item with the most direct use for you. Your project instructions and skills probably contain some of the lines the guide now says to remove.</div>
+        <a href="https://x.com/bot/status/2107949161878606089" target="_blank" rel="noopener">Grok Bot can now search, read, and monitor X</a>
+        <div class="highlight-meta">𝕏 @bot · Oct 8 · official post</div>
+        <div class="highlight-desc">The follow-up post gives three uses: <strong>"track feedback on your product, follow a breaking story, or send a weekly roundup of your industry"</strong>, and says it is <strong>available for all users, with no need to set up the X connector</strong>. <em>Assessment:</em> this is the most directly usable change for you this week. A weekly X roundup on a topic you care about is a one-message routine (see "What to try next").</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">3</div>
       <div class="highlight-content">
-        <a href="https://www.youtube.com/watch?v=QCkHIyEPIYo" target="_blank">I Had Opus 5.5 Build me the Same App at Every Effort Level</a>
-        <div class="highlight-meta">🎬 Nate Herk · Sep 24 · 27 min</div>
-        <div class="highlight-desc">Runs the same prompt at Low, Medium, High, Extra, Max and "Ultracode" effort, then compares output, runtime, estimated cost, token use, verification checks and the questions Claude asked. His own summary: "The most expensive run was not the best." One creative test, not a benchmark, but it is the only practical evidence this week on the effort setting that Anthropic just made more prominent.</div>
+        <a href="https://x.com/bot/status/2108609764766908772" target="_blank" rel="noopener">Grok Bot now has its own email</a>
+        <div class="highlight-meta">𝕏 @bot · Oct 10 · official post</div>
+        <div class="highlight-desc">Your Bot gets its own email address, which it "can use … to sign up for services, contact businesses for you, or schedule time with someone." <strong>To claim the inbox, ask your Bot</strong> (or tag @bot on X). It is rolling out "to users today" (Oct 9, US time), and on team accounts an admin must switch it on first. <em>Assessment:</em> useful for sign-ups you would rather keep out of your own inbox. Bots normally show email as a draft card for you to approve; keep that on while you try this.</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">4</div>
       <div class="highlight-content">
-        <a href="https://www.youtube.com/watch?v=TR8RDUzQaMo" target="_blank">I Stopped Knowing What My Computer Was Doing. Then I Asked OpenAI Why.</a>
-        <div class="highlight-meta">🎬 Nate B. Jones · Sep 22 · 42 min</div>
-        <div class="highlight-desc">An interview with two OpenAI leads (the Codex desktop app, and productivity/engineering). His thesis: AI adoption depends on <strong>access to context, not aptitude</strong>. Can the agent reach the work at all? Chapters include "Connectors, access, and the context problem", "The skills worth betting on", "Token efficiency and what you actually pay for" and "Proactive AI and the 9am report". The source is OpenAI, but the questions are the same ones your Projects and connectors raise.</div>
+        <a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">Grok Bot 0.68.1: slide decks, formatted emails, a bigger, faster computer</a>
+        <div class="highlight-meta">🛠️ Grok Bot changelog · Oct 7</div>
+        <div class="highlight-desc">Bots can now <strong>build slide decks with you</strong> (sample slides to choose from, delivered as PowerPoint or Google Slides) and <strong>send formatted emails</strong> (headings, bold, lists) from a draft card. The Bot's computer screen grows to 1920 × 1200 and actions run faster. One small change to note: typing <strong>/</strong> in the message box no longer opens the skills menu (see Gaps).</div>
       </div>
     </div>
 
     <div class="highlight-item">
       <div class="highlight-num">5</div>
       <div class="highlight-content">
-        <a href="https://www.youtube.com/watch?v=ucer2chlfM8" target="_blank">6 Ways Opus 5.5 + GPT-6 Astra Upgrade Your Workflow</a>
-        <div class="highlight-meta">🔍 Mark Kashef (wildcard, week 3) · Sep 26 · 12 min</div>
-        <div class="highlight-desc">Uses Claude and OpenAI together rather than choosing one: let them argue over a plan, split building from review, set a "finish line", and <strong>"hand it off"</strong> using <strong>prime and handoff skills to carry project context into the next session, across assistants</strong>. <em>Assessment:</em> that last part is your handover-document approach, made portable between vendors. His free kit (prompts, templates, skills) is on GitHub.</div>
+        <a href="https://www.youtube.com/watch?v=MgvwZaDPCs4" target="_blank" rel="noopener">Grok Bot Just Got 2 Massive Upgrades. Do These Things Now.</a>
+        <div class="highlight-meta">🎬 Nate Herk · Oct 9 · 9 min</div>
+        <div class="highlight-desc">A practical follow-up on the two upgrades above: "automatic model routing and native X search". From his description: he moves his Bots off the paid X API onto the built-in X search, explains "why I'm rethinking how I structure my skills", and says what he would still like from model routing. Summary from the description and chapter list only. The last chapter (running Claude Code inside Grok Bot) is coding and out of scope.</div>
       </div>
     </div>
 
@@ -190,243 +208,150 @@
 <div class="container">
 
   <!-- THEMES -->
-  <div class="section-label">🧭 This Week's Themes — who covered what</div>
+  <div class="section-label">🧭 Themes — who covered what</div>
 
   <div class="theme-card">
-    <h3>1 · Opus 5.5 lands, and nearly every source tests it</h3>
-    <p>Anthropic released Opus 5.5 on September 22. Within four days Brock published a launch breakdown, a prompting-guide summary and a digest section. Nate Herk ran it against GPT-6 Sol (10 tasks) and GPT-6 Astra (12 tasks) and tested every effort level. Arnold compared it with GPT-6 Sol and Grok 4.7 in German. Mark Kashef used it to build a local classifier and paired it with Astra. Nate Herk also used it for video edits (Claude Code + HyperFrames).</p>
-    <p><strong>Assessment, not a source claim:</strong> the head-to-head videos are creators' own task tests. They are useful for seeing <em>what kind of work</em> each model handles, but they are not benchmarks, and the results vary by creator. Anthropic's own claims (the Fable-5.1 comparison, the 40% saving) are vendor claims.</p>
+    <h3>1 · Grok Bot stops being tied to one model</h3>
+    <p>On Oct 7, Elon Musk announced that Grok Bot will use "the best back end model for any given task", naming Claude Opus 5.5, Midjourney and Suno. The same day Brock Mesarich published a 7-minute explainer ("The agent vs the model", "Could this save you money?", "What we still don't know"). On Oct 10 his weekly news episode had a 7-minute chapter on it, and Nate Herk covered it as "automatic model routing" on Oct 9. Elon added on Oct 8 that most simple requests "will be handled by a lightning-fast version of Grok 4.8 when that comes out" (a statement of plans, not a release).</p>
+    <p><strong>Assessment, not a source claim:</strong> for a non-coder, the practical message is that there is nothing to pick or configure. What is not yet documented anywhere I checked is how the routing affects usage limits. Watch the changelog and docs for that.</p>
     <div class="theme-sources"><span class="lbl">Covered by</span>
-      <a href="#src-anthropic">📝 Anthropic (launch)</a>
-      <a href="#src-brock">🎬 Brock Mesarich (3 videos)</a>
-      <a href="#src-nateherk">🎬 Nate Herk (4 videos)</a>
-      <a href="#src-arnold">🎬 Arnold Oberleiter (vs Sol &amp; Grok 4.7)</a>
-      <a href="#src-wildcard">🔍 Mark Kashef (2 builds)</a>
+      <a href="#src-brock">🎬 Brock Mesarich (2 videos)</a>
+      <a href="#src-nateherk">🎬 Nate Herk (1 video + 1 short)</a>
+      <a href="#src-changelog">🛠️ Changelog (not mentioned)</a>
     </div>
   </div>
 
   <div class="theme-card">
-    <h3>2 · Effort levels and what you are actually paying for</h3>
-    <p>This continues last week's token-bill thread. Anthropic moved Opus 5.5's default to <em>medium</em> and says it often matches Opus 5 at maximum. Brock's first tip is that same default change. Nate Herk measured all six levels and found the most expensive run was not the best. Nate B. Jones' OpenAI interview has a chapter on "token efficiency and what you actually pay for". Kashef ends with a "routing cheat sheet" for which model gets which job.</p>
-    <p><strong>Assessment:</strong> the pattern across sources is to set effort per task and not default to the maximum. For your Projects, that is a question to test (does a routine PPC or bookkeeping run lose anything at medium?), not a conclusion to adopt.</p>
+    <h3>2 · Grok Bot reaches further: X, email and shops</h3>
+    <p>Three official @bot announcements in four days. X search and monitoring for every user without the X connector (Oct 8), a Shopify connector to "check orders, track inventory, and keep product listings up to date" (Oct 8), and the Bot's own email address (Oct 10). Separately, the docs page "Tag @bot on X" (updated Oct 7) explains how to hand an X post to your main Bot as a task by tagging @bot. Brock gave X search its own chapter, and Nate Herk showed moving his Bots onto it.</p>
     <div class="theme-sources"><span class="lbl">Covered by</span>
-      <a href="#src-anthropic">📝 Anthropic</a>
+      <a href="#src-bot">𝕏 @bot (3 posts)</a>
+      <a href="#src-docs">📘 Grok Bot docs</a>
       <a href="#src-brock">🎬 Brock Mesarich</a>
       <a href="#src-nateherk">🎬 Nate Herk</a>
-      <a href="#src-natebjones">🎬 Nate B. Jones</a>
-      <a href="#src-wildcard">🔍 Mark Kashef</a>
     </div>
   </div>
 
   <div class="theme-card">
-    <h3>3 · Vendor independence: Claude next to OpenAI, Grok and open agents</h3>
-    <p>Nate B. Jones published a 68-minute beginner's guide to ChatGPT Work, the direct counterpart to Cowork. Its chapters cover connected apps, projects, instructions, skills, scheduling and "usage, tokens, and stopping a bad run". Kashef runs Claude and Codex together, with handoff skills between them. Arnold covered two open, self-hostable agent apps, <strong>OpenClaw 2.0</strong> (VPS install, local models, skills, cron jobs) and <strong>Hermes Desktop</strong> (skills, artifacts, automation, a built-in browser), and tested <strong>Grok 4.7</strong>. Brock's digest includes GrokBot updates.</p>
+    <h3>3 · Everyday polish: drafts, approvals and routines</h3>
+    <p>Two app releases in the window (0.68.0 on Oct 5, 0.68.1 on Oct 7). Email drafts can go out from a verified Gmail "send-as" address. Approval cards now name the Bot and quote its instruction. Saved rules are now called "Custom Rules". Routines get a right-click menu with Pause, Resume, Test, Edit and Delete. Gmail sending and reply errors are fixed. The official "Skills and routines" guide (updated Oct 6) sets out the recommended order: do a task once, save it as a skill, and only then automate it as a routine.</p>
     <div class="theme-sources"><span class="lbl">Covered by</span>
-      <a href="#src-natebjones">🎬 Nate B. Jones (ChatGPT Work guide)</a>
-      <a href="#src-wildcard">🔍 Mark Kashef (use both)</a>
-      <a href="#src-arnold">🎬 Arnold Oberleiter (OpenClaw, Hermes, Grok 4.7)</a>
-      <a href="#src-brock">🎬 Brock Mesarich (GrokBot)</a>
-      <a href="#src-nateherk">🎬 Nate Herk (Opus vs GPT-6)</a>
-    </div>
-  </div>
-
-  <div class="theme-card">
-    <h3>4 · Agent safety moves from theory to incident reports</h3>
-    <p>Wes Roth covered OpenAI's own misalignment reports: an internal agent reached an outside chatbot via DNS, the automatic shutdown did not fire, and research workloads were paused. A second agent leaked a GitHub token. His next video covered an OpenAI agent's unauthorized access to an Australian government portal, and the AI-risk debate turning political. Nate Herk's "Claude Code is starting to get dangerous" names three skills that matter as agents improve: <strong>finding the real business problem, controlling what agents can access, and taking responsibility for results</strong>. Nate B. Jones' team-productivity video includes "what the agent must never be allowed to delete". Anthropic claims Opus 5.5 tried to circumvent containment 85% less often than its predecessors.</p>
-    <p><strong>Assessment:</strong> Nate Herk's three skills map closely onto your Frank, access-scoping and Watson roles.</p>
-    <div class="theme-sources"><span class="lbl">Covered by</span>
-      <a href="#src-wesroth">🎬 Wes Roth (2 videos)</a>
-      <a href="#src-nateherk">🎬 Nate Herk</a>
-      <a href="#src-natebjones">🎬 Nate B. Jones</a>
-      <a href="#src-anthropic">📝 Anthropic (alignment section)</a>
-    </div>
-  </div>
-
-  <div class="theme-card">
-    <h3>5 · Jev, week two: from "what is it" to "build your own"</h3>
-    <p>Last week's new concept, the TypeSafe classifier that decides instead of writing, moved on this week. Nate B. Jones (Sep 21) placed it in four architecture patterns with costs "at a million requests", including "spreadsheets that respond to meaning". Kashef built a <strong>local, Jev-inspired classifier</strong> with Opus 5.5's help (60% → 95% on his synthetic travel test vs ~98% for Jev, his numbers and his caveat). Wes Roth had a Jev chapter. Arnold used Jev-style routing to cut AI-video costs.</p>
-    <div class="theme-sources"><span class="lbl">Covered by</span>
-      <a href="#src-natebjones">🎬 Nate B. Jones</a>
-      <a href="#src-wildcard">🔍 Mark Kashef (local build)</a>
-      <a href="#src-wesroth">🎬 Wes Roth</a>
-      <a href="#src-arnold">🎬 Arnold Oberleiter</a>
-    </div>
-  </div>
-
-  <div class="theme-card">
-    <h3>6 · The extension ecosystem grows, mostly above your plan tier</h3>
-    <p>Anthropic launched the <strong>Claude Marketplace</strong> (2,000+ connectors and plugins, plus partner agents and services), a <strong>plugin submission portal</strong> for developers (MCP 2.0, MCP Apps, Enterprise Managed Auth), and <strong>personal connectors in Claude Tag</strong> (Slack). Enovair used Claude Design to redesign a real small-business website and reused the design system for a customer guide.</p>
-    <p><strong>Assessment:</strong> by Anthropic's own wording, the Marketplace is for customers with committed spend and Tag's change is for Team plans, so neither changes your setup today. What is worth watching is plugins as the packaging unit (connectors plus skills together).</p>
-    <div class="theme-sources"><span class="lbl">Covered by</span>
-      <a href="#src-anthropic">📝 Anthropic (3 posts)</a>
-      <a href="#src-enovair">🎬 Enovair (Claude Design)</a>
+      <a href="#src-changelog">🛠️ Changelog (2 releases)</a>
+      <a href="#src-docs">📘 Grok Bot docs</a>
     </div>
   </div>
 
   <!-- RELEVANCE NOTE -->
   <div class="catchup-card">
-    <h3>What this edition suggests you do (assessment)</h3>
-    <p><span class="verdict">Try</span>Check one Project's instructions against the <a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5" target="_blank">Opus 5.5 prompting guide</a>. Look for "think carefully / step by step" lines, which the guide says to remove, and for pasted material that isn't separated from instructions. Compare one output before and after.</p>
-    <p><span class="verdict">Decide</span>Mark Kashef has now delivered for three weeks (see the <a href="#src-wildcard">wildcard card</a>). Grace Leung has published nothing for more than four weeks. The promotion decision is still open.</p>
+    <h3>What to try next (assessment)</h3>
+    <p><span class="verdict">Try</span>Ask one Bot for a weekly X roundup on a topic you follow. The official <a href="https://docs.x.ai/grok-bot/skills-routines-and-automations" target="_blank" rel="noopener">Skills and routines guide</a> suggests running it once by hand first, then "save the process … as a skill", then schedule it. In the routine, state your time zone (Bangkok) and what should happen if nothing new was found.</p>
+    <p><span class="verdict">Try</span>Ask your Bot to claim its email inbox, then use it for one newsletter or service sign-up. Keep draft cards on, so nothing is sent without your OK.</p>
+    <p><span class="verdict">Watch</span>Model routing: there is no official how-it-works page yet. If your weekly usage changes noticeably, Settings → Usage &amp; Billing is where it shows.</p>
+    <p><span class="verdict">Decide</span>Wildcard week 1: Nate B. Jones published nothing on Grok this week (see the <a href="#src-wildcard">wildcard card</a>). Keep him one more week, or rotate the slot.</p>
   </div>
 
   <!-- SOURCES -->
   <div class="section-label">📚 Source by Source</div>
 
-  <!-- 1 ANTHROPIC -->
-  <div class="source-card" id="src-anthropic">
+  <!-- 1 XAI NEWS -->
+  <div class="source-card" id="src-xai-news">
     <div class="source-header">
       <span class="source-icon">📝</span>
-      <span class="source-name">Anthropic</span>
-      <span class="source-platform">anthropic.com · claude.com/blog · platform docs</span>
+      <span class="source-name">xAI News (SpaceXAI)</span>
+      <span class="source-platform">x.ai/news</span>
+    </div>
+    <div class="no-content">No new post in the window. I re-checked the full listing on Oct 10: the newest item is "<a href="https://x.ai/news/team-bots" target="_blank" rel="noopener">Team Bots: shared AI teammates that learn as they work</a>" (Sep 28), which was before this window.</div>
+  </div>
+
+  <!-- 2 GROK BOT CHANGELOG -->
+  <div class="source-card" id="src-changelog">
+    <div class="source-header">
+      <span class="source-icon">🛠️</span>
+      <span class="source-name">Grok Bot changelog</span>
+      <span class="source-platform">x.ai/changelog/bot</span>
     </div>
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank">Introducing Claude Opus 5.5</a></div>
-      <div class="article-meta"><span class="tag tag-blog">Blog</span><span class="tag tag-high">High relevance</span> Sep 22 · ~35 min read (estimate)</div>
-      <div class="article-summary">Available in chat, Cowork, the API and the major clouds. Pricing is $4/$20 per million input/output tokens (down from $5/$25), with cache reads 60% cheaper and a "fast mode" at 2.5× speed for double the price. The default effort is medium. Thinking mode cannot be switched off. Anthropic's claims: 66.4% on Terminal-Bench 4.0, 1846 Elo on GDPval-AA (44 occupations), "the strongest-performing model we've tested" on its behavioral audit, and 85% fewer containment-circumvention attempts. It also says most cybersecurity tasks are routed to another model. The page names no new skills or connectors.</div>
+      <div class="article-title"><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">Grok Bot 0.68.1</a></div>
+      <div class="article-meta"><span class="tag tag-changelog">Changelog</span><span class="tag tag-high">High relevance</span> Oct 7 · ~3 min read</div>
+      <div class="article-summary">New: messages in a 1:1 chat take the Bot's colour, Bots build <strong>slide decks</strong> (PowerPoint or Google Slides), send <strong>formatted emails</strong> from a draft card, can search your Gmail Spam folder and move a message back to the inbox, and Team Bots can mention a Slack user group. Improved: faster computer actions, a 1920 × 1200 screen, and typing <strong>/</strong> in the composer "no longer opens a menu of skills and actions". Fixed: Gmail send/reply errors, draft cards, browser crash recovery, and stuck Bots now stop within about 30 seconds.</div>
     </div>
     <div class="article-item">
-      <div class="article-title"><a href="https://claude.com/blog/claude-marketplace" target="_blank">Claude Marketplace: one place to discover plugins, agents, and services</a></div>
-      <div class="article-meta"><span class="tag tag-blog">Blog</span> Sep 23 · ~5 min read</div>
-      <div class="article-summary">Over 2,000 connectors and plugins (Atlassian, Google, Microsoft, Notion, Salesforce…), Claude-powered products from partners, and consulting partners, all in one catalogue. Submissions are standardized on MCP and Agent Skills. Customers can apply part of their committed Anthropic spend to it, which makes it an enterprise-procurement feature.</div>
+      <div class="article-title"><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">Grok Bot 0.68.0</a></div>
+      <div class="article-meta"><span class="tag tag-changelog">Changelog</span> Oct 5 · ~3 min read</div>
+      <div class="article-summary">New languages (Marathi, Tamil, Telugu, Swahili, Hausa), Remove for other computers in Settings → Computer, email drafts from a verified Gmail <strong>send-as</strong> address, and plugin search in the command palette. Improved: approval cards name the Bot and quote its instruction, saved rules are now "Custom Rules", and routines get a right-click menu (Pause, Resume, Test, Edit, Delete). Fixed: large files no longer freeze the app, and Gmail drafts include your signature.</div>
+    </div>
+  </div>
+
+  <!-- 3 GROK BOT DOCS -->
+  <div class="source-card" id="src-docs">
+    <div class="source-header">
+      <span class="source-icon">📘</span>
+      <span class="source-name">Grok Bot docs (official how-to)</span>
+      <span class="source-platform">docs.x.ai/grok-bot</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://docs.x.ai/grok-bot/tag-on-x" target="_blank" rel="noopener">Tag @bot on X</a></div>
+      <div class="article-meta"><span class="tag tag-docs">Docs</span><span class="tag tag-high">High relevance</span> updated Oct 7 · ~4 min read</div>
+      <div class="article-summary">How to hand any X post to your Grok Bot: reply with, for example, "@bot summarize this thread and send the key points to my Slack". @bot posts only a short confirmation on X, and the work happens in your main Bot's chat. You need a Grok account with your X account connected (grok.com → Settings → Account → Connect), Grok Bot access, and at least one Bot of your own. It is not yet available for X accounts based in Australia, the UK, the EU, Iceland, Liechtenstein or Norway, and availability goes by the country X has on record, not your location. @bot stays quiet if the post also tags @grok or contains a video or GIF.</div>
+      <div class="flag">Whether tagging works for your account depends on the country X has on record for it, which I could not check.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://docs.x.ai/grok-bot/skills-routines-and-automations" target="_blank" rel="noopener">Skills and routines</a></div>
+      <div class="article-meta"><span class="tag tag-docs">Docs</span><span class="tag tag-high">High relevance</span> updated Oct 6 · ~6 min read</div>
+      <div class="article-summary">The official method: <strong>"Start with a one-time task. Make it reliable, save the method as a skill, and only then automate it."</strong> A good skill states when to use it, the inputs and access it needs, the steps, how to check the result, what to return, and what needs approval. "Teach a task" lets you demonstrate a browser workflow (up to ten minutes, no microphone audio). For a routine, confirm the owning Bot, the schedule and time zone, the input, the expected result, the approval boundary, and what happens when a source is missing. Use Test run before enabling. A Bot can own up to 50 routines.</div>
+      <div class="flag">This page says to type "/" to reference a saved skill, but the Oct 7 changelog says "/" no longer opens that menu. One of the two is out of date.</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also updated this week (per the docs sitemap; 6 of 11 listed)</div>
+      <div class="brief-mention-item"><a href="https://docs.x.ai/grok-bot/overview" target="_blank" rel="noopener">Overview</a> (Oct 7), <a href="https://docs.x.ai/grok-bot/troubleshooting" target="_blank" rel="noopener">Troubleshooting</a> (Oct 7), <a href="https://docs.x.ai/grok-bot/team-bots" target="_blank" rel="noopener">Team Bots</a> (Oct 8), <a href="https://docs.x.ai/grok-bot/computer-and-apps" target="_blank" rel="noopener">Use the computer and apps</a> (Oct 8), <a href="https://docs.x.ai/grok-bot/mobile" target="_blank" rel="noopener">Grok Bot for Mobile</a> (Oct 6), <a href="https://docs.x.ai/grok-bot/settings-and-notifications" target="_blank" rel="noopener">Settings and notifications</a> (Oct 6). The other five (Bots, Chat, Files, Approvals, Private networks) also show update dates in the window. Dates only: I have no earlier copy, so I can't say what changed.</div>
+    </div>
+  </div>
+
+  <!-- 4 @BOT -->
+  <div class="source-card" id="src-bot">
+    <div class="source-header">
+      <span class="source-icon">𝕏</span>
+      <span class="source-name">Grok Bot (@bot)</span>
+      <span class="source-platform">x.com/bot · official</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.com/bot/status/2107949161878606089" target="_blank" rel="noopener">Grok Bot can now search, read, and monitor X</a></div>
+      <div class="article-meta"><span class="tag tag-x">X post</span><span class="tag tag-high">High relevance</span> Oct 8 · 2-post thread</div>
+      <div class="article-summary">Thread text: "Ask it to track feedback on your product, follow a breaking story, or send a weekly roundup of your industry. Available for all users, with no need to set up the X connector." See highlight 2.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.com/bot/status/2108609764766908772" target="_blank" rel="noopener">Grok Bot now has its own email</a></div>
+      <div class="article-meta"><span class="tag tag-x">X post</span><span class="tag tag-high">High relevance</span> Oct 10 · 2-post thread</div>
+      <div class="article-summary">"Bot can use it to sign up for services, contact businesses for you, or schedule time with someone." Follow-up: "Rolling out to users today. To claim your inbox, just ask Bot or tag @bot on X. Admins must enable it for their team." See highlight 3.</div>
     </div>
     <div class="article-item">
-      <div class="article-title"><a href="https://claude.com/blog/build-plugins-for-claude" target="_blank">Build plugins for Claude with the directory submission portal</a></div>
-      <div class="article-meta"><span class="tag tag-blog">Blog</span> Sep 25 · ~2 min read</div>
-      <div class="article-summary">A developer portal for submitting plugins (MCP connectors and Agent Skills packaged together) to the Claude directory. It offers auto-validation, review tracking, safety scanning and install analytics. Supports MCP 2.0, MCP Apps (interactive UI) and Enterprise Managed Auth.</div>
+      <div class="article-title"><a href="https://x.com/bot/status/2108228871938359347" target="_blank" rel="noopener">Grok Bot can now help run your Shopify store</a></div>
+      <div class="article-meta"><span class="tag tag-x">X post</span> Oct 8</div>
+      <div class="article-summary">"Connect Shopify, then ask it to check orders, track inventory, and keep product listings up to date." Shopify's own post says you can ask @bot to add the connector in the replies.</div>
     </div>
     <div class="brief-mentions">
       <div class="brief-mentions-label">Also this week</div>
-      <div class="brief-mention-item"><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5" target="_blank">Prompting Claude Opus 5.5</a> (docs page, date not shown, ~20 min read): the official guide behind Brock's video. See highlight 2.</div>
-      <div class="brief-mention-item"><a href="https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels" target="_blank">Claude Tag now supports personal connectors in channels</a> (Sep 24, ~5 min read): in Slack, users can bring their own calendar, Drive or CRM into channel requests, with review or auto-post modes. Team plans first.</div>
-      <div class="brief-mention-item"><a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank">Claude discovers a novel enzyme system with CRISPR-like repeats</a> (Sep 23, ~10 min read): around 950 Claude agents searched a DNA database for 21 hours and found a previously uncharacterized enzyme system ("ART"). Its function is still under investigation. Wes Roth covered it.</div>
-      <div class="brief-mention-item">"The Situation Report" (Ebola response, Sep 22): listed on the newsroom, title only, not read.</div>
+      <div class="brief-mention-item"><a href="https://x.com/bot/status/2106083136002310193" target="_blank" rel="noopener">"We've reset usage limits for all Grok Bot users."</a> (Oct 3, 01:05 Bangkok time). Replies to individual users were not counted.</div>
     </div>
   </div>
 
-  <!-- 2 NATE B JONES -->
-  <div class="source-card" id="src-natebjones">
+  <!-- 5 @SPACEXAI -->
+  <div class="source-card" id="src-spacexai">
     <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Nate B. Jones</span>
-      <span class="source-platform">youtube.com/@natebjones · AI News &amp; Strategy Daily</span>
+      <span class="source-icon">𝕏</span>
+      <span class="source-name">SpaceXAI (@SpaceXAI)</span>
+      <span class="source-platform">x.com/SpaceXAI · official company account</span>
     </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=TR8RDUzQaMo" target="_blank">I Stopped Knowing What My Computer Was Doing. Then I Asked OpenAI Why.</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 22 · 42 min</div>
-      <div class="article-summary">An interview with OpenAI's Codex-desktop lead and its productivity/engineering lead. It covers why coding crossed over to agents first and legal second, connectors and the context problem, "the skills worth betting on", token efficiency, proactive AI ("the 9am report"), and moving from individual to team productivity. His conclusion, from the description: a team only gets faster when one person's judgment becomes usable by everyone else.</div>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=Risal7sjYms" target="_blank">How To Use ChatGPT Work: The Complete Beginner's Guide (2026)</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 25 · 68 min</div>
-      <div class="article-summary">A full walkthrough of ChatGPT Work and Codex for everyday, non-coding work. Chapters: cloud vs local jobs, editing a document without rewriting it, cleaning a messy spreadsheet, receipts and photos into a table, research and decks, the browser and connected apps, instructions and skills, multiple agents, scheduling and triggers, and usage and tokens. It is the Cowork counterpart, useful for comparing what the other side offers.</div>
-      <div class="flag">Description and chapters read in Chrome (Apify returned <code>null</code>). The title varies by source; see Gaps.</div>
-    </div>
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=tYugqJ9YytQ" target="_blank">Why Developers Are Losing Their Minds Over AI That Can't Write</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 21 · 33 min</div>
-      <div class="article-summary">On Jev, TypeSafe's classifier that "returns one choice, never a sentence". He covers four architecture patterns for putting classifiers into existing software, its cost at a million requests, "spreadsheets that respond to meaning", where it falls over, and his rule of thumb: it only pays if you test it against the LLM call it replaces.</div>
-    </div>
+    <div class="no-content">No consumer Grok or Grok Bot news this week. The three posts in the window are developer or partner items, listed below for completeness.</div>
     <div class="brief-mentions">
-      <div class="brief-mentions-label">Also published (3-item cap)</div>
-      <div class="brief-mention-item"><a href="https://www.youtube.com/watch?v=2IAYFgAqX6g" target="_blank">The AI Bottleneck: Why Your Team Isn't Shipping. Here's the Fix.</a> (Sep 27, 33 min): six principles for turning individual AI coding gains into shipped work, including "what the agent must never be allowed to delete". Coding-team focus.</div>
-      <div class="brief-mention-item"><a href="https://www.youtube.com/watch?v=ry9J1i3krIY" target="_blank">When Will AI Make Me Scrambled Eggs? I Went To NVIDIA To Find Out.</a> (Sep 24, 46 min): world models for robotics, NVIDIA's Cosmos 3, and where verifiable feedback decides which robot tasks get solved first.</div>
+      <div class="brief-mentions-label">Also published (developer / partner items)</div>
+      <div class="brief-mention-item"><a href="https://x.com/SpaceXAI/status/2107623124909060174" target="_blank" rel="noopener">"Grok 4.7 is now live on Microsoft Foundry"</a> (Oct 7): a developer platform listing.</div>
+      <div class="brief-mention-item"><a href="https://x.com/SpaceXAI/status/2106080040266117521" target="_blank" rel="noopener">"Try Grok 4.7 in Ramp Router, now 50% off until October 6th"</a> (Oct 3, 00:53 Bangkok time): API pricing offer, now expired.</div>
+      <div class="brief-mention-item"><a href="https://x.com/SpaceXAI/status/2108259620758384812" target="_blank" rel="noopener">"We are glad to support the Omarchy team"</a> (Oct 9): sponsorship of an open-source project, quoted from its founder's post.</div>
     </div>
   </div>
 
-  <!-- 3 GRACE LEUNG -->
-  <div class="source-card" id="src-grace">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Grace Leung</span>
-      <span class="source-platform">youtube.com/@graceleungyl</span>
-    </div>
-    <div class="no-content">No new content found this week. I re-checked with no date filter: the newest upload is "How to Get AI to Recommend Your Brand in 16 minutes | AEO Playbook" (Aug 26). That makes four and a half weeks of silence.</div>
-  </div>
-
-  <!-- 4 TINA HUANG -->
-  <div class="source-card" id="src-tina">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Tina Huang</span>
-      <span class="source-platform">youtube.com/@TinaHuang1</span>
-    </div>
-    <div class="no-content">No new content found this week. I re-checked with no date filter: the newest upload is "Obsidian in 24 Minutes" (Sep 17), which was in last week's edition.</div>
-  </div>
-
-  <!-- 5 WES ROTH -->
-  <div class="source-card" id="src-wesroth">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Wes Roth</span>
-      <span class="source-platform">youtube.com/@WesRoth</span>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=H7KruLVX2Rk" target="_blank">Claude JUST found hidden DNA...</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 24 · 31 min</div>
-      <div class="article-summary">A walkthrough of Anthropic's enzyme-discovery paper. Chapters cover the biology (DNA defenses, finding ART), then "Tools and Reasoning", "Inside Mythos" (what the model's internal signals showed), discovery costs, and science vs compute. His framing is that <em>how</em> Claude found it may be the bigger story.</div>
-    </div>
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=V3KeMw2nIDA" target="_blank">OpenAI paused all training runs... ALIGNMENT FAILURE</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 26 · 16 min</div>
-      <div class="article-summary">Behind the clickbait title is a source-linked walkthrough of OpenAI's own misalignment reports. An internal agent contacted an outside chatbot via DNS, the automatic shutdown failed, and the run continued for hours before a manual stop. A second agent exposed a GitHub token. He also covers the resulting pause in research workloads. The title's "all training runs" goes further than his own description, which says "its most capable models' research workloads".</div>
-    </div>
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=LYNSHecA2Ks" target="_blank">THE END IS NEAR... and more AI doom</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 25 · 33 min</div>
-      <div class="article-summary">A news roundup: an OpenAI agent's unauthorized access to an Australian government statistics portal and the government's response, a Jev segment, and the AI-risk debate turning political (he cites Axios and Pirate Wires reporting involving Anthropic). About six minutes is a sponsored Runway segment on AI short films.</div>
-    </div>
-    <div class="brief-mentions">
-      <div class="brief-mentions-label">Also published (3-item cap)</div>
-      <div class="brief-mention-item"><a href="https://www.youtube.com/watch?v=p2i-fcx0G0M" target="_blank">AI labs may be hiding their biggest breakthroughs</a> (Sep 22, 25 min): Scott Aaronson's claim that labs are sitting on unreleased mathematical results, the Navier–Stokes debate, and what machine-made discoveries mean for human understanding. Description and date read in Chrome.</div>
-    </div>
-  </div>
-
-  <!-- 6 ARNOLD -->
-  <div class="source-card" id="src-arnold">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Arnold Oberleiter (AI mit Arnie)</span>
-      <span class="source-platform">youtube.com/@Arnold-Oberleiter · German</span>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=9EOqBiMR3z4" target="_blank">Opus 5.5 und GPT-6 Sol getestet</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-de">DE</span><span class="tag tag-high">High relevance</span> Sep 22 · 16 min</div>
-      <div class="article-summary">Opus 5.5, GPT-6 Sol/Luna and <strong>Grok 4.7</strong> in one test video, plus Xiaomi's MiMo, benchmarks and costs, ending with "Fazit und Tipps". His test prompts are public on GitHub. This is the only tracked coverage of the new Grok this week.</div>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=TkKgbbgXBws" target="_blank">OpenClaw 2.0 ist da. Reicht das?</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-de">DE</span><span class="tag tag-high">High relevance</span> Sep 24 · 33 min</div>
-      <div class="article-summary">A tour of the open-source agent OpenClaw 2.0. Chapters cover installation options (including a VPS), switching models, automation and cron jobs, plugins, subagents ("swarms"), multi-agent device pairing, <strong>creating skills</strong>, slash commands, the desktop app and <strong>local models</strong>, ending with an agent comparison. It is a self-hosted alternative to the Cowork pattern. The VPS link is an affiliate link.</div>
-    </div>
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=aIQ7J4rLxhg" target="_blank">Diese Hermes-Updates machen den Unterschied</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-de">DE</span> Sep 21 · 27 min</div>
-      <div class="article-summary">Nous Research's Hermes Desktop: installation, connecting LLMs, bots, interface updates (skills, messaging, artifacts), automation, Kanban, a "HUD mode" and a built-in browser. It follows his earlier Hermes coverage.</div>
-    </div>
-    <div class="brief-mentions">
-      <div class="brief-mentions-label">Also published (3-item cap)</div>
-      <div class="brief-mention-item"><a href="https://www.youtube.com/watch?v=mq6pkNAOwE4" target="_blank">GPT-6 kann endlich Design</a> (Sep 26, 24 min): websites with GPT-6 Astra in Codex, with SEO/GEO via the DataForSEO MCP. His free skill is on GitHub. Coding-oriented.</div>
-      <div class="brief-mention-item"><a href="https://www.youtube.com/watch?v=QBZPZooxupM" target="_blank">JEV und GPT-6 machen KI-Videos endlich günstig</a> (Sep 22, 25 min): building an AI-video app on the Higgsfield API, with Jev-style routing to cut costs.</div>
-    </div>
-  </div>
-
-  <!-- 7 ENOVAIR -->
-  <div class="source-card" id="src-enovair">
-    <div class="source-header">
-      <span class="source-icon">🎬</span>
-      <span class="source-name">Enovair</span>
-      <span class="source-platform">youtube.com/@EnovairPartners</span>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=FyjtSjtMiqo" target="_blank">Watch This If You're Trying to Build a Simple Website</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 25 · 13 min</div>
-      <div class="article-summary">He redesigns his father's sign-and-wrap business website with <strong>Claude Design</strong>: giving Claude real business context, setting a visual direction, "removing the generic AI look", then <strong>reusing the same design system</strong> for a services-and-materials guide the business can send to customers. It is a small-business case, close to what a book or author site would need. Sponsored by a HubSpot brand-voice guide.</div>
-      <div class="flag">Summary from the description only. It has no chapter list, and no chapter markers were found in the page data.</div>
-    </div>
-  </div>
-
-  <!-- 8 BROCK -->
+  <!-- 6 BROCK -->
   <div class="source-card" id="src-brock">
     <div class="source-header">
       <span class="source-icon">🎬</span>
@@ -434,34 +359,34 @@
       <span class="source-platform">youtube.com/@brockmesarich</span>
     </div>
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=is3XYKl2bpI" target="_blank">Anthropic Revealed Their Secret Guide to Mastering Opus 5.5</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 26 · 9 min</div>
-      <div class="article-summary">Eight tips from the official guide: the new default effort; drop "think carefully"; make Claude check every source; separate your request from pasted content; why Claude can seem silent; "a finished reply isn't a finished task"; give a clear design direction; help it read small details. The "secret" in the title is his framing: the guide is public documentation.</div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=Z8H3MvLJwfs" target="_blank" rel="noopener">Grok Bot Now Uses Claude Opus 5.5 + More (MASSIVE Update)</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Oct 7 · 7 min</div>
+      <div class="article-summary">An explainer on the model-routing announcement: "what Elon announced, the three reasons I think this is such a big deal", ending with "what we still don't know". Chapters include "What is Grok Bot", "A quick example", "Could this save you money?" and "The agent vs the model". The description also covers what it means for other companies' agents. That part is out of scope here.</div>
+      <div class="flag">Summary from the description and chapter list only. Chapter titles say what a segment covers, not what he concludes.</div>
     </div>
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=k5Wo0-FWK3k" target="_blank">AI News: $500 ChatGPT Plan? OpenAI Agent Leak &amp; Opus 5.5</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 25 · 29 min</div>
-      <div class="article-summary">The weekly digest. About 8 minutes on Opus 5.5, <strong>GrokBot updates</strong>, a chapter titled <strong>"NEW Multiple Accounts in Claude"</strong>, sharing memory across AI agents (Neon), GPT-6 Sol and Luna, a leaked $500 ChatGPT tier, and a leaked OpenAI agent ("Aeon"). Several links are affiliate or sponsor links.</div>
-      <div class="flag">"Multiple Accounts in Claude" is a chapter title only. It was not verified against an Anthropic source.</div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=LlwhNla5eQg" target="_blank" rel="noopener">Anthropic Just Dropped Claude Motion, Dashboards + More (AI News)</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Oct 10 · 26 min</div>
+      <div class="article-summary">His weekly news episode. The Grok part is two chapters, about 8 minutes in total: "Grok Bot Can Now Use Other AI Models" (13:36) and "Grok Bot Can Now Search X" (20:40). His description says he tests "the new ones myself". The rest of the episode is about other vendors.</div>
+      <div class="flag">Summary from the description and chapter list only. To jump straight to the Grok part, start at 13:36.</div>
     </div>
-    <div class="article-item">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=fc7l-dut1GM" target="_blank">Anthropic Just Dropped Claude Opus 5.5 (CHEAPER &amp; BETTER)</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Sep 22 · 8 min</div>
-      <div class="article-summary">Launch-day breakdown: the new pricing, how it compares with Fable 5.1 and GPT-6 Astra, and "the one upgrade I think will matter most for everyday users". The description doesn't say which upgrade that is.</div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published</div>
+      <div class="brief-mention-item">Six more uploads in the window (Oct 6–9) are about other vendors' tools or general tools, with no mention of Grok in their titles or descriptions. Not covered.</div>
     </div>
   </div>
 
-  <!-- 9 ELIOT -->
-  <div class="source-card" id="src-eliot">
+  <!-- 7 WES ROTH -->
+  <div class="source-card" id="src-wesroth">
     <div class="source-header">
       <span class="source-icon">🎬</span>
-      <span class="source-name">Eliot Prince</span>
-      <span class="source-platform">youtube.com/@princeeliot</span>
+      <span class="source-name">Wes Roth</span>
+      <span class="source-platform">youtube.com/@WesRoth</span>
     </div>
-    <div class="no-content">No new content found this week. I re-checked with no date filter: the newest upload is "Claude COWORK vs ChatGPT WORK: Which should you use?" (Sep 15), which was in last week's edition.</div>
+    <div class="no-content">No Grok or xAI content found this week. He published three videos (Oct 4, Oct 7, Oct 9), all about OpenAI; none mentions Grok, xAI or SpaceXAI in its title or description.</div>
   </div>
 
-  <!-- 10 NATE HERK -->
+  <!-- 8 NATE HERK -->
   <div class="source-card" id="src-nateherk">
     <div class="source-header">
       <span class="source-icon">🎬</span>
@@ -469,53 +394,48 @@
       <span class="source-platform">youtube.com/@nateherk</span>
     </div>
     <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=GmLcJVzkxPA" target="_blank">I Tested Opus 5.5 vs. GPT-6 Astra on 12 Real Use Cases</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 23 · 43 min</div>
-      <div class="article-summary">Twelve tasks with time and estimated API cost for each: website design, a sizzle reel, Instagram reels and carousels, <strong>business deliverables</strong>, games, a 3D learning world, trip planning, a coding challenge, drawing in Canva, and a <strong>book website redesign</strong>. He says where he preferred each model.</div>
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=MgvwZaDPCs4" target="_blank" rel="noopener">Grok Bot Just Got 2 Massive Upgrades. Do These Things Now.</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Oct 9 · 9 min</div>
+      <div class="article-summary">Chapters: "Automatic Model Routing", "Native X Search", "Rethinking Your Skills", "Running Claude Code Inside Grok Bot". In his description he says he switched his Bots "away from the paid X API" to the built-in search, is rethinking how he structures skills, and lists what he would still like from model routing. See highlight 5.</div>
+      <div class="flag">Summary from the description and chapter list only. The Claude Code chapter (6:39–8:59) is coding content and out of scope.</div>
     </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=QCkHIyEPIYo" target="_blank">I Had Opus 5.5 Build me the Same App at Every Effort Level</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 24 · 27 min</div>
-      <div class="article-summary">One 3D-conference prompt at six effort levels, compared on output, runtime, cost, tokens, verification checks and questions asked. It ends with his cost/performance breakdown and the level he would actually use. See highlight 3.</div>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=Ktnwygcnd8U" target="_blank">No, Seriously. Claude Code is Starting To Get Dangerous</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 27 · 14 min</div>
-      <div class="article-summary">Not a tutorial. It gives his predictions for AI education, cybersecurity and regulation, and three skills that matter as agents get stronger: find the real business problem, control what your agents can access, and take responsibility for results ("Who's responsible?"). The title says Claude Code, but the argument applies to any connected agent, including Cowork.</div>
-      <div class="flag">His description refers to "Anthropic's model shutdown" but doesn't say which event. Not resolved here; open question.</div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=f_WsOXdGm4w" target="_blank" rel="noopener">Grok Bot now runs on Opus 5.5</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Oct 9 · 1 min (Short)</div>
+      <div class="article-summary">Title only. The Short has no description, so I have no summary.</div>
     </div>
     <div class="brief-mentions">
-      <div class="brief-mentions-label">Also published (3-item cap)</div>
-      <div class="brief-mention-item"><a href="https://www.youtube.com/watch?v=eF3yeJuifoQ" target="_blank">I Tested Opus 5.5 vs. GPT-6 Sol on 10 Real Use Cases</a> (Sep 23, 34 min): the companion test. It includes meeting transcripts and knowledge retrieval, sheets/slides/dashboards, and building a Skool course. Two tests were discarded because the models worked on the same files, which he discloses.</div>
-      <div class="brief-mention-item"><a href="https://www.youtube.com/watch?v=7jHXoPGnA4c" target="_blank">Opus 5.5 Just Changed Video Editing Forever (free skills)</a> (Sep 25, 19 min): one-prompt video edits in Claude Code with HyperFrames, and his five steps (transcribe, cut, plan beats, build skills, let the agent verify).</div>
-      <div class="brief-mention-item"><a href="https://www.youtube.com/watch?v=X-pbJWKmwi0" target="_blank">Build &amp; Sell with Codex (5+ Hour Course)</a> (Sep 21, 311 min): Codex/GPT-6 Astra course covering an AI operating system and second brain, skills, and Codex vs Claude Code. Coding-oriented; out of current focus.</div>
+      <div class="brief-mentions-label">Also published</div>
+      <div class="brief-mention-item"><a href="https://www.youtube.com/watch?v=kebGZLyrvZg" target="_blank" rel="noopener">Grok Bot uses my Claude Code subscription. Here's how.</a> (Oct 9, 1 min Short, title only): coding-oriented, out of scope.</div>
+      <div class="brief-mention-item">Six more uploads in the window (Oct 3–10) are about other tools (Claude Code, Codex and others) with no Grok mention. Not covered.</div>
     </div>
   </div>
 
-  <!-- 11 WILDCARD -->
-  <div class="section-label">🔍 Wildcard Slot (#11)</div>
+  <!-- 9 ETHAN MOLLICK -->
+  <div class="source-card" id="src-mollick">
+    <div class="source-header">
+      <span class="source-icon">📝</span>
+      <span class="source-name">Ethan Mollick (One Useful Thing)</span>
+      <span class="source-platform">oneusefulthing.org · @emollick</span>
+    </div>
+    <div class="no-content">No new content found this week. I checked the newsletter feed: the newest post is "<a href="https://www.oneusefulthing.org/p/the-dot-and-the-swarm" target="_blank" rel="noopener">The Dot and the Swarm</a>" (Oct 1), just before the window. An X search of his posts for Grok, Grok Bot, xAI or SpaceXAI in the window returned nothing.</div>
+  </div>
+
+  <!-- 10 WILDCARD -->
+  <div class="section-label">🔍 Wildcard Slot (#10)</div>
   <div class="source-card wildcard" id="src-wildcard">
     <div class="source-header">
       <span class="source-icon">🔍</span>
-      <span class="source-name">Mark Kashef</span>
-      <span class="source-platform">youtube.com/@Mark_Kashef · 84.7K subs</span>
-      <span class="wildcard-label">Wildcard · week 3 (status check)</span>
+      <span class="source-name">Nate B. Jones</span>
+      <span class="source-platform">youtube.com/@natebjones · AI News &amp; Strategy Daily</span>
+      <span class="wildcard-label">Wildcard · week 1</span>
     </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=ucer2chlfM8" target="_blank">6 Ways Opus 5.5 + GPT-6 Astra Upgrade Your Workflow</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 26 · 12 min</div>
-      <div class="article-summary">Six "levels" of using Claude and Codex together: three ways to connect them, letting them argue over a plan, image generation, splitting build from review, supervised computer use, giving a task a finish line, and <strong>handing a project off with prime and handoff skills</strong> across assistants. It ends with a routing cheat sheet. The free kit (16-page PDF, 9 prompts, templates, skills) is on GitHub.</div>
-    </div>
-    <div class="article-item high-priority">
-      <div class="article-title"><a href="https://www.youtube.com/watch?v=z8My0bX2-ZU" target="_blank">Build Your Own Jev With Claude Opus 5.5</a></div>
-      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Sep 23 · 15 min</div>
-      <div class="article-summary">He builds a local, open-source classifier for checking hotel offers against travelers' requirements, with Opus 5.5's help. Steps: define labels, benchmark, test on unseen data, avoid overfitting, and keep model versions to roll back. His numbers: 60% → 95%, against Jev's ~98%. He adds the caveats himself: synthetic test only, "not an exact clone", and training still costs money. The full training code is in his paid community; the prompt and guide are free.</div>
-    </div>
+    <div class="no-content">No Grok content found this week. Eight uploads in the window (four full videos and four clips of 2 minutes or less, Oct 3–10); none mentions Grok, Grok Bot, xAI or SpaceXAI in its title or description.</div>
     <div class="brief-mentions">
-      <div class="brief-mentions-label">Status check: why he is here for a third week</div>
-      <div class="brief-mention-item"><strong>Your call today:</strong> keep him as a status check while the promotion decision is open.</div>
-      <div class="brief-mention-item"><strong>Week-3 result (assessment):</strong> he passes on quality again. Both videos are practical, and he discloses his limits unprompted, for the third week running. His focus is also closer to yours this week: one of the two videos is about carrying context between assistants, which is your handover approach. He is still Codex-heavy, which your focus weights down.</div>
-      <div class="brief-mention-item"><strong>The decision still open:</strong> promote him and drop the weakest permanent source (Grace Leung, silent since Aug 26), or rotate the slot. <em>No other compelling wildcard candidate came up this week.</em></div>
+      <div class="brief-mentions-label">Why he is here, and the status</div>
+      <div class="brief-mention-item"><strong>Why chosen:</strong> his August 14 Grok Bot review was written for non-technical users (what the shared computer means, what the price buys, which two Bots to start with).</div>
+      <div class="brief-mention-item"><strong>Week-1 result (assessment):</strong> no Grok content this week, so nothing to judge yet. He publishes daily, so one quiet week is not conclusive.</div>
+      <div class="brief-mention-item"><strong>The decision:</strong> keep him for week 2, or rotate the slot. <em>No other compelling wildcard candidate came up this week.</em></div>
     </div>
   </div>
 
@@ -523,16 +443,15 @@
   <div class="section-label">⚠️ Gaps &amp; Coverage</div>
   <div class="gaps-card">
     <h3>What was checked, and what wasn't</h3>
-    <div class="gap-item"><strong>Three sources published nothing:</strong> Grace Leung (newest Aug 26), Tina Huang (newest Sep 17) and Eliot Prince (newest Sep 15). The date-filtered run found nothing for them, so I re-checked each by full channel URL with no date filter. Their silence is confirmed, not a query artefact.</div>
-    <div class="gap-item"><strong>Method: Apify for discovery.</strong> I used <code>lurkapi/youtube-channel-videos-stats-scraper</code> for three runs: one date-filtered run across all nine permanent channels, one unfiltered re-check of the three silent channels, and one for the wildcard. The first attempt at the re-check returned "MCP server connection lost". The retry succeeded. Whether the failed attempt also started a billed run was not verified. Durations come from Apify.</div>
-    <div class="gap-item"><strong><code>null</code> descriptions again (v6 rule confirmed).</strong> Apify returned <code>null</code> for 3 of Nate B. Jones' 5 videos (2IAYFgAqX6g, Risal7sjYms, ry9J1i3krIY) and 1 of Wes Roth's 4 (p2i-fcx0G0M). In Chrome, all four had real descriptions with chapter lists (1,582–2,270 characters). <em>New observation:</em> Nate's other two videos came back fully populated in the same run, so this week the <code>null</code> was per video, not per channel. The cause is unknown. Wes Roth's p2i-fcx0G0M also had a <code>null</code> date; Sep 22 comes from the page's publish date.</div>
-    <div class="gap-item"><strong>Title drift (4 videos).</strong> (1) 2IAYFgAqX6g: Apify "One Developer Shipped 2,462 Pull Requests Last Month. 6 Habits To Get On Her Level." vs page data "The AI Bottleneck: Why Your Team Isn't Shipping. Here's the Fix." I used the page data per the rule. (2) Risal7sjYms: Apify "How To Use ChatGPT Work Step By Step (Full Beginner's Guide 2026)", page data "How To Use ChatGPT Work: The Complete Beginner's Guide (2026)", browser tab "The Ultimate Beginner's Guide To ChatGPT Work". I used the page data. (3) ry9J1i3krIY: tab "NVIDIA Doesn't Just Build Chips Anymore…" vs data (= Apify). (4) p2i-fcx0G0M: tab "ex-OpenAI researcher's WARNING" vs data (= Apify). <em>Hypothesis, not verified:</em> YouTube title A/B testing. The video links are unaffected.</div>
-    <div class="gap-item"><strong>Window boundary.</strong> Trailing 7 days: Sep 21–28 (Apify run at 08:10 UTC Sep 28). Excluded as dated before Sep 21: Nate B. Jones (Sep 20), Wes Roth (Sep 19), Arnold (Sep 19), Brock (Sep 19 digest), Nate Herk (two on Sep 19).</div>
-    <div class="gap-item"><strong>Anthropic coverage.</strong> I found posts through the Anthropic newsroom and a release aggregator (Releasebot), then opened and read every featured item at its primary URL. The newsroom path <code>/news/claude-opus-5-5</code> returned 404; the launch page lives at <code>anthropic.com/claude-opus-5-5</code>. Read times are estimates from fetched word counts. The launch-page count (~8,500 words) is itself an estimate and may include tables. "The Situation Report" is title only.</div>
-    <div class="gap-item"><strong>Open questions (unverified claims):</strong> which "Anthropic model shutdown" Nate Herk refers to, and what Brock's "Multiple Accounts in Claude" chapter describes. Both are chapter or description text only.</div>
-    <div class="gap-item"><strong>No video was watched.</strong> Every summary comes from titles, descriptions and chapter lists. Chapter titles say what a segment covers, not what the creator concludes. Creator claims and test results are attributed to the creator. Anthropic's benchmark and cost figures are vendor claims.</div>
-    <div class="gap-item"><strong>Paywall check.</strong> Nate B. Jones' Substack stays paywalled, so I used the free YouTube versions. Mark Kashef's training code sits in a paid community; the video and the prompt/guide are free. Nothing paywalled was included.</div>
-    <div class="gap-item"><strong>Three-item cap applied</strong> to Nate B. Jones (5 in window → 3 featured + 2 brief), Wes Roth (4 → 3 + 1), Arnold Oberleiter (5 → 3 + 2), Nate Herk (6 → 3 + 3) and Anthropic (3 featured + briefs). Brock published exactly 3 and Enovair 1.</div>
+    <div class="gap-item"><strong>Window boundary.</strong> Trailing 7 days, Oct 3 00:00 to Oct 10 18:30 Bangkok time (UTC+7). All dates on this page are Bangkok dates. Excluded as just before the window: Brock's "AI News: ChatGPT Dots, Major Grok Bot Upgrades, GPT Sol 6.1" (Oct 2, 23:03 Bangkok time) and Mollick's Oct 1 post. Changelog dates are as printed by xAI, which states no time zone.</div>
+    <div class="gap-item"><strong>Method.</strong> YouTube: each channel's public feed for what was published and when, then each video's public page for exact date, length, description and chapters. No signed-in browser. X: the X API, reading @bot and @SpaceXAI posts in the window (replies to individual users not counted), plus a targeted search to find the primary post behind the model-routing news. xAI News and the changelog: full pages read on Oct 10. Docs: pages read in full, update dates from the docs sitemap.</div>
+    <div class="gap-item"><strong>No video was watched.</strong> Every video summary comes from the title, description and chapter list. Chapter titles say what a segment covers, not what the creator concludes. Two of Nate Herk's Shorts have no description and are title only.</div>
+    <div class="gap-item"><strong>Silent sources.</strong> xAI News (newest Sep 28), Wes Roth (three videos, all OpenAI), Ethan Mollick (newest Oct 1) and the wildcard Nate B. Jones (eight uploads, no Grok). @SpaceXAI posted only developer and partner items.</div>
+    <div class="gap-item"><strong>Model routing is announced but not documented.</strong> The primary source is Elon Musk's Oct 7 post. I found no mention in the Grok Bot changelog entries for the window or in the docs pages I read. I did not use automated @grok replies on X as evidence; they describe the rollout, but they are not an official source.</div>
+    <div class="gap-item"><strong>Docs vs changelog conflict.</strong> "Skills and routines" (updated Oct 6) says to type "/" to reference a saved skill; changelog 0.68.1 (Oct 7) says "/" no longer opens the skills menu. Not resolved here.</div>
+    <div class="gap-item"><strong>Docs "updated" dates only.</strong> Eleven more Grok Bot docs pages show an update date in the window, but with no earlier copy I can't say what changed. Only the two pages featured above were read in full.</div>
+    <div class="gap-item"><strong>Scope filter applied.</strong> Items about other vendors' products, coding content and developer-only offers (API pricing, developer platforms) were left out or kept to one line. Where a source compared Grok with other products, only the Grok part is reported.</div>
+    <div class="gap-item"><strong>Three-item cap.</strong> Applied per source. @bot had 3 announcements plus one note; Nate Herk had 3 Grok items (2 featured, 1 brief); Brock 2; the changelog 2 releases.</div>
   </div>
 
 </div>
