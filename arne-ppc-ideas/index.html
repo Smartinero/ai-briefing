@@ -60,8 +60,8 @@ ul.clean li::before{content:"";position:absolute;left:0;top:.6em;width:.42em;hei
 /* ---------- slide 2 ---------- */
 .sum-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;flex:1;min-height:0}
 .sum-left{display:flex;flex-direction:column;gap:22px}
-.ideas{display:flex;flex-direction:column;gap:14px}
-.idea{display:flex;gap:.7em;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:.5em .8em}
+.ideas{display:flex;flex-direction:column;gap:10px}
+.idea{display:flex;gap:.7em;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:.42em .8em}
 .idea .n{flex:none;width:1.75em;height:1.75em;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85em}
 .idea b{display:block;font-size:.92em}
 .idea span{font-size:.78em;color:var(--muted)}
@@ -113,6 +113,23 @@ ul.clean li::before{content:"";position:absolute;left:0;top:.6em;width:.42em;hei
 .outcome.retire{background:#eeeae3;border:1px solid #d8d1c4}
 .outcome.retire h3{color:#7a6f5f}
 
+
+/* ---------- data history ---------- */
+.dh-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;flex:1;min-height:0;align-items:start}
+.tl{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:.8em 1em}
+.tl-row{margin:.6em 0 1.1em}
+.tl-row .lab{font-size:.68em;font-weight:700;margin-bottom:.35em;display:flex;justify-content:space-between;gap:.5em}
+.tl-row .lab span{font-weight:500;color:var(--muted)}
+.months{display:grid;grid-template-columns:repeat(12,1fr);gap:5px}
+.months div{height:84px;border-radius:9px;background:#ece9e2;color:#9a9284;font-size:.52em;font-weight:700;display:flex;align-items:flex-end;justify-content:center;padding-bottom:.4em}
+.months.amz div.on{background:var(--accent2);color:#fff}
+.months.own div{background:var(--good);color:#fff}
+.months.own div.dec{background:var(--accent)}
+.months.own div.hol{background:#5aa57d}
+.tl-key{display:flex;flex-wrap:wrap;gap:.4em 1em;font-size:.6em;color:var(--muted);margin-top:.2em}
+.tl-key i{display:inline-block;width:.85em;height:.85em;border-radius:3px;vertical-align:-.1em;margin-right:.35em}
+.dh-right{display:flex;flex-direction:column;gap:14px}
+.dh-right .card p{font-size:.76em}
 /* ---------- slide 6 (highlight) ---------- */
 .s-loop{background:radial-gradient(1200px 700px at 30% 60%,#22384a 0%,#15202b 70%);color:#fff}
 .s-loop .kicker{color:#f2a283}
@@ -170,6 +187,8 @@ ul.clean li::before{content:"";position:absolute;left:0;top:.6em;width:.42em;hei
   .s-title .orb.two{width:180px;height:180px;right:-30px;top:auto;bottom:40px}
   .sum-grid,.kw-grid,.is-grid,.loop-wrap{grid-template-columns:1fr;gap:16px}
   .z-top{grid-template-columns:1fr;gap:10px;margin-bottom:14px}
+  .dh-grid{grid-template-columns:1fr;gap:16px}
+  .months{gap:3px} .months div{height:40px;font-size:.55em;border-radius:6px}
   .flow{flex-direction:column;height:auto}
   .arrow{width:auto;height:30px;transform:rotate(90deg)}
   .dgrid{font-size:.8em;grid-template-columns:1fr 1fr 1.15fr}
@@ -192,9 +211,9 @@ ul.clean li::before{content:"";position:absolute;left:0;top:.6em;width:.42em;hei
 <section class="slide s-title" data-title="Title">
   <div class="orb"></div><div class="orb two"></div>
   <div class="kicker">For Arne · from Sven</div>
-  <h1>Four PPC ideas for your author ads tool</h1>
+  <h1>Five PPC ideas for your author ads tool</h1>
   <p class="sub">What I've learned running Amazon ads for my procrastination book, and where I think a simple tool could really help authors.</p>
-  <div class="meta"><span>Keywords</span><span>Impression share</span><span>Zombie keywords</span><span>Broad → exact loop ★</span></div>
+  <div class="meta"><span>Keywords</span><span>Impression share</span><span>Zombie keywords</span><span>Data history</span><span>Broad → exact loop ★</span></div>
   <div class="hint">← → arrow keys, click or swipe · October 2026</div>
 </section>
 
@@ -222,7 +241,8 @@ ul.clean li::before{content:"";position:absolute;left:0;top:.6em;width:.42em;hei
       <div class="idea"><div class="n">1</div><div><b>Keywords</b><span>Help authors set campaigns up, not just manage them.</span></div></div>
       <div class="idea"><div class="n">2</div><div><b>Impression share</b><span>Check impression share and bid vs. actual CPC before raising a bid.</span></div></div>
       <div class="idea"><div class="n">3</div><div><b>Zombie keywords</b><span>Give sleeping keywords a short, cheap test, then keep or retire them.</span></div></div>
-      <div class="idea star"><div class="n">4</div><div><b>Broad → exact loop <span class="tag">my favourite</span></b><span>A self-improving keyword loop. Too fiddly by hand, perfect for software.</span></div></div>
+      <div class="idea"><div class="n">4</div><div><b>Data history</b><span>Store the data from day one and build your own 12+ month history.</span></div></div>
+      <div class="idea star"><div class="n">5</div><div><b>Broad → exact loop <span class="tag">my favourite</span></b><span>A self-improving keyword loop. Too fiddly by hand, perfect for software.</span></div></div>
     </div>
   </div>
 </section>
@@ -238,7 +258,7 @@ ul.clean li::before{content:"";position:absolute;left:0;top:.6em;width:.42em;hei
         <div class="formula"><span class="box">your bid</span> + <span class="box alt">likelihood of a sale</span></div>
         <p class="small muted">Amazon earns on the click <em>and</em> the sale, so relevance and conversion count for more than the bid alone. (Two campaign types: product targeting and keyword bidding.)</p>
       </div>
-      <div class="theory"><b>My working theory, worth testing:</b> only exact-match keywords build organic rank for that keyword; broad, phrase and auto don't. If true, move winners to exact quickly (see idea 4). Auto campaigns are fine for a total beginner to see Amazon's picks, just not the best approach.</div>
+      <div class="theory"><b>My working theory, worth testing:</b> only exact-match keywords build organic rank for that keyword; broad, phrase and auto don't. If true, move winners to exact quickly (see idea 5). Auto campaigns are fine for a total beginner to see Amazon's picks, just not the best approach.</div>
       <div class="card"><p class="small muted"><b style="color:var(--ink)">What does seem to hold:</b> Kindlepreneur's "Popularity Effect" experiment (Dave Chesson) found steady sales from any source, Amazon Ads included, get a book shown for more keywords and ranked higher. Amazon starts with the narrow terms where it converts, then tests broader searches. He never split sales by match type, so exact-only stays my theory.</p></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:12px">
@@ -312,9 +332,29 @@ ul.clean li::before{content:"";position:absolute;left:0;top:.6em;width:.42em;hei
   </div>
 </section>
 
+<!-- DATA HISTORY -->
+<section class="slide" data-title="Data history">
+  <div class="kicker">Idea 4 · Data history</div>
+  <h2>Start saving the data on day one</h2>
+  <div class="dh-grid">
+    <div class="tl">
+      <h3>What you can look back on</h3>
+      <div class="tl-row"><div class="lab">Amazon's reports <span>in my experience, only 1–3 months</span></div><div class="months amz"><div class="">Nov</div><div class="">Dec</div><div class="">Jan</div><div class="">Feb</div><div class="">Mar</div><div class="">Apr</div><div class="">May</div><div class="">Jun</div><div class="">Jul</div><div class="">Aug</div><div class="on">Sep</div><div class="on">Oct</div></div></div>
+      <div class="tl-row"><div class="lab">Your tool, after a year of saving <span>12 months or more</span></div><div class="months own"><div class="">Nov</div><div class="dec">Dec</div><div class="">Jan</div><div class="">Feb</div><div class="hol">Mar</div><div class="">Apr</div><div class="">May</div><div class="">Jun</div><div class="hol">Jul</div><div class="">Aug</div><div class="">Sep</div><div class="">Oct</div></div></div>
+      <div class="tl-key"><span><i style="background:var(--accent)"></i>December: people shopping for gifts</span><span><i style="background:#5aa57d"></i>March / July: holidays</span></div>
+    </div>
+    <div class="dh-right">
+      <div class="card"><h3>Why a longer history</h3><p class="muted">12 months or more gives steadier signals. December, with everyone buying gifts, looks nothing like March or July, when people are on holiday.</p></div>
+      <div class="card"><h3>What it could show</h3><p class="muted">Maybe some keywords are seasonal. Maybe bids need to be higher in December. Without a history, none of this can be analysed.</p></div>
+      <div class="callout"><b>For your tool:</b> store the data yourself, starting from day one, and build up your own history. I'm not sure how far back the API goes (see footnote).</div>
+    </div>
+  </div>
+  <div class="foot">Amazon Ads API docs: the search term report keeps 65 days of data for Sponsored Products (60 for Sponsored Brands), and v3 reports in general go back up to 95 days, depending on report type. The console may differ by report; the "1–3 months" above is my own experience. <a href="https://advertising.amazon.com/API/docs/en-us/guides/reporting/v3/report-types/search-term">Search term report</a> · <a href="https://advertising.amazon.com/API/docs/en-us/guides/reporting/v3/faq">Reporting FAQ</a></div>
+</section>
+
 <!-- 6 BROAD TO EXACT -->
 <section class="slide s-loop" data-title="Broad to exact">
-  <div class="kicker">Idea 4 · Broad → exact <span class="badge">★ my favourite</span></div>
+  <div class="kicker">Idea 5 · Broad → exact <span class="badge">★ my favourite</span></div>
   <h2>A keyword loop that gets smarter every round</h2>
   <div class="loop-wrap">
     <div class="loop">
@@ -340,7 +380,7 @@ ul.clean li::before{content:"";position:absolute;left:0;top:.6em;width:.42em;hei
 </div></div>
 <button class="navbtn" id="prev" aria-label="Previous slide">‹</button>
 <button class="navbtn" id="next" aria-label="Next slide">›</button>
-<div id="counter">1 / 6</div>
+<div id="counter">1 / 7</div>
 <div id="progress"></div>
 <script>
 (function(){
