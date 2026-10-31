@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Briefing — xAI · Grok · Grok Bot — October 23–31, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f4f4f0;
+    color: #1a1a1a;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .container { max-width: 800px; margin: 0 auto; padding: 0 20px 60px; }
+
+  /* ── MASTHEAD ── */
+  .masthead { background: #1a1a2e; color: #ffffff; padding: 36px 40px 32px; margin-bottom: 0; }
+  .masthead-inner { max-width: 800px; margin: 0 auto; }
+  .masthead-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #7c9dc4; margin-bottom: 8px;
+  }
+  .masthead h1 { font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 6px; letter-spacing: -0.5px; }
+  .masthead-date { font-size: 14px; color: #8899aa; }
+
+  /* ── TOP HIGHLIGHTS BAND ── */
+  .highlights-band { background: #16213e; padding: 32px 40px 36px; margin-bottom: 32px; }
+  .highlights-band-inner { max-width: 800px; margin: 0 auto; }
+  .highlights-band h2 {
+    font-size: 12px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #e8a84c; margin-bottom: 20px;
+  }
+  .highlight-item {
+    display: flex; gap: 14px; align-items: flex-start;
+    margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #243050;
+  }
+  .highlight-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .highlight-num {
+    flex-shrink: 0; width: 26px; height: 26px; background: #e8a84c;
+    color: #16213e; font-size: 12px; font-weight: 800; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; margin-top: 2px;
+  }
+  .highlight-content a { color: #93c5fd; text-decoration: none; font-weight: 600; font-size: 15px; line-height: 1.4; }
+  .highlight-content a:hover { text-decoration: underline; }
+  .highlight-meta { font-size: 12px; color: #6b8aaa; margin-top: 3px; }
+  .highlight-desc { font-size: 13.5px; color: #b0c4d8; margin-top: 4px; line-height: 1.5; }
+
+  /* ── SECTION HEADERS ── */
+  .section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #7c9dc4; margin: 36px 0 14px;
+    padding-bottom: 8px; border-bottom: 2px solid #1a1a2e;
+  }
+
+  /* ── SOURCE CARD ── */
+  .source-card {
+    background: #ffffff; border-radius: 8px; margin-bottom: 16px;
+    overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border: 1px solid #e5e5e0;
+    scroll-margin-top: 16px;
+  }
+  .source-card:target { box-shadow: 0 0 0 3px #e8a84c, 0 1px 4px rgba(0,0,0,0.08); }
+  .source-header { padding: 14px 20px 12px; border-bottom: 1px solid #f0f0eb; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .source-icon { font-size: 16px; flex-shrink: 0; }
+  .source-name { font-size: 14px; font-weight: 700; color: #1a1a2e; }
+  .source-platform { font-size: 12px; color: #888; margin-left: auto; flex-shrink: 0; }
+
+  /* ── ARTICLE ITEMS ── */
+  .article-item { padding: 14px 20px; border-bottom: 1px solid #f5f5f0; position: relative; }
+  .article-item:last-child { border-bottom: none; }
+  .article-item.high-priority { border-left: 3px solid #e8a84c; padding-left: 17px; }
+  .article-title a { color: #1a1a2e; text-decoration: none; font-weight: 600; font-size: 15px; line-height: 1.4; }
+  .article-title a:hover { color: #2563eb; text-decoration: underline; }
+  .article-meta { font-size: 12px; color: #888; margin: 4px 0 6px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 2px 6px; border-radius: 3px; }
+  .tag-high { background: #fef3cd; color: #a0600a; }
+  .tag-yt { background: #fee2e2; color: #b91c1c; }
+  .tag-blog { background: #e0f2fe; color: #0369a1; }
+  .tag-de { background: #f3f4f6; color: #4b5563; }
+  .tag-new { background: #dcfce7; color: #166534; }
+  .article-summary { font-size: 14px; color: #444; line-height: 1.55; }
+  .flag { font-size: 12.5px; color: #8a6d00; background: #fffbe8; border-left: 2px solid #e8a84c; padding: 4px 10px; margin-top: 6px; border-radius: 0 4px 4px 0; }
+  .brief-mentions { padding: 12px 20px 14px; background: #fafaf8; border-top: 1px dashed #e0e0d8; }
+  .brief-mentions-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #999; margin-bottom: 6px; }
+  .brief-mention-item { font-size: 13px; color: #555; margin-bottom: 4px; line-height: 1.4; }
+  .brief-mention-item:last-child { margin-bottom: 0; }
+  .brief-mention-item a { color: #2563eb; text-decoration: none; font-weight: 500; }
+  .brief-mention-item a:hover { text-decoration: underline; }
+
+  /* ── NO CONTENT ── */
+  .no-content { padding: 14px 20px; font-size: 14px; color: #888; font-style: italic; }
+
+  /* ── WILDCARD CARD ── */
+  .source-card.wildcard { border: 2px dashed #7c9dc4; background: #f8fbff; }
+  .wildcard-label { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: #1a1a2e; color: #7c9dc4; padding: 2px 7px; border-radius: 3px; margin-left: 8px; vertical-align: middle; }
+
+  /* ── THEMES (cross-source index) ── */
+  .theme-card { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 18px 20px; margin-bottom: 16px; }
+  .theme-card h3 { font-size: 14px; font-weight: 700; color: #1e40af; margin-bottom: 8px; }
+  .theme-card p { font-size: 14px; color: #1e3a5f; line-height: 1.6; margin-bottom: 10px; }
+  .theme-sources { font-size: 12.5px; color: #1e3a5f; padding-top: 8px; border-top: 1px solid #cfe0f5; }
+  .theme-sources .lbl { font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; font-size: 10px; color: #2563eb; margin-right: 6px; }
+  .theme-sources a {
+    display: inline-block; color: #1e40af; text-decoration: none; font-weight: 600;
+    background: #dbeafe; padding: 2px 9px; border-radius: 12px; margin: 3px 5px 3px 0;
+  }
+  .theme-sources a:hover { background: #2563eb; color: #fff; }
+
+  /* ── RELEVANCE NOTE ── */
+  .catchup-card { background: #f5f0ff; border: 1px solid #ddd0f7; border-radius: 8px; padding: 18px 20px; margin-bottom: 24px; }
+  .catchup-card h3 { font-size: 13px; font-weight: 700; color: #5b21b6; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .catchup-card p { font-size: 14px; color: #3f2560; line-height: 1.6; margin-bottom: 10px; }
+  .catchup-card p:last-child { margin-bottom: 0; }
+  .catchup-card a { color: #5b21b6; font-weight: 600; }
+  .verdict { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 7px; border-radius: 3px; background: #e9dcff; color: #5b21b6; margin-right: 6px; }
+
+  /* ── GAPS ── */
+  .gaps-card { background: #fff9f0; border: 1px solid #f0d080; border-radius: 8px; padding: 18px 20px; font-size: 14px; color: #555; line-height: 1.6; }
+  .gaps-card h3 { font-size: 13px; font-weight: 700; color: #7a5500; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .gap-item { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #f0e0c0; }
+  .gap-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+
+  /* ── [NEW] additions per style guide v1.1 ── */
+  .tag-x { background: #f3f4f6; color: #111827; }
+  .tag-docs { background: #ede9fe; color: #5b21b6; }
+  .tag-changelog { background: #e0f2fe; color: #0369a1; }
+  .highlight-desc a { font-size: inherit; }
+
+  @media (max-width: 600px) {
+    .masthead { padding: 26px 18px 22px; }
+    .highlights-band { padding: 24px 18px 26px; margin-bottom: 24px; }
+    .masthead h1 { font-size: 22px; }
+    .container { padding: 0 14px 48px; }
+    .source-header, .article-item, .brief-mentions, .no-content { padding-left: 14px; padding-right: 14px; }
+    .article-item.high-priority { padding-left: 11px; }
+    .source-platform { margin-left: 0; width: 100%; }
+    .theme-card, .catchup-card, .gaps-card { padding: 16px 14px; }
+  }
+
+</style>
+</head>
+
+<body>
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-label">AI Briefing · xAI · Grok · Grok Bot</div>
+    <h1>What's new, and how to use it</h1>
+    <div class="masthead-date">October 23–31, 2026 &nbsp;·&nbsp; 10 sources monitored &nbsp;·&nbsp; Generated October 31, 2026, 18:50 (Bangkok, UTC+7)</div>
+  </div>
+</div>
+
+<!-- TOP HIGHLIGHTS -->
+<div class="highlights-band">
+  <div class="highlights-band-inner">
+    <h2>⭐ Top Highlights</h2>
+
+    <div class="highlight-item">
+      <div class="highlight-num">1</div>
+      <div class="highlight-content">
+        <a href="https://docs.x.ai/grok-bot/vault" target="_blank" rel="noopener">Vault: your Bots can now sign in and check out without seeing your secrets</a>
+        <div class="highlight-meta">🛠️ Changelog 0.75.5 · Oct 23 · also @bot (Oct 24), a new docs page (Oct 28) and Matt Palmer</div>
+        <div class="highlight-desc">Open <strong>Settings → Vault → New item</strong> to save a Login, Card or Contact info. The docs say "A Bot never sees a saved password, card number, or security code." Use the <strong>Hints</strong> field ("Use for work purchases") so a Bot picks the right entry. On desktop you can import a password-manager CSV export. The catch: Vault covers your whole account, so every Bot you own can use every item. <em>Assessment:</em> read the payment caveat in <a href="#src-docs">the docs card</a> before you save a card. The docs and the Oct 26 changelog disagree on whether each purchase needs your OK.</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">2</div>
+      <div class="highlight-content">
+        <a href="https://docs.x.ai/grok-bot/approvals-security-and-privacy" target="_blank" rel="noopener">Fewer approval cards, and your rules now live in Settings → Permissions</a>
+        <div class="highlight-meta">🛠️ Changelog 0.75.5, 0.75.8, 0.77.0 · Oct 23–26 · docs updated Oct 29</div>
+        <div class="highlight-desc">Auto-review now "asks less often for an action you asked for in your own words." Email and Slack messages you ask for in chat go out once Auto-review allows them, but <strong>sends from routines still wait as drafts</strong>. If you press Deny, the Bot stops until your next message. A Bot can offer to add or change one of your rules on a card you confirm. <strong>Settings → Permissions</strong> lists your rules under Always Ask and Allow without Asking. Approval cards now stay open 30 minutes, up from 10. The docs add that cards from a chat message don't expire at all. <em>Assessment:</em> fewer cards means each "Always Ask" rule you set matters more. Check that list once.</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">3</div>
+      <div class="highlight-content">
+        <a href="https://x.com/bot/status/2113393684209176718" target="_blank" rel="noopener">"Grok Bot can now use Calendar, Reminders, Contacts, and more apps on your phone."</a>
+        <div class="highlight-meta">𝕏 @bot · Oct 23 · 2-post thread · details in the Mobile docs (Oct 28)</div>
+        <div class="highlight-desc">On iPhone and Android: Calendar (read, add, change, delete), Contacts (read-only), Location and Alarms. <strong>Reminders and Apple Home are iPhone only.</strong> It works only in your own chat with your own Bot, and only while the Grok Bot app is open on the phone. Allow apps ahead of time under <strong>Settings → Connect apps → iPhone</strong> (or Android). Limits: the Bot can't change repeating events, never invites anyone, and can't set an alarm more than 24 hours ahead. <em>Assessment:</em> good for quick tasks you'd dictate on the move. It won't work from a routine while the app is closed.</div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">4</div>
+      <div class="highlight-content">
+        <a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">Grok Bot 0.78.1: Shopping cards and subscription templates</a>
+        <div class="highlight-meta">🛠️ Grok Bot changelog · Oct 27 · latest release</div>
+        <div class="highlight-desc">Shopping now shows product cards with photo, rating, price and store. "Buy now" starts an order you approve, and the Bot then tracks shipping. There are three new templates: <strong>"Try it, don't pay for it"</strong> (starts a free trial, then cancels or reminds you before it bills), <strong>"Find unused subscriptions"</strong> and <strong>"Watch subscription prices"</strong>. The changelog says Bots "confirm with you before changing anything." Also in this release: <strong>routines made in a new Bot's first chat now use your time zone, not UTC.</strong></div>
+      </div>
+    </div>
+
+    <div class="highlight-item">
+      <div class="highlight-num">5</div>
+      <div class="highlight-content">
+        <a href="https://x.ai/news/grok-bot-sales" target="_blank" rel="noopener">Your next sales teammate should be a Grok Bot</a>
+        <div class="highlight-meta">📝 xAI News · Oct 27 · ~6 min read · also @bot</div>
+        <div class="highlight-desc">The company's sales team describes three Shared Bots: Account Intel, Quote and Deal. The useful part is the rules. Bots "act with each user's permissions, with additional restrictions on sensitive actions." Quote Bot "shows the rep a preview and asks for confirmation" before changing records. People review anything customer-facing, and any decision whose criteria can't be clearly defined. <em>Assessment:</em> the same pattern works for one person: preview first, confirm, then act. Copy it into your own routines.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- THEMES -->
+  <div class="section-label">🧭 Themes — who covered what</div>
+
+  <div class="theme-card">
+    <h3>1 · Logins, cards and buying: the Bot as your errand runner</h3>
+    <p>Four releases in five days build this out. Vault arrived in 0.75.5 (Oct 23). The 1Password connection now works without a shared vault, and you approve each login (0.77.0). The Vault gained a <strong>Payments tab</strong>, where you pick the payment method Bots use first, and address autocomplete (0.77.0). Product cards, order tracking and the subscription templates followed in 0.78.1 (Oct 27). The docs set the sign-in order: a Vault login first, then a connected password manager, then a Secure Form in chat. When you leave a Secure Form's <strong>"Securely save to Bot's vault"</strong> box unchecked, the value is used only in that chat. If you let a Bot pick the password when it signs up for a site, Vault generates and saves it, and the Bot never sees it. Matt Palmer's Oct 27 roundup leads with Vault and 1Password too.</p>
+    <p><strong>Assessment:</strong> the sources disagree on one point, covered in the docs card below. The Oct 26 changelog says "you still approve every purchase." The Vault page (updated Oct 28) says a saved card "fills in at checkout without asking you each time, and no setting requires your approval for each use." Until that is settled, the safe reading is the docs' own advice. If you want to approve every payment, don't save the card.</p>
+    <div class="theme-sources"><span class="lbl">Covered by</span>
+      <a href="#src-changelog">🛠️ Changelog (4 releases)</a>
+      <a href="#src-docs">📘 Docs (new Vault page)</a>
+      <a href="#src-bot">𝕏 @bot (Vault, 1Password)</a>
+      <a href="#src-wildcard">🔍 Matt Palmer (weekly roundup)</a>
+    </div>
+  </div>
+
+  <div class="theme-card">
+    <h3>2 · Fewer interruptions, with the rules in one place</h3>
+    <p>Three releases cut approval cards. 0.75.5: Auto-review asks less for things you asked for in your own words, a denied card stops the Bot until your next message, and Auto-review "no longer waves through an action your request said to stop before, such as sending a message you asked only to draft." 0.75.8: Auto-review "takes a second look," saving or editing a routine no longer counts as risky by itself, and a Bot can propose a rule change on a card. 0.77.0: <strong>Settings → Permissions</strong> and 30-minute cards. The approvals page (Oct 29) explains what the cards mean. <strong>Allow once</strong> saves no rule. <strong>Always allow</strong> saves one to Custom Rules. Text from an email or web page "doesn't count as your request". Sending a new message closes any open card in that chat.</p>
+    <p><strong>Assessment:</strong> your own wording now carries weight. "Draft only, don't send" is respected, and so is "send it". Say which you mean.</p>
+    <div class="theme-sources"><span class="lbl">Covered by</span>
+      <a href="#src-changelog">🛠️ Changelog (0.75.5, 0.75.8, 0.77.0)</a>
+      <a href="#src-docs">📘 Docs (approvals page)</a>
+      <a href="#src-wildcard">🔍 Matt Palmer ("fewer approval cards")</a>
+    </div>
+  </div>
+
+  <div class="theme-card">
+    <h3>3 · The Bot reaches into your phone</h3>
+    <p>@bot announced phone apps on Oct 23. The Mobile docs (Oct 28) list what each app can do, and which phone the Bot uses if Grok Bot is open on two. It uses the phone you messaged from when it can. A "Grok Bot needs permission" card waits up to five minutes for you. If you allow the app within an hour, the Bot picks the request back up without being asked again. Brock gave it a chapter of his Oct 24 news episode, alongside Pages. Matt Palmer covers Apple Home, Reminders, Location, Contacts, Alarms and Calendar in his roundup. From the same docs page: on the phone you can now start a routine with <strong>Add routine</strong> on a Bot's profile. Testing a routine still needs the desktop app.</p>
+    <div class="theme-sources"><span class="lbl">Covered by</span>
+      <a href="#src-bot">𝕏 @bot (launch post)</a>
+      <a href="#src-docs">📘 Docs (Mobile page)</a>
+      <a href="#src-brock">🎬 Brock Mesarich (news chapter)</a>
+      <a href="#src-wildcard">🔍 Matt Palmer (Apple apps chapter)</a>
+    </div>
+  </div>
+
+  <div class="theme-card">
+    <h3>4 · Bots with one job, shared with a team</h3>
+    <p>xAI News and @bot describe the sales team's three Shared Bots. The docs now have a <strong>Shared Bots</strong> page (new, Oct 28), though the changelog still says "Team Bot". Matt Palmer's Oct 23 video walks through two of his Team Bots, a marketing reviewer and a Slack-to-scheduled-post social Bot. Wes Roth's sponsored Oct 31 video builds a "chief of staff" Bot with specialist research Bots, group chats, routines and skills taught by demonstration. Docs details: in a Shared Bot, your chat is private from the owner, and the Bot asks before it uses your personal accounts (Allow once, Always allow, Skip). Each reply uses the usage of the person it answers.</p>
+    <p><strong>Assessment:</strong> The docs say Shared Bots are "for members of a Cursor team who have Grok Bot", but the design pattern applies to personal Bots too. One Bot per job, a written rule for when a person must review, and a preview before any change.</p>
+    <div class="theme-sources"><span class="lbl">Covered by</span>
+      <a href="#src-xai-news">📝 xAI News (sales Bots)</a>
+      <a href="#src-bot">𝕏 @bot (sales thread)</a>
+      <a href="#src-docs">📘 Docs (Shared Bots page)</a>
+      <a href="#src-wildcard">🔍 Matt Palmer (Team Bots video)</a>
+      <a href="#src-wes">🎬 Wes Roth (sponsored build)</a>
+    </div>
+  </div>
+
+  <!-- RELEVANCE NOTE -->
+  <div class="catchup-card">
+    <h3>What to try next (assessment)</h3>
+    <p><span class="verdict">Try</span>Review your Permissions in two minutes. Update to 0.77.0 or later, open <strong>Settings → Permissions</strong>, and read both lists. Then ask your main Bot: "Add an Auto-review rule that always asks me before any purchase, payment or subscription change." It should answer with a rule card for you to confirm. Nothing changes until you do.</p>
+    <p><span class="verdict">Try</span>Put one login in the Vault, with a hint. Open <strong>Settings → Vault → New item → Login</strong>, save a site you use often, and under Hints write when to use it. Then ask: "Sign in to that site and tell me my next renewal date. Don't change anything." <strong>Cards:</strong> save one only if you're fine with it filling in at checkout without asking each time (see the docs card). Otherwise leave "Securely save to Bot's vault" unchecked when the Bot asks.</p>
+    <p><span class="verdict">Try</span>Run a subscription audit, read-only. Start the <strong>"Find unused subscriptions"</strong> template (0.78.1) and say: "List what I pay for and when each renews. Don't cancel anything; I'll pick." The changelog says Bots confirm before changing anything. The template can cancel plans you pick, so pick nothing on the first run.</p>
+    <p><span class="verdict">Try</span>Let the Bot use your phone. With the app open, go to <strong>Settings → Connect apps → iPhone</strong> (or Android) and allow Calendar. Then say: "Add 'Call the bank' to my calendar tomorrow at 10:00." Reminders need an iPhone. Contacts are read-only.</p>
+    <p><span class="verdict">Decide</span>Whether to keep Matt Palmer. In week 1 he posted two on-topic videos, including a dated "What's new in Grok Bot" roundup (see <a href="#src-wildcard">the wildcard card</a>). My suggestion is to keep him in the wildcard slot for a few more weeks before making him permanent. Tell me if you'd rather promote him now.</p>
+    <p><span class="verdict">Skip</span>The referral program (docs, Oct 23). Only referrers "based in the US" are eligible, so it likely doesn't apply to you in Bangkok.</p>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="section-label">📚 Source by Source</div>
+
+  <!-- 1 XAI NEWS -->
+  <div class="source-card" id="src-xai-news">
+    <div class="source-header">
+      <span class="source-icon">📝</span>
+      <span class="source-name">xAI News (SpaceXSI)</span>
+      <span class="source-platform">x.ai/news</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.ai/news/grok-bot-sales" target="_blank" rel="noopener">Your next sales teammate should be a Grok Bot</a></div>
+      <div class="article-meta"><span class="tag tag-blog">Blog</span><span class="tag tag-high">High relevance</span> Oct 27 · ~6 min read</div>
+      <div class="article-summary">Written by four members of the SpaceXSI sales team. <strong>Account Intel Bot</strong> prepares a briefing before a customer meeting. Afterwards it reads the call transcript, updates the sales records, and "draft[s] a follow-up email for the rep to review". Reps "can schedule these workflows to run automatically." <strong>Quote Bot</strong> lays several proposals side by side and turns the approved one into an order form, showing "a preview" before any record change. <strong>Deal Bot</strong> checks unusual terms against policy and asks a specialist to approve. Each approval is stamped with "the decision, the rationale, and the DRI". Guardrails: rate limits "to prevent unintended changes at scale", and "A sales rep, for example, cannot use Quote Bot to approve their own discount." <em>Assessment:</em> it's an enterprise story, but the checklist carries over. A Bot needs a defined role, shared rules in a skill, its own limits, and human review when the criteria are unclear.</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published</div>
+      <div class="brief-mention-item"><a href="https://x.ai/news/partnernetworkannouncement" target="_blank" rel="noopener">Introducing the SpaceX Super Intelligence Partner Network</a> (Oct 22, not in edition 2): a programme for consulting firms and marketplace companies, aimed at businesses. Not relevant to personal use.</div>
+      <div class="brief-mention-item">I re-checked the news page on Oct 31. There is nothing newer than Oct 27, and the Grok Voice 3.0 article (Oct 14) is still at the top as a featured item.</div>
+    </div>
+  </div>
+
+  <!-- 2 GROK BOT CHANGELOG -->
+  <div class="source-card" id="src-changelog">
+    <div class="source-header">
+      <span class="source-icon">🛠️</span>
+      <span class="source-name">Grok Bot changelog</span>
+      <span class="source-platform">x.ai/changelog/bot</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">Grok Bot 0.78.1: Shopping cards and subscription templates</a></div>
+      <div class="article-meta"><span class="tag tag-changelog">Changelog</span><span class="tag tag-high">High relevance</span> Oct 27 · includes 0.78.0</div>
+      <div class="article-summary">Product cards come with up to two badges such as "Top rated". Several results show as a carousel. "Buy now" starts an order you approve, and shipment cards show the carrier and stage. You can connect Shop Pay in the Vault's Payments tab. Three templates: "Try it, don't pay for it", "Find unused subscriptions" and "Watch subscription prices". Bots can also cancel a subscription or read its price and renewal date when you ask. Also useful: copied replies <strong>keep their formatting</strong> when pasted into Slack, Gmail, Docs or Notion. Page edits now apply all at once or not at all. Clicking a webhook routine shows its URL. Routines created in a new Bot's first chat use your time zone, not UTC.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">Grok Bot 0.77.0: Permissions, Vault payments, and question cards</a></div>
+      <div class="article-meta"><span class="tag tag-changelog">Changelog</span><span class="tag tag-high">High relevance</span> Oct 26 · includes 0.76.0</div>
+      <div class="article-summary"><strong>Settings → Permissions</strong> lists your Auto-review rules, each list with its own Add Rule button. Approval cards stay open 30 minutes (was 10), in the app and in Slack. The Vault <strong>Payments tab</strong> lets you pick the method Bots use first. <strong>Import Memory</strong>, in Settings, brings your preferences from another AI assistant into your primary Bot. The Settings docs describe it: choose Start Import, copy a prompt into the other assistant, paste its answer back, then press Add to Memory. Question cards can ask several things at once, with a "Your own answer" option. Tables get a copy button and a full-screen view. Order Concierge and Deal Watcher templates track orders, refunds, returns, prices and coupons, "never buying without your OK." Dictation now writes as you speak, and email draft cards have a Discard button again.</div>
+      <div class="flag">This release says "you still approve every purchase" for the Payments tab. The Vault docs page (Oct 28) says a saved card fills in "without asking you each time". See the docs card.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">Grok Bot 0.75.5: Vault, email forwarding, and fewer approval cards</a></div>
+      <div class="article-meta"><span class="tag tag-changelog">Changelog</span><span class="tag tag-high">High relevance</span> Oct 23 · includes 0.75.3 and 0.75.4</div>
+      <div class="article-summary">This release added the Vault (see highlight 1). Bots can forward an email from their own inbox "with its original formatting, images, and attachments." Auto-review asks less often, and a denied card stops the Bot until your next message. Emails and Slack messages you ask for go out once Auto-review allows them, but "sends on routine and other turns still wait as drafts." <strong>Connecting X also connects X Money.</strong> Routine limits rose to 300 runs an hour in total (was 100), and 200 for each routine. There's also a pumpkin avatar for Halloween.</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published (3-item cap)</div>
+      <div class="brief-mention-item"><strong>0.75.8</strong> (Oct 24): Auto-review rule cards and a "second look" before showing a card. Scheduling uses the calendar you've connected. "In a chat only you can see, a Bot reads your own private files without asking first." Slack posts from routines no longer notify your phone.</div>
+      <div class="brief-mention-item"><strong>0.75.2</strong> (Oct 22, catch-up): the release behind the Pages launch. It adds video creation from a description or image, a Pinned section in the Library, Shop Pay, one-tap X Money, ⌘/ to open a keyboard-shortcuts sheet, and ">" at the start of a line for a block quote. Memory saved in one chat now applies in all chats with that personal Bot.</div>
+    </div>
+    <div class="flag">Catch-up note: 0.75.2 is dated Oct 22, but it wasn't on the changelog when edition 2 checked that day.</div>
+  </div>
+
+  <!-- 3 GROK BOT DOCS -->
+  <div class="source-card" id="src-docs">
+    <div class="source-header">
+      <span class="source-icon">📘</span>
+      <span class="source-name">Grok Bot docs (official how-to)</span>
+      <span class="source-platform">docs.x.ai/grok-bot</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://docs.x.ai/grok-bot/vault" target="_blank" rel="noopener">Vault and secure sign-in</a></div>
+      <div class="article-meta"><span class="tag tag-docs">Docs</span><span class="tag tag-new">New</span><span class="tag tag-high">High relevance</span> updated Oct 28 · ~8 min read</div>
+      <div class="article-summary">Needs app 0.75.2 or later. You can scan or photograph a card to fill it in. CSV import from 1Password, Chrome or Edge, Safari or Apple Passwords, Firefox, Bitwarden or LastPass runs on your computer and is "never uploaded". The page says to delete the export afterwards, because it holds your passwords unencrypted. A Bot can edit contact info, nicknames and hints when you ask. Passwords, card numbers and websites change only in Settings → Vault. Saved values are write-only: "a blank field later is not proof the secret was deleted." When a form can't do a step (a passkey, a QR code, bank card verification), the Bot hands you the computer: choose <strong>Take over</strong>, then <strong>I'm done</strong>.</div>
+      <div class="flag"><strong>Payment caveat:</strong> "A card saved in Vault fills in at checkout without asking you each time, and no setting requires your approval for each use. If you want to approve every payment yourself, don't save the card." That conflicts with the Oct 26 changelog line "you still approve every purchase". I haven't tested which is true. With a connected Link account, the page says a Bot can ask you to approve a one-time card for a single purchase, showing merchant, items and total.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://docs.x.ai/grok-bot/approvals-security-and-privacy" target="_blank" rel="noopener">Approvals, security, and privacy</a></div>
+      <div class="article-meta"><span class="tag tag-docs">Docs</span><span class="tag tag-high">High relevance</span> updated Oct 29 · ~10 min read</div>
+      <div class="article-summary">A rewritten section on approval cards. "Most actions run on their own," and an action that matches one of your <strong>Ask first</strong> rules always gets a card. Warnings to watch for: "This can't be undone", "This changes sign-in or security settings" and "This shares your data outside this chat". Email from the Bot's own address: if you ask for it in chat, it goes out once Auto-review allows it. If a routine or an incoming message triggers it, it waits as a draft until you press Send. A forward, or an attachment Auto-review can't fully read, always waits for you. Cards from a chat message don't expire. Cards from background work expire after 30 minutes.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://docs.x.ai/grok-bot/mobile" target="_blank" rel="noopener">Start Grok Bot for Mobile</a></div>
+      <div class="article-meta"><span class="tag tag-docs">Docs</span> updated Oct 28 · ~12 min read</div>
+      <div class="article-summary">The new section "Let a Bot use your phone's apps" (see highlight 3). Location gives "a position, not an address or place name." Apple Home can control lights, thermostats and locks, and locks and garage doors follow the same approval rules as other Home changes. On Android, alarms go to the Clock app, which doesn't confirm them, so the Bot asks you to check. Under <strong>Settings → Bot → Manage your devices</strong> you can see each device, and, on computers, set whether Bots may run commands there.</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published (3-item cap)</div>
+      <div class="brief-mention-item"><a href="https://docs.x.ai/grok-bot/shared-bots" target="_blank" rel="noopener">Shared Bots</a> (new, Oct 28): sharing "doesn't make a copy". Choose Collaborator or Manager. Your chat stays private from the owner. Each reply is paid for from the usage of the person it answers.</div>
+      <div class="brief-mention-item"><a href="https://docs.x.ai/grok-bot/skills-routines-and-automations" target="_blank" rel="noopener">Skills and routines</a> (Oct 28): "To use a skill, ask the Bot for it by name; use @ for Bots, groups, routines, and apps." The old "type /" line is gone. Team members can now <strong>Publish</strong> a private skill to their team.</div>
+      <div class="brief-mention-item"><a href="https://docs.x.ai/x-subscription/referral-program" target="_blank" rel="noopener">Refer friends to Grok Bot</a> (new, Oct 23): a friend gets a 2-week Premium trial, and you get a usage reset once they pay. Referrers must be on Premium, Super or Ultra and "based in the US".</div>
+      <div class="brief-mention-item">Also dated in the window, not featured: Settings and notifications (Import Memory, Auto-review rules now saved to your account), Computers, Bots, Chat, Use cases, FAQ, Troubleshooting and the team and enterprise pages. A new "Inference hooks" page was not read.</div>
+    </div>
+  </div>
+
+  <!-- 4 @BOT -->
+  <div class="source-card" id="src-bot">
+    <div class="source-header">
+      <span class="source-icon">𝕏</span>
+      <span class="source-name">Grok Bot (@bot)</span>
+      <span class="source-platform">x.com/bot · official</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.com/bot/status/2113717946019397910" target="_blank" rel="noopener">"Grok Bot can now save your logins, cards, and contact information."</a></div>
+      <div class="article-meta"><span class="tag tag-x">X post</span><span class="tag tag-high">High relevance</span> Oct 24 · with video</div>
+      <div class="article-summary">"Add them once, and Bot securely remembers them for the future." This is the Vault launch. See highlight 1 and the docs card for how it works.</div>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://x.com/bot/status/2113393684209176718" target="_blank" rel="noopener">"Grok Bot can now use Calendar, Reminders, Contacts, and more apps on your phone."</a></div>
+      <div class="article-meta"><span class="tag tag-x">X post</span><span class="tag tag-high">High relevance</span> Oct 23 · 2-post thread</div>
+      <div class="article-summary">"Rolling out now on iOS and Android." The reply: "Update to the latest version to try it." See highlight 3.</div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://x.com/bot/status/2115130760009273501" target="_blank" rel="noopener">"Our sales operations team built Shared Bots that help reps move deals faster."</a></div>
+      <div class="article-meta"><span class="tag tag-x">X post</span> Oct 28 · 2-post thread</div>
+      <div class="article-summary">This post summarises the three Bots, and the follow-up links to the xAI News article. In the follow-up's words: "Shared Bots draw on the expertise of the people who know each job best."</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published (3-item cap)</div>
+      <div class="brief-mention-item"><a href="https://x.com/bot/status/2113332983226831339" target="_blank" rel="noopener">"Grok Bot can now use your 1Password account."</a> (Oct 23, 01:13 Bangkok time): "Approve the logins you want to share, and your Bot signs in for you." Rolling out "over the next few days".</div>
+      <div class="brief-mention-item">That makes four top-level posts and two follow-ups in the window. Its many replies to individual users were not counted.</div>
+    </div>
+  </div>
+
+  <!-- 5 @SPACEXSI -->
+  <div class="source-card" id="src-spacexai">
+    <div class="source-header">
+      <span class="source-icon">𝕏</span>
+      <span class="source-name">SpaceX Super Intelligence (@SpaceXSI, formerly @SpaceXAI)</span>
+      <span class="source-platform">x.com/SpaceXSI · official company account</span>
+    </div>
+    <div class="no-content">No Grok or Grok Bot product news in the window. I re-checked the account's posts from Oct 22 18:30 to Oct 31. The only one is "<a href="https://x.com/SpaceXSI/status/2113365443931148624" target="_blank" rel="noopener">Proud to be a part of this important initiative from NVIDIA</a>" (Oct 23, 03:22 Bangkok time). It quotes another company's post about an agent-security framework, so it's an industry item.</div>
+  </div>
+
+  <!-- 6 BROCK MESARICH -->
+  <div class="source-card" id="src-brock">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Brock Mesarich (AI for Non Techies)</span>
+      <span class="source-platform">youtube.com/@brockmesarich</span>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=Q1m25CQrjFY&amp;t=370s" target="_blank" rel="noopener">Grok Bot Drops Artifacts, Claude Duet, Security Issues + more (AI News)</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Oct 24 · 19 min · Grok chapter 6:10–8:28 (~2 min)</div>
+      <div class="article-summary">His weekly news episode. One chapter, "Grok Bot Pages + Phone Apps", covers this window's launches, and the link starts at that chapter. His summary: "Grok Bot got its own version of artifacts and can now use the apps on your phone." ("Artifacts" is his word for Pages.) The rest of the episode is about other companies, and one chapter compares products, so it's left out here. <em>Summary from the description and chapter titles only.</em></div>
+      <div class="flag">The description opens with an affiliate link for an image and video tool.</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published</div>
+      <div class="brief-mention-item">"Claude Duet is the Grok Bot Killer? (LIVE TEST)" (Oct 22, 20:57 Bangkok time, 12 min): a test of another vendor's product, with a comparison. Left out under the no-comparisons rule.</div>
+      <div class="brief-mention-item">Nine Shorts (Oct 23–30) are about developer tools and another vendor's assistant. None mention Grok in the title or description.</div>
+    </div>
+  </div>
+
+  <!-- 7 WES ROTH -->
+  <div class="source-card" id="src-wes">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Wes Roth</span>
+      <span class="source-platform">youtube.com/@WesRoth</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=rY8FuDONHxw" target="_blank" rel="noopener">my bots just BROKE Wall St...</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Oct 31 (01:39 Bangkok time) · 28 min</div>
+      <div class="article-summary">The title is clickbait. In the video, he builds "an entire AI research team with Grok Bot, complete with a chief of staff, specialized analysts, and bots that work together while I'm offline." The description promises the path "from your first bot to an AI workforce with connected apps, shared projects, scheduled routines, and skills learned by watching you work." Chapters: Bot Setup (2:53), Chief of Staff (5:36), Research Team (8:33), Group Chats (14:36), Routines and Alerts (17:12), Research Journals (19:00), Teaching Skills (22:25). <em>Assessment:</em> the most complete walkthrough of the "one Bot per role" setup this week. Start at Chief of Staff for the setup, and at Teaching Skills for learning by demonstration. <em>Summary from the description and chapter titles only.</em></div>
+      <div class="flag"><strong>Sponsored:</strong> "This video is sponsored by SpaceX." The investing demos "use simulated paper trading and are not financial advice."</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Also published</div>
+      <div class="brief-mention-item">Three other videos (Oct 24, 27 and 28) cover other AI news and don't mention Grok in the title or description.</div>
+    </div>
+  </div>
+
+  <!-- 8 NATE HERK -->
+  <div class="source-card" id="src-nate-herk">
+    <div class="source-header">
+      <span class="source-icon">🎬</span>
+      <span class="source-name">Nate Herk | AI Automation</span>
+      <span class="source-platform">youtube.com/@nateherk</span>
+    </div>
+    <div class="no-content">No Grok or Grok Bot content found in this window. I re-checked the channel feed and every video page from Oct 22 18:30 to Oct 31. There were eight uploads. All are about another vendor's assistant or general automation, and none mention Grok in the title or description.</div>
+  </div>
+
+  <!-- 9 ETHAN MOLLICK -->
+  <div class="source-card" id="src-mollick">
+    <div class="source-header">
+      <span class="source-icon">📝</span>
+      <span class="source-name">Ethan Mollick (One Useful Thing)</span>
+      <span class="source-platform">oneusefulthing.org · @emollick</span>
+    </div>
+    <div class="no-content">No new content found in this window. I re-checked the One Useful Thing feed: the newest item is "30 Months on the Exponential" (Oct 20), already covered in edition 2. An X search for his posts mentioning Grok since Oct 22 returned none.</div>
+  </div>
+
+  <!-- 10 WILDCARD -->
+  <div class="section-label">🔍 Wildcard Slot (#10)</div>
+  <div class="source-card wildcard" id="src-wildcard">
+    <div class="source-header">
+      <span class="source-icon">🔍</span>
+      <span class="source-name">Matt Palmer<span class="wildcard-label">Wildcard · week 1</span></span>
+      <span class="source-platform">youtube.com/@mattpalmer</span>
+    </div>
+    <div class="article-item high-priority">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=3Edjn34IuzQ" target="_blank" rel="noopener">What's new in Grok Bot - Oct 27, 2026</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span><span class="tag tag-high">High relevance</span> Oct 27 · 8 min · 12 chapters</div>
+      <div class="article-summary">A short, dated product roundup. Pages (0:13), Vault (1:09: the Bot "can't see them; it fills them into web pages securely"), 1Password (2:05: "built with the 1Password team"), Apple Home, Reminders, Location, Contacts, Alarms and Calendar (2:21), videos with Imagine (3:21), the pumpkin Bot (3:47) and X Spaces (4:13: "Your bot can help you manage X Spaces and create lists"). A rapid-fire list at 5:11 includes subagents making images and video, Library pins, formatted forwards, fewer approval cards, "Cmd+/" for shortcuts, and "Send a .docx and get a Google Doc back." <em>Assessment:</em> the best 8-minute way to see this week's changes on screen. The X Spaces item and the ".docx to Google Doc" tip are his claims; I didn't find them in this window's changelog. <em>Summary from the description and chapter titles only.</em></div>
+    </div>
+    <div class="article-item">
+      <div class="article-title"><a href="https://www.youtube.com/watch?v=A3-qLhe46Dw" target="_blank" rel="noopener">Team Bots: Grok Bots for your whole team</a></div>
+      <div class="article-meta"><span class="tag tag-yt">YouTube</span> Oct 23 · 8 min · 10 chapters</div>
+      <div class="article-summary">"Note: team bots are currently available on Team &amp; Enterprise plans." He shows two of his own: a marketing review Bot (1:18), and a social media Bot (3:52) that combines "my writing skills, a Typefully API key and a routine". When someone tags him in Slack, it rewrites the copy in the brand voice and schedules the post. Also covered: owners and users, installing in Slack or Microsoft Teams (1:51), and "When to make one" (5:48). <em>Summary from the description and chapter titles only.</em></div>
+      <div class="flag">He calls a Team Bot "a copy of a Grok Bot shared with your team". The new docs say "Sharing doesn't make a copy" (only a shared <em>template</em> gives each person their own copy). The docs now say "Shared Bots".</div>
+    </div>
+    <div class="brief-mentions">
+      <div class="brief-mentions-label">Why this source is here</div>
+      <div class="brief-mention-item">He replaces Nate B. Jones, at your request. Week 1 delivered two on-topic videos, both directly about Grok Bot. He uploads dated "What's new in Grok Bot" episodes. His links carry the product's own tracking tags and point to a Bot he made for updates, which suggests a close tie to the product team (unverified).</div>
+      <div class="brief-mention-item"><strong>Promotion decision:</strong> I'd keep him as the wildcard for a few more weeks, then decide on a permanent slot. See Decide in the action card.</div>
+    </div>
+  </div>
+
+  <!-- GAPS -->
+  <div class="section-label">⚠️ Gaps &amp; Coverage</div>
+  <div class="gaps-card">
+    <h3>What was checked, and what wasn't</h3>
+    <div class="gap-item"><strong>Window boundary.</strong> This edition covers Oct 23–31, 2026 (Bangkok time), 9 days rather than the usual 7. It picks up exactly where edition 2 stopped (Oct 22, 18:30), so nothing falls between the two editions. That's why a few items from the evening of Oct 22 appear here: the Partner Network article, Brock's comparison video and changelog 0.75.2. 0.75.2 is dated Oct 22 but wasn't on the changelog when edition 2 checked. Final re-check: Oct 31, 18:46.</div>
+    <div class="gap-item"><strong>Method.</strong> I read the xAI News page and articles, the full Grok Bot changelog page, and the docs sitemap. Every Grok Bot page with a date in the window was opened, and the pages cited were read in full. I pulled @bot's and @SpaceXSI's posts through the X API (top-level posts and their own follow-ups), and an X search covered Ethan Mollick. For YouTube I used each channel's feed, plus each new video's page for its length, description and chapters.</div>
+    <div class="gap-item"><strong>No video was watched.</strong> No video was watched and no transcripts were read. Every video summary comes from the title, description and chapter list, and each card says so. The @bot posts' attached videos weren't watched either.</div>
+    <div class="gap-item"><strong>Silent sources.</strong> Nate Herk: eight uploads, none about Grok, each title and description checked. Ethan Mollick: no new post since Oct 20, and no X results. @SpaceXSI: one post, an industry item rather than Grok product news, so the card shows the no-content state.</div>
+    <div class="gap-item"><strong>Handle and name notes.</strong> @SpaceXSI is the former @SpaceXAI (same account). The docs and the admin page now say "Shared Bots"; the changelog and Matt Palmer still say "Team Bots". I treat them as the same feature. The card ids for Wes Roth and Nate Herk changed to <a href="#src-wes">src-wes</a> and <a href="#src-nate-herk">src-nate-herk</a>.</div>
+    <div class="gap-item"><strong>Open questions (unverified claims):</strong> (1) <strong>Saved cards and approval.</strong> The changelog 0.77.0 says "you still approve every purchase". The Vault docs say a saved card fills in "without asking you each time". Not tested. Until it's clarified, assume the docs are right. (2) Matt Palmer's X Spaces and ".docx to Google Doc" items aren't in this window's changelog. (3) Whether Matt Palmer works for the company isn't confirmed. (4) <strong>Resolved from edition 2:</strong> the skills page now says to "ask the Bot for it by name; use @ for Bots, groups, routines, and apps". The old "/" instruction is gone.</div>
+    <div class="gap-item"><strong>Vendor claims.</strong> Everything in the xAI News sales article is the company describing its own team. The results and numbers weren't checked independently. "Fewer approval cards" is the changelog's claim; I didn't count cards.</div>
+    <div class="gap-item"><strong>Sponsorship.</strong> Wes Roth's video is sponsored by SpaceX, as stated in his description and hashtags. Brock's episode opens with an affiliate link. Matt Palmer's links carry the product's own tracking tags.</div>
+    <div class="gap-item"><strong>Scope filter applied.</strong> Left out: comparisons with other vendors (Brock's Oct 22 test, and one chapter of his Oct 24 episode), developer-only docs (custom moderation controls; Inference hooks was not read), team-admin and enterprise changelog lines, and the Partner Network programme beyond a one-line mention. The referral page is mentioned only to say it likely doesn't apply outside the US.</div>
+    <div class="gap-item"><strong>Three-item cap.</strong> Applied to the changelog (0.75.8 and 0.75.2 moved to brief mentions), the docs (Shared Bots, Skills, Referral and the rest moved to brief mentions) and @bot (the 1Password post moved to brief mentions).</div>
+  </div>
+
+</div>
+
+</body>
+</html>
